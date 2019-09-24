@@ -7,7 +7,6 @@ The description should in text clearly state what you wish to build and the requ
 Has to be an administrative system – wtf that means I don’t know.  
 1.1 Requirements 
  
-- Use cases (Hvordan skal brugeren benytte programmet) 
 - Lister over hvad brugeren skal gøre.  
 
 1.2 Description  

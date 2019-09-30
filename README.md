@@ -71,5 +71,5 @@ Hvis nogen er I tvivl om klassediagram, er den her god:
 https://www.youtube.com/watch?v=UI6lqHOVHic 
 
  
- 
+https://studentcbs-my.sharepoint.com/:w:/g/personal/chan19af_student_cbs_dk/EZJSkbOtUbdLsjJd0HAIm7IBoC2Vn0GMM9PYMOesb-Pzfw?rtime=gUi9GalF10g
  

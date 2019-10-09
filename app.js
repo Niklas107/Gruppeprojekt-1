@@ -1,5 +1,8 @@
-//:hehe
+//hehe
 
-//:Hej venner
-
-//: CHRIS WAS HERE
+//Hej venner
+class User {
+    constructor(type) {
+        this.type = type;
+    }
+}

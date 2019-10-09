@@ -54,7 +54,9 @@ Lave klassen med constructor og kommentarer og lave en funktion der kan udregne 
 
 Alternativt skal denne klasse slettes og så kan students bare tilmelde sig en forelæsning, hvis det andet bliver for bøvlet.  
 
+#### **Andet**
 
+Vi skal have indsat de forskellige js dokumenter i vores html fil og lave css, så det er ens for alle "siderne". Altså så det eksempelvis ser ens ud for index.html og login.html
 
 
 

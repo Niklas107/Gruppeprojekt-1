@@ -1,6 +1,6 @@
-hehe
+//hehe
 
-Hej venner
+//Hej venner
 class User {
     constructor(type) {
         this.type = type;

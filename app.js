@@ -1,3 +1,3 @@
-hehe
+//:hehe
 
-Hej venner
+//:Hej venner

@@ -9,3 +9,6 @@ Hvis et gruppemedlem har slettet noget og pushet, så når man selv puller ned l
 Hvordan løser vi det?
 
 TEST 
+
+
+git add "filename"

@@ -2,6 +2,4 @@
 
 //:Hej venner
 
-//: FUCK GITHUB
-
-//: Heyo
+//: CHRIS WAS HERE

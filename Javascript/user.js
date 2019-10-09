@@ -8,3 +8,7 @@ class user {
         this.lastName = lastName;
     }
 }
+
+user.prototype.getUser = function(){
+    return this.userName + this.password + this.email + this.phoneNumber + this.firstName + this.lastName;
+}

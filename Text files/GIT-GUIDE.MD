@@ -7,4 +7,3 @@ I terminalen skrives "git push"
 Hvis et gruppemedlem har slettet noget og pushet, så når man selv puller ned lokalt, kommer de ændringer ind. Der står dog ikke hvilke ændringer der er altså hvad der er nyt og hvad der er slettet
 
 Hvordan løser vi det?
-TEST 2 with their commands 

@@ -101,7 +101,3 @@ Vi er endnu ikke sikre på hvorvidt forelæsningerne skal være gratis eller om 
 
  
 https://studentcbs-my.sharepoint.com/:w:/g/personal/chan19af_student_cbs_dk/EZJSkbOtUbdLsjJd0HAIm7IBoC2Vn0GMM9PYMOesb-Pzfw?rtime=gUi9GalF10g
- 
- 
- 
- TEST 

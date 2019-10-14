@@ -22,6 +22,12 @@ class teacher {
   }
 
 
+function test() {
+    var lectureName = document.getElementById("lectureName").value;
+
+
+
+}
 
 
 

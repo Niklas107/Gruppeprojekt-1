@@ -48,6 +48,8 @@ Lave en funktion så de kan tilmelde sig en forelæsning
 
 Finde ud af om informationerne om student kan modtages af teacher, og om student kan få informationer fra courses.
 
+ if (teacher.studyProgram==student.studyProgram) og  if (teacher.course==student.course) må de tilmelde sig en forelæsning
+
 #### **Order**
 
 Lave klassen med constructor og kommentarer og lave en funktion der kan udregne en pris for alle forelæsninger en student har tilmeldt sig. Og en funktion der laver/accepterer ordren eller tilmeldingen.

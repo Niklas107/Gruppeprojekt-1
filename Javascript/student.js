@@ -2,7 +2,7 @@ class student extends user {                                                    
     constructor(userName, password, email, phoneNumber, firstName, lastName, studyProgram, course, semester) {
         super(userName, password, email, phoneNumber, firstName, lastName);                                                       //Vi bruger super-funktionen.
 
-        this.studyProgram = studyProgram;                                                                                         // Vi tilføjer tre nye attributter 
+        this.studyProgram = studyProgram;                                                                                         // Vi tilføjer tre nye attributter, som kun skal benyttes hos student
         this.course = course;
         this.semester = semester;
     }

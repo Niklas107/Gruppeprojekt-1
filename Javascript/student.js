@@ -1,14 +1,13 @@
-class student {
-    constructor(studyProgram, creditCardInfo, course, semester) {  //Ekstra attributter som er opstillet til student
+class student extends user }
+    constructor=(userName, password, email, phoneNumber, firstName, lastName, studyProgram, course, semester) {
         this.studyProgram = studyProgram;
-        this.creditCardInfo = creditCardInfo;
         this.course = course;
         this.semester = semester;
     }
 }
 
 
-Niklas = new student("Ha(it)", "4521 5986 2541 3654 month:04 year20 controlnumber: 666", "VØS", "1");
+Niklas = new student("Niller", "12345", "Nik123@gmail.com", "12345678", "Niklas", "Something","","","" );
 console.log(Niklas);
 
 

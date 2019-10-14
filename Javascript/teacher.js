@@ -7,7 +7,7 @@ class teacher {
   function createLecture() {
       var teacher = document.getElementById("teacher").value;
       var studyProgram = document.getElementById("studyProgram").value;
-      var course = document.getElementById("course");
+      var course = document.getElementById("course").value;
       var classroom = document.getElementById("classroom").value;
       var lectureName = document.getElementById("lectureName").value;
       var comment = document.getElementById("comment").value;

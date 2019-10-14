@@ -1,13 +1,13 @@
-## **TO-DO list**
+## **TO-DO list**#### **User**
+                 
+                 Lave register funktion under user
+                 
+                 Undersøge om teacher, student og admin "inheritter"
+                 attributterne fra user.
+                 
+                 Hvis ja gør noget lignende, så teacher kan få informationerne fra student
 
-#### **User**
 
-Lave register funktion under user
-
-Undersøge om teacher, student og admin "inheritter"
-attributterne fra user.
-
-Hvis ja gør noget lignende, så teacher kan få informationerne fra student
 
 #### **Get/set metoderne**
 

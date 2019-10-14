@@ -1,0 +1,49 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="utf-8">
+    <title>JavaScript Field Label Form Validation using a registration form</title>
+    <meta name="keywords" content="example, JavaScript Form Validation, Sample registration form" />
+    <meta name="description" content="This document is an example of JavaScript Field label form validation using a sample registration form. " />
+    <link rel='stylesheet' href='registration.css' type='text/css' />
+    <script src="registration.js"></script>
+</head>
+<body onload="firstfocus();">
+<h1>Registrering til StudentTeach</h1>
+<h2>Indtast oplysninger i nedenstående formular</h2><form name='registration'">
+<ul>
+    <!--MANGLER AT FÅ LAVET FUNKTION TIL DEN HER-->
+    <li><label for="registeras">Register as [Must select an option] :</label></li>
+    <li><select name="" onblur="registerselect()">
+        <option selected="" value="Default">(Please select an option)</option>
+        <option value="ADM">Admin</option>
+        <option value="TEA">Teacher</option>
+        <option value="STU">Student</option>
+
+
+    </select></li>
+    <li><label for="User_id">User_id [6 til 8 characters] :</label></li>
+    <li><input type="text" name="userid" size="12" onblur="userid_validation(6,8)"/></li>
+    <li><label for="User_id">Password [7 to 14 characters] :</label></li>
+    <li><input type="password" name="passid" size="12" onblur="passid_validation(7,14)"/></li>
+    <li><label for="User_id"> Name [Alphabetic characters] :</label></li>
+    <li><input type="text" name="User_id" size="50" onblur="allLetter()"/></li>
+    <li><label for="mainCourse">Main Course [Must select a Main Course] :</label></li>
+    <li><select name="" onblur="countryselect()">
+        <option selected="" value="Default">(Please select a course)</option>
+        <option value="VØS">Virksomhedens økonomiske styring (1)</option>
+        <option value="ORG">Indføring i organisationers opbygning og funktion</option>
+        <option value="BIS">Introduction to Information Systems</option>
+        <option value="PRO">Programmering og udvikling af små systemer</option>
+
+    </select></li>
+    <li><label for="email">Email [Valid email] :</label></li>
+    <li><input type="text" name="email" size="50" onblur="ValidateEmail()" /></li>
+    <li><label>Language [Optional] :</label></li>
+    <li><input type="checkbox" name="en" value="en" checked /><span>English</span></li>
+    <li><input type="checkbox" name="nonen" value="noen" /><span>Non English</span></li>
+    <li><label for="desc">About [Optional] :</label></li>
+    <li><textarea name="desc" id="desc"></textarea></li>
+    <li><input type="submit" name="submit" value="Submit" onclick="alert('Form submitted successfully')" /></li>
+</ul>
+</form>
+</body>
+</html>

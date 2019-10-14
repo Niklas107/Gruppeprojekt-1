@@ -1,17 +1,8 @@
 class admin {
-    constructor(adminName) {             //Ekstra attributter som er opstillet til student
+    constructor(adminName) {             //Ekstra attributter som er opstillet til admin
         this.adminName = adminName;
+    }
     }
 }
 admin.prototype = new user();          ////Vi kalder user som har vores attributter der er gældende for alle grupper.
 admin.prototype.constructor = admin;
-
-class newTeacher {
-    constructor(firstName, lastName, email) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.email = email;
-    }
-}
-
-

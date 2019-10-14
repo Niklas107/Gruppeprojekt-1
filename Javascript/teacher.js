@@ -2,16 +2,28 @@ class teacher {
     constructor(studyProgram) {     //Ekstra attributter som er opstillet til teacher
         this.studyProgram = studyProgram;
         }
-         function lecture(teacher, studyProgram, course, classroom, lectureName) {
-         super();
-         this.course = course;
-         this.classroom = classroom;
-         this.lectureName = lectureName;
-    }
   }
 
-lecture2 = new lecture("alal", "fil", "VØS", "4", "Introduktion til Lineær programmering")
-console.log(lecture2);
+  function createLecture() {
+      var teacher = document.getElementById("teacher").value;
+      var studyProgram = document.getElementById("studyProgram").value;
+      var course = document.getElementById("course");
+      var classroom = document.getElementById("classroom").value;
+      var lectureName = document.getElementById("lectureName").value;
+      var comment = document.getElementById("comment").value;
+
+      alert("Your lecture has been created"
+          + "\nTeacher:" + " " + teacher
+          + "\nStudy program:" + " " + studyProgram
+          + "\nCourse:" + " " + course
+          + "\nClassroom:" + " " + classroom
+          + "\nLecture Name:" + " " + lectureName
+          + "\nAdditional comment:" + " " + comment);
+  }
+
+
+
+
 
 
 

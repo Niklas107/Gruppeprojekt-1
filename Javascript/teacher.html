@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<form name="createLecture">
+
+    <!-- Text fields -->
+    Teacher name
+    <br/>
+    <input type="text" id="teacher" value="" placeholder="Your name"/>
+    <br/>
+
+    <!-- Dropdown lists -->
+    Study program
+    <br/>
+    <select type="text" id="studyProgram">
+        <option selected disabled>Study program</option>
+        <option value="HA(it.)">HA(it.)</option>
+        <option value="HA(jur.)">HA(jur.)</option>
+        <option value="HA(fil.)">HA(fil.)</option>
+        <option value="HA(mat.)">HA(mat.)</option>
+        <option value="HA pro.">HA pro.</option>
+        <option value="HA(kom.)">HA(kom.)</option>
+        <option value="HA(psyk.)">HA(psyk.)</option>
+    </select>
+    <br/>
+
+    Course
+    <br/>
+    <select type="text" id="course">
+        <option selected disabled>Course</option>
+        <option value="BIS">Introduction to Informations Systems and Informations Systems Development</option>
+        <option value="VØS">Virksomhedens økonomiske styring 1</option>
+        <option value="PRO">Programmering og udvikling af små systemer samt databaser</option>
+        <option value="ORG">Indføring i organisationers opbygning og funktion</option>
+    </select>
+    <br/>
+
+    Classroom
+    <br/>
+    <select type="text" id="classroom">
+        <option selected disabled>Classroom</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+    </select>
+    <br/>
+
+    Lecture Name
+    <br/>
+    <input type="text" id="lectureName" value="" placeholder="Lecture name"/>
+    <br/>
+
+    <!-- Text area for additional comments -->
+    Additional comments
+    <br/>
+    <textarea type="text" rows="5" cols="30" id="comment" value="">
+    </textarea>
+
+      <!-- Submit button to activate some function -->
+    <button  type="button" onclick="createLecture()"> Create lecture </button>
+
+</form>
+<!-- Linking external JavaScript file to our HTML page -->
+<script type="text/javascript" src="teacher.js"></script>
+</body>
+</html>

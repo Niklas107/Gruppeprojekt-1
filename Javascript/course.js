@@ -1,1 +1,2 @@
-class course {}
+class course {
+}

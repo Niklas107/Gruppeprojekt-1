@@ -3,6 +3,8 @@ class admin {
         this.adminName = adminName;
     }
 }
+admin.prototype = new user();          ////Vi kalder user som har vores attributter der er gældende for alle grupper.
+admin.prototype.constructor = admin;
 
 class newTeacher {
     constructor(firstName, lastName, email) {
@@ -10,8 +12,6 @@ class newTeacher {
         this.lastName = lastName;
         this.email = email;
     }
-
 }
 
-const newTeacher1 = Teacher("Josefine","Colberg","Jos123@gmail.com");
-console.log (newTeacher1);
+

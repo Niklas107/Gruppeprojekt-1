@@ -54,8 +54,35 @@
 
     Lecture Name
     <br/>
-    <input type="text" id="lectureName" value="" placeholder="Lecture name"/>
+    <input type="text" name="text" id="lectureName" value="" placeholder="Lecture name"/>
+    <button onclick="pushLecture();">Show</button>
+    <p id="lName"></p>
     <br/>
+    <script>
+
+        // create an array
+        var lectureList = ["LP intro","Programmering - Guide til objekter","Organisationskultur - eksamensforberedelse"];
+
+        function pushLecture()
+        {
+            // get value from the input text
+            var lectureName = document.getElementById('lectureName').value;
+
+            // append data to the array
+            lectureList.push(lectureName);
+
+            var pval = "";
+
+            for(i = 0; i < lectureList.length; i++)
+            {
+                pval = pval + lectureList[i] + "<br/>";
+            }
+
+            // display array data
+            document.getElementById('lName').innerHTML = pval;
+        }
+
+    </script>
 
     <!-- Text area for additional comments -->
     Additional comments
@@ -66,6 +93,8 @@
       <!-- Submit button to activate some function -->
     <br/>
     <button id="lecture" type="button" onclick="createLecture()"> Create lecture </button>
+
+
 
 </form>
 <!-- Linking external JavaScript file to our HTML page -->

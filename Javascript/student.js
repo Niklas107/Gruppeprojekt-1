@@ -1,4 +1,4 @@
-class student extends user {                                                                                                    //Vi extender vores værdier fra User
+/*class student extends user {                                                                                                    //Vi extender vores værdier fra User
     constructor(userName, password, email, phoneNumber, firstName, lastName, studyProgram, course, semester) {
         super(userName, password, email, phoneNumber, firstName, lastName);                                                       //Vi bruger super-funktionen.
 
@@ -6,7 +6,16 @@ class student extends user {                                                    
         this.course = course;
         this.semester = semester;
     }
+}*/
+
+var programDropdown = document.getElementById("selectStudyProgram")
+programDropdown.onchange = function() {
+    if(programDropdown.value == "HA(it.)"){
+        console.log(document.getElementsByClassName("HA(it.)"))
+
+    }
 }
+
 function chooseCourse() {
     var studyprogram = document.getElementById("selectStudyProgram").value;
     var course = document.getElementById("studentCourses").value;
@@ -21,8 +30,8 @@ function chooseCourse() {
 }
 
 
-Niklas = new student("Niller", "12345", "Nik123@gmail.com", "12345678", "Niklas","jh",""," ",""  );
-console.log(Niklas);
+//Niklas = new student("Niller", "12345", "Nik123@gmail.com", "12345678", "Niklas","jh",""," ",""  );
+//console.log(Niklas);
 
 
 

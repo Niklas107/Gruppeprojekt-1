@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>StudentTeach - Student subpage</title>
+</head>
+<body>
+<h1> This is a subpage where the student can select a course</h1>
+<!-- Dropdown lists  for courses-->
+<!-- In the future we need the dropdown lists to only show the relevant courses for the student, depending on the study program-->
+<br/>
+<br/>
+<!-- this dropdown list will be excluded when we learn how to only show a specific set of courses depending on the study program you signed up with-->
+<h2> Select Study program</h2>
+<select type="text" id="selectStudyProgram">
+    <option selected disabled>Study program</option>
+    <option value="HA(it.)">HA(it.)</option>
+    <option value="HA(jur.)">HA(jur.)</option>
+    <option value="HA(fil.)">HA(fil.)</option>
+    <option value="HA(mat.)">HA(mat.)</option>
+    <option value="HA pro.">HA pro.</option>
+    <option value="HA(kom.)">HA(kom.)</option>
+    <option value="HA(psyk.)">HA(psyk.)</option>
+</select>
+<br/>
+<!-- This list needs to change depending on what study program the student choose, currently only displaying ha(it)-->
+<h2>Available Courses: </h2>
+<select type="text" id="studentCourses">
+    <option selected disabled>Course</option>
+    <option value="BIS">Introduction to Informations Systems and Informations Systems Development</option>
+    <option value="VØS">Virksomhedens økonomiske styring 1</option>
+    <option value="PRO">Programmering og udvikling af små systemer samt databaser</option>
+    <option value="ORG">Indføring i organisationers opbygning og funktion</option>
+</select>
+<br/>
+<!-- This dropdown list needs to only show the course selected in the dropdown list above-->
+<h2>Availability - Lecture</h2>
+<select type = "text" id = "courseTime">
+    <option selected disabled> Availability for courses</option>
+    <option value="BIS - Monday 16:30">BIS - Monday 16:30</option>
+    <option value="VØS 1 - Tuesday 16:30">VØS 1 - Tuesday 16:30</option>
+    <option value="PRO - wednesday 16:30">PRO - wednesday 16:30</option>
+    <option value="ORG - Thursday 16:30">ORG - Thursday 16:30</option>
+</select>
+<br/>
+<!-- Text area for additional comments -->
+<h2>Additional comments:</h2>
+<textarea type="text" rows="5" cols="30" id="comment" value="">
+    </textarea>
+<br/>
+<br/>
+<!-- Submit button to activate some function -->
+<button  type="button" onclick="chooseCourse()"> Join Lecture </button>
+<br/>
+<!-- Linking external JavaScript file to our HTML page -->
+<script type="text/javascript" src="../Javascript/student.js"></script>
+</body>
+</html>

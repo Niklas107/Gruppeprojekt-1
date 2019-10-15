@@ -5,11 +5,11 @@ function Register() {
     var phone = document.getElementById("phone").value;
     var comments = document.getElementById("comment").value;
 
-    alert("You have been registered"
-        + "\nName: " + name
-        + "\naddress: " + address
-        + "\nemail: " + email
-        + "\nphone: " + phone
-        + "\npassword: " + "********"
-        + "\nAdditional comment:" + " " + comments);
+    alert("You have been registered" +
+        "\nName: " + name +
+        "\naddress: " + address +
+        "\nemail: " + email +
+        "\nphone: " + phone +
+        "\npassword: " + "****" +
+        "\nAdditional comment: " + comments);
 }

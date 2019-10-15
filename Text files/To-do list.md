@@ -47,6 +47,8 @@ Finde ud af om informationerne om student kan modtages af teacher, og om student
 
  if (teacher.studyProgram==student.studyProgram) og  if (teacher.course==student.course) må de tilmelde sig en forelæsning
 
+#### **Registration**
+FIXED!!!
 
 #### **Andet**
 

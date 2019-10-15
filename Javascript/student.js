@@ -7,6 +7,18 @@ class student extends user {                                                    
         this.semester = semester;
     }
 }
+function chooseCourse() {
+    var studyprogram = document.getElementById("selectStudyProgram").value;
+    var course = document.getElementById("studentCourses").value;
+    var courseTime = document.getElementById("courseTime").value;
+    var comment = document.getElementById("comment").value;
+
+    alert("You have joined a lecture"
+        + "\nStudy Program: " + studyprogram
+        + "\nCourse: " + course
+        + "\nCourse Time: " + courseTime
+        + "\nAdditional comment:" + " " + comment);
+}
 
 
 Niklas = new student("Niller", "12345", "Nik123@gmail.com", "12345678", "Niklas","jh",""," ",""  );

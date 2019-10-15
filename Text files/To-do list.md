@@ -1,14 +1,11 @@
-## **TO-DO list**#### **User**
+## **TO-DO list** 
+#### **User**
                  
-                 Lave register funktion under user
+   Lave register funktion under user
                  
-                 Hvis ja gør noget lignende, så teacher kan få informationerne fra student
-
-
-
 #### **Get/set metoderne**
 
-Ellers skal vi finde en måde hvor de forskellige klasser kan få informationer fra hinanden, da admin også skal have information om classroom og courses, og teacher skal have information om classroom.
+Vi skal finde en måde hvor de forskellige klasser kan få informationer fra hinanden, da admin også skal have information om classroom og courses, og teacher skal have information om classroom.
 
 Hvis ikke det kan lade sig gøre, kan vi overveje at samle alle user klasserne i et js dokument, og så finde en måde at classroom, courses og order kan virke 
 
@@ -29,9 +26,9 @@ Lave klassen med contructor og kommentarer og lave en funktion der kan tjekke hv
 
 #### **Teacher**
 
-Lave en funktion så de kan oprette en forelæsning
 
-Lave en funktion så de kan fjerne en forelæsning
+
+Tilkoble lectureList med removeLecture funktionen, så det er de valgmuligheder man kan fjerne mellem
 
 Lave en funktion så de kan tilføje en student til en forelæsning
 
@@ -40,8 +37,6 @@ Lave en funktion så de kan fjerne en student fra en forelæsning
 Lave en funktion så de på deres profil kan ændre informationer om en forelæsning fx. tidspunkt, eller classroom.
 
 #### **Student**
-
-Lave en funktion så de kan tilmelde sig en forelæsning
 
 Finde ud af om informationerne om student kan modtages af teacher, og om student kan få informationer fra courses.
 

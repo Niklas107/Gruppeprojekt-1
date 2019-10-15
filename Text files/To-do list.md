@@ -2,9 +2,6 @@
                  
                  Lave register funktion under user
                  
-                 Undersøge om teacher, student og admin "inheritter"
-                 attributterne fra user.
-                 
                  Hvis ja gør noget lignende, så teacher kan få informationerne fra student
 
 
@@ -50,11 +47,6 @@ Finde ud af om informationerne om student kan modtages af teacher, og om student
 
  if (teacher.studyProgram==student.studyProgram) og  if (teacher.course==student.course) må de tilmelde sig en forelæsning
 
-#### **Order**
-
-Lave klassen med constructor og kommentarer og lave en funktion der kan udregne en pris for alle forelæsninger en student har tilmeldt sig. Og en funktion der laver/accepterer ordren eller tilmeldingen.
-
-Alternativt skal denne klasse slettes og så kan students bare tilmelde sig en forelæsning, hvis det andet bliver for bøvlet.  
 
 #### **Andet**
 

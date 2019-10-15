@@ -6,7 +6,6 @@ class teacher extends user {                                                    
         }
   }
 
-Niklas = new teacher("","","","","","","");
 
 )
   function createLecture() {
@@ -18,16 +17,18 @@ Niklas = new teacher("","","","","","","");
       var comment = document.getElementById("comment").value;
 
       alert("Your lecture has been created"
-          + "\nTeacher:" + " " + teacher
-          + "\nStudy program:" + " " + studyProgram
-          + "\nCourse:" + " " + course
-          + "\nClassroom:" + " " + classroom
-          + "\nLecture Name:" + " " + lectureName
-          + "\nAdditional comment:" + " " + comment);
+          + "\nTeacher: " + teacher
+          + "\nStudy program: " + studyProgram
+          + "\nCourse: " + course
+          + "\nClassroom: " + classroom
+          + "\nLecture Name: " + lectureName
+          + "\nAdditional comment: " + comment);
   }
 
 
 
+  //Når jeg får funktionen med at oprette et array med alt der indtastes i lectureName
+//til at virke, så skal det nedenstående kode køres
 
 
 
@@ -35,9 +36,10 @@ Niklas = new teacher("","","","","","","");
 
 
 
-/* Lave en funktion så de kan oprette en forelæsning
 
-Lave en funktion så de kan fjerne en forelæsning
+
+
+/*Lave en funktion så de kan fjerne en forelæsning
 
 Lave en funktion så de kan tilføje en student til en forelæsning
 

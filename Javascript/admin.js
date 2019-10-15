@@ -1,8 +1,6 @@
-class admin {
-    constructor(adminName) {             //Ekstra attributter som er opstillet til admin
-        this.adminName = adminName;
+class admin extends user {                                                                   // Vi extender fra user
+    constructor(userName, password, email, phoneNumber, firstName, lastName, adminName) {   // Alle attributter til admin
+        super(userName, password, email, phoneNumber, firstName, lastName);
+        this.adminName = adminName;                                                         //Ekstra attributter som er opstillet til admin
     }
     }
-}
-admin.prototype = new user();          ////Vi kalder user som har vores attributter der er gældende for alle grupper.
-admin.prototype.constructor = admin;

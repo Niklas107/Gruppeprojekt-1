@@ -1,8 +1,8 @@
-class teacher extends user {
-    constructor(userName, password, email, phoneNumber, firstName, lastName, studyProgram) {     //Ekstra attributter som er opstillet til teacher
-        super(userName, password, email, phoneNumber, firstName, lastName);
+class teacher extends user {                                                                     // Vi extender fra user
+    constructor(userName, password, email, phoneNumber, firstName, lastName, studyProgram) {     // Alle attributter til teacher
+        super(userName, password, email, phoneNumber, firstName, lastName);                      // Vi opstiller en super-funktion
 
-        this.studyProgram = studyProgram;
+        this.studyProgram = studyProgram;                                                        //Ekstra attributter som er opstillet til teacher
         }
   }
 

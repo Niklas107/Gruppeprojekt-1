@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<body>
+<!-- Dropdown list med alle ens egne oprettede forelæsninger -->
+<form>
+    Select a lecture:
+    <br>
+    <select id="hejsa" size="3">
+        <option>LP intro</option>
+        <option>Organisationskultur</option>
+        <option>Programmering - Guide til objekter</option>
+    </select>
+</form>
+<br>
+
+<button onclick="removeLecture()">Remove selected lecture</button>
+
+<script>
+    function removeLecture() {
+        var x = document.getElementById("hejsa");
+        x.remove(x.selectedIndex);
+    }
+</script>
+
+</body>
+</html>
+

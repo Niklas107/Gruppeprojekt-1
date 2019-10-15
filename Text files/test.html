@@ -7,7 +7,7 @@
 <body>
 
 <input type="text" name="text" id="lectureName"/>
-<button onclick="pushLecture();">Show</button>
+<button onclick="pushLecture();">Create lecture</button>
 <p id="lName"></p>
 
 <script>
@@ -36,41 +36,9 @@
 
 </script>
 
+
+
 </body>
 </html>
 
 
-
-
-
-Lecture Name
-<br/>
-<input type="text" id="lectureName" value="" placeholder="Lecture name"/>
-<button onclick="pushLecture();">Show</button>
-<p id="lName"></p>
-<br/>
-
-<!-- Forsøg med at tilføje lectureName til et array -->
-<script>
-    //Her laves et array
-    var allLectures = ["LP intro","Organisationskultur","JavaScript - Guide til objekter"];
-
-    //Her laves en funktion der tilføjer inputet fra lectureName til vores array
-    function pushLecture() {
-        var lectureName = document.getElementById('lectureName').value;
-
-        //Tilføje værdien fra input
-        allLectures.push(lectureName);
-
-        var pval = "";
-
-        for(i = 0; i < allLectures.length; i++)
-        {
-            pval = pval + allLectures[i] + "<br/>";
-        }
-
-        //Vis array data
-        document.getElementById('lName').innerHTML = pval;
-    }
-
-</script>

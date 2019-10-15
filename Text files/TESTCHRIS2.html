@@ -48,15 +48,15 @@
                     break;
                 case "BIS" :
                     document.getElementById("sub_subcategory").options[0]=new Option("Select Lecture Time","");
-                    document.getElementById("sub_subcategory").options[2]=new Option("BIS - Tuesday 16:30","BIS - Tuesday 16:30");
+                    document.getElementById("sub_subcategory").options[1]=new Option("BIS - Tuesday 16:30","BIS - Tuesday 16:30");
                     break;
                 case "PRO" :
                     document.getElementById("sub_subcategory").options[0]=new Option("Select Lecture Time","");
-                    document.getElementById("sub_subcategory").options[3]=new Option("VØS - Wednesday 16:30","PRO - Wednesday 16:30");
+                    document.getElementById("sub_subcategory").options[1]=new Option("VØS - Wednesday 16:30","PRO - Wednesday 16:30");
                     break;
                 case "ORG" :
                     document.getElementById("sub_subcategory").options[0]=new Option("Select Lecture Time","");
-                    document.getElementById("sub_subcategory").options[4]=new Option("VØS - Thursday 16:30","ORG - Thursday 16:30");
+                    document.getElementById("sub_subcategory").options[1]=new Option("VØS - Thursday 16:30","ORG - Thursday 16:30");
                     break;
                 default:
                     document.getElementById("sub_subcategory").options[0]=new Option("Select Lecture Time","");
@@ -68,7 +68,8 @@
 </head>
 <title>Dynamic Drop Down List</title>
 <body>
-<div class="category_div" id="category_div">Select study program:
+<h1> This is a subpage where the student can select a course</h1>
+<div class="category_div" id="category_div"><h2>Select study program:</h2>
     <select name="category" class="required-entry" id="category" onchange="javascript: dynamicdropdown(this.options[this.selectedIndex].value);">
         <option value="">Select study program</option>
         <option value="Ha(it.)">Ha(it.)</option>
@@ -77,7 +78,7 @@
         <option value="Ha(mat.)">Ha(mat.)</option>
     </select>
 </div>
-<div class="sub_category_div" id="sub_category_div">Select lecture:
+<div class="sub_category_div" id="sub_category_div"><h2>Select lecture:</h2>
     <script type="text/javascript" language="JavaScript">
         document.write('<select name="subcategory" id="subcategory" onchange="javascript: dynamicdropdownone(this.options[this.selectedIndex].value);"><option value="">Select Lecture</option></select>')
     </script>
@@ -87,7 +88,7 @@
         </select>
     </noscript>
 </div>
-<div class="sub_subcategory_div" id="sub_subcategory_div">Select Lecture Time:
+<div class="sub_subcategory_div" id="sub_subcategory_div"><h2>Select Lecture Time:</h2>
     <script type="text/javascript" language="JavaScript">
         document.write('<select name="sub_subcategory" onchange="javascript: urlRedirectTo(this.options[this.selectedIndex].value);" id="sub_subcategory"><option value="">Select Lecture Time </option></select>')
     </script>
@@ -96,6 +97,16 @@
             <option value="">Select Lecture Time</option>
         </select>
     </noscript>
-</div>
-</body>
-</html>
+    <!-- Text area for additional comments -->
+    <h2>Additional comments:</h2>
+    <textarea type="text" rows="5" cols="30" id="comment" value="">
+    </textarea>
+    <br/>
+    <br/>
+    <!-- Submit button to activate some function -->
+    <button  type="button" onclick="chooseCourse()"> Join Lecture </button>
+    <br/>
+    <script type="text/javascript" src="../Javascript/student.js"></script>
+    </div>
+    </body>
+    </html>

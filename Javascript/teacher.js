@@ -43,6 +43,7 @@ function pushLecture() {
 
     // display array data
     document.getElementById('lName').innerHTML = pval;
+
 }
 
 function removeLecture() {
@@ -50,8 +51,10 @@ function removeLecture() {
     x.remove(x.selectedIndex);
 }
 
-  //Når jeg får funktionen med at oprette et array med alt der indtastes i lectureName
-//til at virke, så skal det nedenstående kode køres
+  /*pushLecture virker kun i script tags i html filen. Når det virker i JS er næste step at få resultatet
+  fra lectureList ind i select formen, for at kunne remove en af dem, eller lave en måde at kigge det array
+  igennem, og fjerne den lecture i arrayet, som man vil fjerne.
+   */
 
 
 

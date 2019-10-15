@@ -55,16 +55,12 @@
     Lecture Name
     <br/>
     <input type="text" name="text" id="lectureName" value="" placeholder="Lecture name"/>
-    <button onclick="pushLecture();">Show</button>
     <p id="lName"></p>
-    <br/>
     <script>
-
         // create an array
         var lectureList = ["LP intro","Programmering - Guide til objekter","Organisationskultur - eksamensforberedelse"];
 
-        function pushLecture()
-        {
+        function pushLecture() {
             // get value from the input text
             var lectureName = document.getElementById('lectureName').value;
 
@@ -84,19 +80,36 @@
 
     </script>
 
+
+
     <!-- Text area for additional comments -->
     Additional comments
     <br/>
     <textarea type="text" rows="5" cols="30" id="comment" value="">
     </textarea>
 
-      <!-- Submit button to activate some function -->
+      <!-- Submit button to create lecture -->
     <br/>
-    <button id="lecture" type="button" onclick="createLecture()"> Create lecture </button>
+    <button id="lecture" type="button" onclick="createLecture(); pushLecture();"> Create lecture </button>
+    <br/>
 
 
-
+    <!-- Dropdown list med alle ens egne oprettede forelæsninger -->
+    <br>
+    Remove an existing lecture:
+    <br>
+    <select id="hejsa" size=""
+    <br>
+        <option>Organisationskultur</option>
+        <option>Programmering - Guide til objekter</option>
+        <option>En anden forelæsning</option>
+        <option>Hvorfor gider den ikke vise den første forelæsning</option>
+    </select>
+    <br>
+<button onclick="removeLecture()">Remove selected lecture</button>
 </form>
+
+
 <!-- Linking external JavaScript file to our HTML page -->
 <script type="text/javascript" src="../Javascript/teacher.js"></script>
 </body>

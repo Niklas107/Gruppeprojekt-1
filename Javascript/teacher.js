@@ -3,15 +3,14 @@ class teacher extends user {                                                    
         super(userName, password, email, phoneNumber, firstName, lastName);                      // Vi opstiller en super-funktion
 
         this.studyProgram = studyProgram;                                                        //Ekstra attributter som er opstillet til teacher
-        }
-  }
+    }
+}
 
 
-)
-  function createLecture() {
+function createLecture() {
       var teacher = document.getElementById("teacher").value;
       var studyProgram = document.getElementById("studyProgram").value;
-      var course = document.getElementById("course");
+      var course = document.getElementById("course").value;
       var classroom = document.getElementById("classroom").value;
       var lectureName = document.getElementById("lectureName").value;
       var comment = document.getElementById("comment").value;
@@ -25,10 +24,37 @@ class teacher extends user {                                                    
           + "\nAdditional comment: " + comment);
   }
 
+// create an array
+var lectureList = ["LP intro","Programmering - Guide til objekter","Organisationskultur - eksamensforberedelse"];
 
+function pushLecture() {
+    // get value from the input text
+    var lectureName = document.getElementById('lectureName').value;
 
-  //Når jeg får funktionen med at oprette et array med alt der indtastes i lectureName
-//til at virke, så skal det nedenstående kode køres
+    // append data to the array
+    lectureList.push(lectureName);
+
+    var pval = "";
+
+    for(i = 0; i < lectureList.length; i++)
+    {
+        pval = pval + lectureList[i] + "<br/>";
+    }
+
+    // display array data
+    document.getElementById('lName').innerHTML = pval;
+
+}
+
+function removeLecture() {
+    var x = document.getElementById("hejsa");
+    x.remove(x.selectedIndex);
+}
+
+  /*pushLecture virker kun i script tags i html filen. Når det virker i JS er næste step at få resultatet
+  fra lectureList ind i select formen, for at kunne remove en af dem, eller lave en måde at kigge det array
+  igennem, og fjerne den lecture i arrayet, som man vil fjerne.
+   */
 
 
 

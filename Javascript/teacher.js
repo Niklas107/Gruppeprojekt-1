@@ -1,12 +1,18 @@
-class teacher {
-    constructor(studyProgram) {     //Ekstra attributter som er opstillet til teacher
-        this.studyProgram = studyProgram;
+class teacher extends user {                                                                     // Vi extender fra user
+    constructor(userName, password, email, phoneNumber, firstName, lastName, studyProgram) {     // Alle attributter til teacher
+        super(userName, password, email, phoneNumber, firstName, lastName);                      // Vi opstiller en super-funktion
+
+        this.studyProgram = studyProgram;                                                        //Ekstra attributter som er opstillet til teacher
         }
   }
+
+Niklas = new teacher("","","","","","","");
+
+)
   function createLecture() {
       var teacher = document.getElementById("teacher").value;
       var studyProgram = document.getElementById("studyProgram").value;
-      var course = document.getElementById("course").value;
+      var course = document.getElementById("course");
       var classroom = document.getElementById("classroom").value;
       var lectureName = document.getElementById("lectureName").value;
       var comment = document.getElementById("comment").value;
@@ -21,10 +27,6 @@ class teacher {
   }
 
 
-function test() {
-    var lectureName = document.getElementById("lectureName").value;
-
-}
 
 
 

@@ -1,14 +1,8 @@
-class teacher extends user {
-    constructor(userName, password, email, phoneNumber, firstName, lastName, studyProgram) {     //Ekstra attributter som er opstillet til teacher
-        super(userName, password, email, phoneNumber, firstName, lastName);
-
+class teacher {
+    constructor(studyProgram) {     //Ekstra attributter som er opstillet til teacher
         this.studyProgram = studyProgram;
         }
   }
-
-Niklas = new teacher("","","","","","","");
-
-)
   function createLecture() {
       var teacher = document.getElementById("teacher").value;
       var studyProgram = document.getElementById("studyProgram").value;
@@ -29,8 +23,6 @@ Niklas = new teacher("","","","","","","");
 
 function test() {
     var lectureName = document.getElementById("lectureName").value;
-
-
 
 }
 

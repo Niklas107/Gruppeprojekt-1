@@ -17,9 +17,9 @@ programDropdown.onchange = function() {
 }
 
 function chooseCourse() {
-    var studyprogram = document.getElementsByClassName("category_div").value;
-    var lecture = document.getElementsByClassName("sub_category_div").value;
-    var lectureTime = document.getElementsByClassName("sub_subcategory_div").value;
+    var studyprogram = document.getElementById("category_div").value;
+    var lecture = document.getElementById("sub_category_div").value;
+    var lectureTime = document.getElementById("sub_subcategory_div").value;
     var comment = document.getElementById("comment").value;
 
     alert("You have joined a lecture"

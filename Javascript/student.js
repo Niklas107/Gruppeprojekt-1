@@ -17,17 +17,18 @@ programDropdown.onchange = function() {
 }
 
 function chooseCourse() {
-    var studyprogram = document.getElementById("selectStudyProgram").value;
-    var course = document.getElementById("studentCourses").value;
-    var courseTime = document.getElementById("courseTime").value;
+    var studyprogram = document.getElementById("category_div").value;
+    var lecture = document.getElementById("sub_category_div").value;
+    var lectureTime = document.getElementById("sub_subcategory_div").value;
     var comment = document.getElementById("comment").value;
 
     alert("You have joined a lecture"
         + "\nStudy Program: " + studyprogram
-        + "\nCourse: " + course
-        + "\nCourse Time: " + courseTime
+        + "\nLecture: " + lecture
+        + "\nLecture Time: " + lectureTime
         + "\nAdditional comment:" + " " + comment);
 }
+
 
 
 //Niklas = new student("Niller", "12345", "Nik123@gmail.com", "12345678", "Niklas","jh",""," ",""  );

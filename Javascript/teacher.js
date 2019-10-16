@@ -13,6 +13,8 @@ function createLecture() {
       var course = document.getElementById("course").value;
       var classroom = document.getElementById("classroom").value;
       var lectureName = document.getElementById("lectureName").value;
+      var day = document.getElementById("day").value;
+      var time = document.getElementById("time").value;
       var comment = document.getElementById("comment").value;
 
       alert("Your lecture has been created"
@@ -21,6 +23,8 @@ function createLecture() {
           + "\nCourse: " + course
           + "\nClassroom: " + classroom
           + "\nLecture Name: " + lectureName
+          + "\nDay: " + day
+          + "\nTime of lecture: " + time
           + "\nAdditional comment: " + comment);
   }
 
@@ -43,8 +47,49 @@ function pushLecture() {
 
     // display array data
     document.getElementById('lName').innerHTML = pval;
-
 }
+
+(function() {
+    function IDGenerator() {
+
+        this.length = 8;
+        this.timestamp = +new Date;
+
+        var _getRandomInt = function( min, max ) {
+            return Math.floor( Math.random() * ( max - min + 1 ) ) + min;
+        }
+
+        this.generate = function() {
+            var ts = this.timestamp.toString();
+            var parts = ts.split( "" ).reverse();
+            var id = "";
+
+            for( var i = 0; i < this.length; ++i ) {
+                var index = _getRandomInt( 0, parts.length - 1 );
+                id += parts[index];
+            }
+
+            return id;
+        }
+
+
+    }
+
+
+    document.addEventListener( "DOMContentLoaded", function() {
+        var btn = document.querySelector( "#generate" ),
+            output = document.querySelector( "#output" );
+
+        btn.addEventListener( "click", function() {
+            var generator = new IDGenerator();
+            output.innerHTML = generator.generate();
+
+        }, false);
+
+    });
+
+
+})();
 
 function removeLecture() {
     var x = document.getElementById("hejsa");
@@ -56,9 +101,28 @@ function removeLecture() {
   igennem, og fjerne den lecture i arrayet, som man vil fjerne.
    */
 
+  //Måske en knap der viser alle items i array (show your lectures)
+//derefter en simpel pop funktion der alt efter hvad man skriver, fjerne den rigtige i arrayet?
+//^^Choose a lecture to remove
 
+const testList = [
+    {name: 'LP intro', id: 1 },
+    {name: 'Programmering - Guide til objekter', id: 2},
+    {name: 'Organisationskultur - eksamensforberedelse', id: 3},
+    {name: 'En forelæsning om druk på CBS', id: 4},
+    {name: 'Verdens bedste VØS guide', id: 5},
+    {name: 'En fordybelse i magt begreber', id: 6}
 
+]
 
+const filteredTestList = testList.filter((testList) => {
+    return testList.id <= 2
+})
+
+console.log(testList)
+console.log(testLectureList)
+
+//Den her kode kan måske bruges? Her kan jeg vælge en med et bestemt ID der fjernes. Så skal den bare kunne forbindes med de andre funktioner
 
 
 

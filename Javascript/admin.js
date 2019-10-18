@@ -4,3 +4,4 @@ class admin extends user {                                                      
         this.adminName = adminName;                                                         //Ekstra attributter som er opstillet til admin
     }
     }
+

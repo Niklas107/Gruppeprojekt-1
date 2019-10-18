@@ -6,6 +6,10 @@ class teacher extends user {                                                    
     }
 }
 
+/*class Lecture {
+    constructor(teacher, studyProgram, ...)
+}*/
+
 
 function createLecture() {
       var teacher = document.getElementById("teacher").value;
@@ -16,6 +20,8 @@ function createLecture() {
       var day = document.getElementById("day").value;
       var time = document.getElementById("time").value;
       var comment = document.getElementById("comment").value;
+
+    //  new Lecture(teacher, studyProgram,..)
 
       alert("Your lecture has been created"
           + "\nTeacher: " + teacher

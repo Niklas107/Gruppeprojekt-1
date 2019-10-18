@@ -8,19 +8,14 @@
     }
 }*/
 
-var programDropdown = document.getElementById("selectStudyProgram")
-programDropdown.onchange = function() {
-    if(programDropdown.value == "HA(it.)"){
-        console.log(document.getElementsByClassName("HA(it.)"))
-
-    }
-}
 
 function chooseCourse() {
-    var studyprogram = document.getElementById("category_div").value;
-    var lecture = document.getElementById("sub_category_div").value;
-    var lectureTime = document.getElementById("sub_subcategory_div").value;
+    var studyprogram = document.getElementById("category").value;
+    var lecture = document.getElementById("subcategory").value;
+    var lectureTime = document.getElementById("sub_subcategory").value;
     var comment = document.getElementById("comment").value;
+
+
 
     alert("You have joined a lecture"
         + "\nStudy Program: " + studyprogram

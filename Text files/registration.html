@@ -7,7 +7,7 @@
 <body>
 
 <h1>Registration Form:</h1>
-<form id = "Registration Form" onclick = "return validateContactInformation()">
+<form id = "Registration Form">
     <input type = "text" id = "userName" value = "" placeholder = "Your username"/>
     <br/>
     <br/>
@@ -30,7 +30,7 @@
     <br/>
     <br/>
     <!-- Submit button to activate some function -->
-    <button  type="button" onclick ="storeLogin()"> Register </button>
+    <button  type="button"  onclick = "return validateContactInformation()" onclick ="storeLogin()"> Register </button>
     <br/>
 </form>
 <script type="text/javascript" src="../Javascript/registration.js"></script>

@@ -5,3 +5,4 @@ class admin extends user {                                                      
     }
     }
 
+//Lav en removeTeacher og removeStudent funktion

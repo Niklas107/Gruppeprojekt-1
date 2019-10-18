@@ -1,7 +1,7 @@
 ## **TO-DO list** 
 #### **User**
                  
-   Lave register funktion under user
+
                  
 #### **Get/set metoderne**
 
@@ -11,9 +11,7 @@ Hvis ikke det kan lade sig gøre, kan vi overveje at samle alle user klasserne i
 
 #### **Admin**
 
-Under admin skal der være mulighed for at lave en ny student og teacher. Om det er er new.teacher eller this.teacher og så oplysninger ved jeg ikke
-
-Admin skal også kunne slette teachers eller students, så informationerne om de student og teachers, der er regristreret skal også gemmes et sted. 
+Admin skal kunne slette teachers eller students, så informationerne om de student og teachers, der er regristreret skal også gemmes et sted. 
 
 #### **Classroom**
 

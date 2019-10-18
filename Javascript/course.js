@@ -3,7 +3,7 @@ class course {
         this.studyProgram = studyProgram;
         this.semester = semester;
     }
-
+}
 BIS = new course ("Ha(it.)", "1");
 VØS = new course ("Ha(it.)", "1");
 console.log(BIS);

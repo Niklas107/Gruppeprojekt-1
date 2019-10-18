@@ -22,8 +22,6 @@ function Register() {
 
     this.phone = document.getElementById("phone").value;
 
-    this.password = document.getElementById("password").value;
-
     this.comment = document.getElementById("comment").value;
 
 
@@ -43,8 +41,6 @@ function storeLogin() {
     localStorage.setItem("email", email.value);
 
     localStorage.setItem("phone", phone.value);
-
-    localStorage.setItem("password",password.value)
 
     localStorage.setItem("comment", comment.value);
 

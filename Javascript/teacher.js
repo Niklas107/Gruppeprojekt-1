@@ -18,14 +18,14 @@ function createLecture() {
       var comment = document.getElementById("comment").value;
 
       alert("Your lecture has been created"
-          + "\nTeacher: " + teacher
-          + "\nStudy program: " + studyProgram
-          + "\nCourse: " + course
-          + "\nClassroom: " + classroom
-          + "\nLecture Name: " + lectureName
-          + "\nDay: " + day
-          + "\nTime of lecture: " + time
-          + "\nAdditional comment: " + comment);
+          + "\nteacher: " + teacher
+          + "\nstudy program: " + studyProgram
+          + "\ncourse: " + course
+          + "\nclassroom: " + classroom
+          + "\nlecture Name: " + lectureName
+          + "\nday: " + day
+          + "\ntime of lecture: " + time
+          + "\nadditional comment: " + comment);
   }
 
 // create an array

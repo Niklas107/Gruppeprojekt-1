@@ -26,6 +26,7 @@ function storeLecture () {
     localStorage.setItem("teacher", teacher.value);
     localStorage.setItem("studyprogram", studyProgram.value);
     localStorage.setItem("course", course.value);
+    localStorage.setItem("classRoom", classRoom.value);
     localStorage.setItem("lectureName", lectureName.value);
     localStorage.setItem("day", day.value);
     localStorage.setItem("time", time.value);
@@ -35,6 +36,7 @@ function storeLecture () {
           + "\nteacher: " + teacher.value
           + "\nstudy program: " + studyProgram.value
           + "\ncourse: " + course.value
+          + "\nclassroom: " + course.classRoom
           + "\nlecture Name: " + lectureName.value
           + "\nday: " + day.value
           + "\ntime of lecture: " + time.value

@@ -12,6 +12,7 @@ function Register() {
     this.email = document.getElementById("email").value;
     this.phone = document.getElementById("phone").value;
     this.comment = document.getElementById("comment").value;
+    this.password = document.getElementById("password").value;
 }
 
 //Store input from registration to localStorage
@@ -22,6 +23,7 @@ function storeLogin() {
     localStorage.setItem("email", email.value);
     localStorage.setItem("phone", phone.value);
     localStorage.setItem("comment", comment.value);
+    localStorage.setItem("password",password.value);
     console.log(fullName.value);
 }
 

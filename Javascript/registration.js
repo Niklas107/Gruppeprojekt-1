@@ -14,7 +14,7 @@ function Register() {
 
 }
 
-//Store input from registration to localStorage
+//Store input from registration to localStorage.
 function storeLogin() {
         localStorage.setItem("userName", userName.value);
         localStorage.setItem("name", fullName.value);

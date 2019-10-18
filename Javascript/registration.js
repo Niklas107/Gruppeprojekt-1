@@ -1,14 +1,17 @@
-var userName = document.getElementById("userName");
+    var userName = document.getElementById("userName");
 
-var fullName = document.getElementById("fullName");
+    var fullName = document.getElementById("fullName");
 
-var email = document.getElementById("email");
+    var email = document.getElementById("email");
 
-var phone = document.getElementById("phone");
+    var phone = document.getElementById("phone");
 
-var comment = document.getElementById("comment");
-if (userName>6 || fullName>6 || email>8 || phone>=8 || comment<300 )
+    var comment = document.getElementById("comment");
 
+    if(!userName  && !fullName && !email && !phone && !comment ){
+        alert("Enter at least one search parameter!");
+        return false;
+    }
 
 //Different variables needed in our registration form
 

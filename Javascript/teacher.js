@@ -33,14 +33,14 @@ function storeLecture () {
     localStorage.setItem("comment", comment.value);
 
     alert("Your lecture has been created"
-          + "\nteacher: " + teacher.value
-          + "\nstudy program: " + studyProgram.value
-          + "\ncourse: " + course.value
-          + "\nclassroom: " + course.classRoom
-          + "\nlecture Name: " + lectureName.value
-          + "\nday: " + day.value
-          + "\ntime of lecture: " + time.value
-          + "\nadditional comment: " + comment.value);
+          + "\nTeacher: " + teacher.value
+          + "\nStudy program: " + studyProgram.value
+          + "\nCourse: " + course.value
+          + "\nClassroom: " + classRoom.value
+          + "\nLecture name: " + lectureName.value
+          + "\nDay: " + day.value
+          + "\nTime of lecture: " + time.value
+          + "\nAdditional comment: " + comment.value);
   }
 
 function showLecture() {

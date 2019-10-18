@@ -2,9 +2,11 @@ class classroom {
     constructor(size, location) {               //Attributter opstillet som courses skal bruge
         this.size = size;
         this.location = location;
+    }
 }
-
-1 = new classroom("50", "Solbjerg Plads");
-2 = new classroom("40", "Dalgas Have");
-3 = new classroom("120", "Solbjerg Plads");
-console.log(2);
+room1 = new classroom("50", "Solbjerg Plads");
+room2 = new classroom("40", "Dalgas Have");
+room3 = new classroom("120", "Solbjerg Plads");
+room4 = new classroom("90", "Kilen");
+room5 = new classroom("50", "Flintholm");
+console.log(room5);

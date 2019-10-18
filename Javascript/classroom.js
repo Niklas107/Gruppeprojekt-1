@@ -10,3 +10,8 @@ room3 = new classroom("120", "Solbjerg Plads");
 room4 = new classroom("90", "Kilen");
 room5 = new classroom("50", "Flintholm");
 console.log(room5);
+
+function addLectureToClassroom() {
+
+
+}

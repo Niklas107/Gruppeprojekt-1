@@ -129,9 +129,7 @@ console.log(testLectureList)
 
 
 
-/*Lave en funktion så de kan fjerne en forelæsning
-
-Lave en funktion så de kan tilføje en student til en forelæsning
+/*Lave en funktion så de kan tilføje en student til en forelæsning
 
 Lave en funktion så de kan fjerne en student fra en forelæsning
 

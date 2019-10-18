@@ -6,6 +6,10 @@ class teacher extends user {                                                    
     }
 }
 
+/*class Lecture {
+    constructor(teacher, studyProgram, ...)
+}*/
+
 
 function createLecture() {
       var teacher = document.getElementById("teacher").value;
@@ -16,6 +20,8 @@ function createLecture() {
       var day = document.getElementById("day").value;
       var time = document.getElementById("time").value;
       var comment = document.getElementById("comment").value;
+
+    //  new Lecture(teacher, studyProgram,..)
 
       alert("Your lecture has been created"
           + "\nteacher: " + teacher
@@ -129,9 +135,7 @@ console.log(testLectureList)
 
 
 
-/*Lave en funktion så de kan fjerne en forelæsning
-
-Lave en funktion så de kan tilføje en student til en forelæsning
+/*Lave en funktion så de kan tilføje en student til en forelæsning
 
 Lave en funktion så de kan fjerne en student fra en forelæsning
 

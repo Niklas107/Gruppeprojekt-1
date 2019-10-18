@@ -1,5 +1,6 @@
 student - chris
-regristration - chris
+regristration validation form- chris
+regristration - chris og josefine. 
 login - chris
 admin - josefine
 teacher - nik

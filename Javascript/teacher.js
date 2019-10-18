@@ -1,101 +1,49 @@
-class teacher extends user {                                                                     // Vi extender fra user
-    constructor(userName, password, email, phoneNumber, firstName, lastName, studyProgram) {     // Alle attributter til teacher
-        super(userName, password, email, phoneNumber, firstName, lastName);                      // Vi opstiller en super-funktion
 
-        this.studyProgram = studyProgram;                                                        //Ekstra attributter som er opstillet til teacher
-    }
+    var teacher = document.getElementById("teacher");
+    var studyProgram = document.getElementById("studyProgram");
+    var course = document.getElementById("course");
+    var classRoom = document.getElementById("classRoom");
+    var lectureName = document.getElementById("lectureName");
+    var day = document.getElementById("day");
+    var time = document.getElementById("time");
+    var comment = document.getElementById("comment");
+
+
+//Function to create lecture
+function createLecture() {
+    this.teacher = document.getElementById("teacher").value;
+    this.studyProgram = document.getElementById("studyProgram").value;
+    this.course = document.getElementById("course").value;
+    this.classRoom = document.getElementById("classRoom").value;
+    this.lectureName = document.getElementById("lectureName").value;
+    this.day = document.getElementById("day").value;
+    this.time = document.getElementById("time").value;
+    this.comment = document.getElementById("comment").value;
 }
 
-/*class Lecture {
-    constructor(teacher, studyProgram, ...)
-}*/
+//Store input from lecture
+function storeLecture () {
+    localStorage.setItem("teacher", teacher.value);
+    localStorage.setItem("studyProgram", studyProgram.value);
+    localStorage.setItem("course", course.value);
+    localStorage.setItem("classRoom", classRoom.value);
+    localStorage.setItem("lectureName", lectureName.value);
+    localStorage.setItem("day", day.value);
+    localStorage.setItem("time", time.value);
+    localStorage.setItem("comment", comment.value);
 
-
-function createLecture() {
-      var teacher = document.getElementById("teacher").value;
-      var studyProgram = document.getElementById("studyProgram").value;
-      var course = document.getElementById("course").value;
-      var classroom = document.getElementById("classroom").value;
-      var lectureName = document.getElementById("lectureName").value;
-      var day = document.getElementById("day").value;
-      var time = document.getElementById("time").value;
-      var comment = document.getElementById("comment").value;
-
-    //  new Lecture(teacher, studyProgram,..)
-
-      alert("Your lecture has been created"
-          + "\nteacher: " + teacher
-          + "\nstudy program: " + studyProgram
-          + "\ncourse: " + course
-          + "\nclassroom: " + classroom
-          + "\nlecture Name: " + lectureName
-          + "\nday: " + day
-          + "\ntime of lecture: " + time
-          + "\nadditional comment: " + comment);
+    alert("Your lecture has been created"
+          + "\nTeacher: " + teacher.value
+          + "\nStudy program: " + studyProgram.value
+          + "\nCourse: " + course.value
+          + "\nClassroom: " + classRoom.value
+          + "\nLecture name: " + lectureName.value
+          + "\nDay: " + day.value
+          + "\nTime of lecture: " + time.value
+          + "\nAdditional comment: " + comment.value);
   }
 
-// create an array
-var lectureList = ["LP intro","Programmering - Guide til objekter","Organisationskultur - eksamensforberedelse"];
-
-function pushLecture() {
-    // get value from the input text
-    var lectureName = document.getElementById('lectureName').value;
-
-    // append data to the array
-    lectureList.push(lectureName);
-
-    var pval = "";
-
-    for(i = 0; i < lectureList.length; i++)
-    {
-        pval = pval + lectureList[i] + "<br/>";
-    }
-
-    // display array data
-    document.getElementById('lName').innerHTML = pval;
+function showLecture() {
+    console.log("Show user stored in localStorage");
+    console.log(localStorage);
 }
-
-
-function removeLecture() {
-    var x = document.getElementById("hejsa");
-    x.remove(x.selectedIndex);
-}
-
-  /*pushLecture virker kun i script tags i html filen. Når det virker i JS er næste step at få resultatet
-  fra lectureList ind i select formen, for at kunne remove en af dem, eller lave en måde at kigge det array
-  igennem, og fjerne den lecture i arrayet, som man vil fjerne.
-   */
-
-  //Måske en knap der viser alle items i array (show your lectures)
-//derefter en simpel pop funktion der alt efter hvad man skriver, fjerne den rigtige i arrayet?
-//^^Choose a lecture to remove
-
-const testList = [
-    {name: 'LP intro', id: 1 },
-    {name: 'Programmering - Guide til objekter', id: 2},
-    {name: 'Organisationskultur - eksamensforberedelse', id: 3},
-    {name: 'En forelæsning om druk på CBS', id: 4},
-    {name: 'Verdens bedste VØS guide', id: 5},
-    {name: 'En fordybelse i magt begreber', id: 6}
-
-]
-
-const filteredTestList = testList.filter((testList) => {
-    return testList.id <= 2
-})
-
-console.log(testList)
-console.log(testLectureList)
-
-//Den her kode kan måske bruges? Her kan jeg vælge en med et bestemt ID der fjernes. Så skal den bare kunne forbindes med de andre funktioner
-
-
-
-
-
-
-/*Lave en funktion så de kan tilføje en student til en forelæsning
-
-Lave en funktion så de kan fjerne en student fra en forelæsning
-
-Lave en funktion så de på deres profil kan ændre informationer om en forelæsning fx. tidspunkt, eller classroom. */

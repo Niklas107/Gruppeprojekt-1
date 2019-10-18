@@ -42,13 +42,13 @@
 
     Classroom
     <br/>
-    <select id="classroom">
+    <select id="classRoom">
         <option selected disabled>Classroom</option>
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5</option>
+        <option value="room1">1</option>
+        <option value="room2">2</option>
+        <option value="room3">3</option>
+        <option value="room4">4</option>
+        <option value="room5">5</option>
     </select>
     <br/>
 
@@ -56,10 +56,6 @@
     <br/>
     <input type="text" name="text" id="lectureName" value="" placeholder="Lecture name"/>
     <p id="lName"></p>
-
-    Lecture ID
-    <p><button id="generate">Generate</button></p>
-    <p><code id="output"></code></p>
 
 
     Day
@@ -87,7 +83,7 @@
 
       <!-- Submit button to create lecture -->
     <br/>
-    <button id="lecture" type="button" onclick="createLecture(); pushLecture();"> Create lecture </button>
+    <button id="lecture" type="button" onclick="storeLecture();"> Create lecture </button>
     <br/>
     <br/>
 

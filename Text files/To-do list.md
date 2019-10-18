@@ -11,20 +11,17 @@ Hvis ikke det kan lade sig gøre, kan vi overveje at samle alle user klasserne i
 
 #### **Admin**
 
-Admin skal kunne slette teachers eller students, så informationerne om de student og teachers, der er regristreret skal også gemmes et sted. 
+Admin skal kunne slette teachers eller students, så informationerne om de student og teachers der er regristreret skal også gemmes i local storage. 
 
 #### **Classroom**
 
-Lave klassen med contructor og kommentarer og lave en funktion der kan tjekke hvilke lokaler er tilgængelige, så teachers kan vide det.
+Lave en funktion der kan tjekke hvilke lokaler er tilgængelige, så teachers kan vide det.
 
 #### **Courses**
 
-Lave klassen med contructor og kommentarer og lave en funktion der kan tjekke hvilke fag de forskellige students og teachers har klaret, for at vide om de kan være en del af den samme forelæsning.
-
+Lave en funktion der kan tjekke hvilke fag de forskellige students og teachers har klaret, for at vide om de kan være en del af den samme forelæsning.
 
 #### **Teacher**
-
-
 
 Tilkoble lectureList med removeLecture funktionen, så det er de valgmuligheder man kan fjerne mellem
 
@@ -35,8 +32,6 @@ Lave en funktion så de kan fjerne en student fra en forelæsning
 Lave en funktion så de på deres profil kan ændre informationer om en forelæsning fx. tidspunkt, eller classroom.
 
 #### **Student**
-
-Finde ud af om informationerne om student kan modtages af teacher, og om student kan få informationer fra courses.
 
  if (teacher.studyProgram==student.studyProgram) og  if (teacher.course==student.course) må de tilmelde sig en forelæsning
 

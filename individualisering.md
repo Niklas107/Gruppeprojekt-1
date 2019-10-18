@@ -5,3 +5,5 @@ login - chris
 admin - josefine
 teacher - nik
 user - josefine
+ingenting - nik
+to do listen - den har niklas lavet

@@ -24,7 +24,7 @@ function createLecture() {
 //Store input from lecture
 function storeLecture () {
     localStorage.setItem("teacher", teacher.value);
-    localStorage.setItem("studyprogram", studyProgram.value);
+    localStorage.setItem("studyProgram", studyProgram.value);
     localStorage.setItem("course", course.value);
     localStorage.setItem("classRoom", classRoom.value);
     localStorage.setItem("lectureName", lectureName.value);

@@ -17,12 +17,12 @@ class student {
     }
     }
 
+
 function SelectCourse() {
     var studyprogram = document.getElementById("category").value;
     var lecture = document.getElementById("subcategory").value;
     var lectureTime = document.getElementById("sub_subcategory").value;
     var comment = document.getElementById("comment").value;
-    var newStudent = new student(studyprogram,lecture,lectureTime);
 
     //Validation form
 /*    function validationForm() {
@@ -54,8 +54,6 @@ function SelectCourse() {
     }
 */
 
-}
-
 //
 //
 
@@ -65,8 +63,18 @@ console.log(Niklas);
 */
 
 
+}
 
-
+// Store input when astudent chooses to join a lecture.
+var studyprogram1 = document.getElementById("category");
+var lecture1 = document.getElementById("subcategory");
+var lectureTime1 = document.getElementById("sub_subcategory");
+function storeJoinLecture() {
+    localStorage.setItem("studyprogram", studyprogram1.value);
+    localStorage.setItem("lecture", lecture1.value);
+    localStorage.setItem("lecturetime", lectureTime1.value);
+    console.log (studyprogram1);
+}
 
 
 

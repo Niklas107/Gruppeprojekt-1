@@ -2,7 +2,7 @@ class Teacher extends User {
     constructor (userName, password, email, phoneNumber, firstName, lastName, studyProgram) {
         super(userName, password, email, phoneNumber, firstName, lastName);
 
-        this studyProgram = studyProgram;
+        this.studyProgram = studyProgram;
     }
 }
 

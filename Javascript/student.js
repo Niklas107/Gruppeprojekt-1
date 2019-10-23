@@ -9,72 +9,30 @@
     }
 }
 */
-class student {
-    constructor(studyprogram, lecture, lectureTime){
+class Student {
+    constructor(studyprogram, lecture, lectureTime) {
         this.studyprogram = studyprogram;
         this.lecture = lecture;
         this.lectureTime = lectureTime;
     }
     }
 
-
-function SelectCourse() {
+function SelectLecture() {
     var studyprogram = document.getElementById("category").value;
     var lecture = document.getElementById("subcategory").value;
     var lectureTime = document.getElementById("sub_subcategory").value;
     var comment = document.getElementById("comment").value;
-
-    //Validation form
-/*    function validationForm() {
-        var form_valid = true;
-        var validation_message = "";
-
-        if (form_valid) {
-
- */
             alert("You have joined a lecture"
                 + "\nStudy Program: " + studyprogram
                 + "\nLecture: " + lecture
                 + "\nLecture Time: " + lectureTime
                 + "\nAdditional comment:" + " " + comment);
-            /*
-        }
-        else {
-            alert(validation_message);
-        }
 
-        var dd1 = document.getElementById("category").value;
-        if (dd1 !== "Ha(it)") {
-            form_valid = false;
-            validation_message += "A studyprogram must be selected \n";
-            return (form_valid);
-
-
-        }
-    }
-*/
-
-//
-//
-
-
-/* Niklas = new student("Niller", "12345", "Nik123@gmail.com", "12345678", "Niklas","jh",""," ",""  );
-console.log(Niklas);
-*/
-
+    person = new Student(studyprogram, lecture, lectureTime);
+    console.log(person);
 
 }
 
-// Store input when astudent chooses to join a lecture.
-var studyprogram1 = document.getElementById("category");
-var lecture1 = document.getElementById("subcategory");
-var lectureTime1 = document.getElementById("sub_subcategory");
-function storeJoinLecture() {
-    localStorage.setItem("studyprogram", studyprogram1.value);
-    localStorage.setItem("lecture", lecture1.value);
-    localStorage.setItem("lecturetime", lectureTime1.value);
-    console.log (studyprogram1);
-}
 
 
 

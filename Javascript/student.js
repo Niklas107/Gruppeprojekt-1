@@ -1,3 +1,14 @@
+class User {                                                                   //Klassen user er blot overklasse som de andre klasser inheriter fra
+    constructor(userName, password, email, phoneNumber, firstName, lastName) {  //Her er alle de attributter som alle classes skal bruge
+        this.userName = userName;
+        this.password = password;
+        this.email = email;
+        this.phoneNumber = phoneNumber;
+        this.firstName= firstName;
+        this.lastName = lastName;
+    }
+}
+
 class Student extends User {                                                                                                    //Vi extender vores værdier fra User
     constructor(userName, password, email, phoneNumber, firstName, lastName, studyProgram, semester) {
         super(userName, password, email, phoneNumber, firstName, lastName);                                                       //Vi bruger super-funktionen.

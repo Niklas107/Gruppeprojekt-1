@@ -11,7 +11,7 @@ var teacherList = []
 
 if (localStorage.getItem("Teacher") == null) {
 
-    teacherList.push(new Teacher("Chris","1234","Christopher@andre.bz","31418551","Christopher","André","Ha(it)","1"));
+    teacherList.push(new Teacher("Jose","4567","Josefinecolberg@gmail.com","31418551","Josefine","Colberg","Ha(it)","2"));
 
     var teacherListString = JSON.stringify(teacherList)
     localStorage.setItem('Teacher', teacherListString)

@@ -18,7 +18,10 @@ if (localStorage.getItem("Admin") == null) {
     adminList = JSON.parse(localStorage.getItem('Admin'))
 }
 
-
+function delete() {
+    var x = document.getElementById("DeleteStudent");
+    x.remove(x.selectedIndex);
+}
 
 
 

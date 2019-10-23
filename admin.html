@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/html">
 <head>
     <title>StudentTeach Admin page</title>
 </head>
@@ -11,11 +11,24 @@
 
 <form name="createTeacher">
 
-    <!-- Text fields -->
-    Create Teacher
-    <br/>
-    <br/>
+    <!-- Drop down menu til at fjerne students (Prototype, virker ikke uden database) -->
+    <br>
+    <select id="DeleteStudent" size="4">
+            <option>Niklas Ha(IT) 1. semester</option>
+            <option>Jens Ha(IT) 1. semester</option>
+            <option>Christopher Ha(IT) 1. semester</option>
+            <option>Alexander Ha(IT) 1. semester </option>
+    </select>
+<button onclick="delete()">Delete the selected student</button>
+</form>
 
+
+<script>
+    function delete(); {
+        var x = document.getElementById("DeleteStudent");
+        x.remove(x.selectedIndex);
+    }
+</script>
 </body>
 </html>
 

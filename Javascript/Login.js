@@ -1,18 +1,30 @@
-function clicked() {
-    var user = document.getElementById("username");
-    var pass = document.getElementById("password");
-    var correctUser = "test";
-    var correctPassword = "123";
-    if (user.value == correctUser) {
-        if (pass.value == correctPassword) {
-            alert("you are logged in ");
+var login = document.getElementById('login');
+var existingStudent = JSON.parse(localStorage.getItem('Student'));
+
+login.onclick = function() {
+    var user = document.getElementById("username").value;
+    var pass = document.getElementById("password").value;
+
+    for (let i = 0; i < existingStudent.length; i++) {
+        if (user == existingStudent[i].userName && pass == existingStudent[i].password) {
+            alert("you are logged in");
+            //document.location.href = "HTML PAGE";
+            return true;
+        } else {
+            alert("Incorrect username or password");
         }
-        else
-            {
-                alert("Incorrect username or password");
-            }
-        }
-    else {
-        alert("Incorrect username or password");
     }
-    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

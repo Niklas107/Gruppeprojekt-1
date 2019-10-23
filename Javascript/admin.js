@@ -1,4 +1,4 @@
-class admin extends user {                                                                   // Vi extender fra user
+class Admin extends User {                                                                   // Vi extender fra user
     constructor(userName, password, email, phoneNumber, firstName, lastName, adminName) {   // Alle attributter til admin
         super(userName, password, email, phoneNumber, firstName, lastName);
         this.adminName = adminName;                                                         //Ekstra attributter som er opstillet til admin
@@ -6,3 +6,6 @@ class admin extends user {                                                      
     }
 
 //Lav en removeTeacher og removeStudent funktion
+
+//Opret én bruger, som er admins' login
+//

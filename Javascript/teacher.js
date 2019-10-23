@@ -2,7 +2,7 @@
     var teacher = document.getElementById("teacher");
     var studyProgram = document.getElementById("studyProgram");
     var course = document.getElementById("course");
-    var classRoom = document.getElementById("classRoom");
+    var classRoom = document.getElementById("Classroom");
     var lectureName = document.getElementById("lectureName");
     var day = document.getElementById("day");
     var time = document.getElementById("time");
@@ -14,7 +14,7 @@ function createLecture() {
     this.teacher = document.getElementById("teacher").value;
     this.studyProgram = document.getElementById("studyProgram").value;
     this.course = document.getElementById("course").value;
-    this.classRoom = document.getElementById("classRoom").value;
+    this.classRoom = document.getElementById("Classroom").value;
     this.lectureName = document.getElementById("lectureName").value;
     this.day = document.getElementById("day").value;
     this.time = document.getElementById("time").value;
@@ -26,7 +26,7 @@ function storeLecture () {
     localStorage.setItem("teacher", teacher.value);
     localStorage.setItem("studyProgram", studyProgram.value);
     localStorage.setItem("course", course.value);
-    localStorage.setItem("classRoom", classRoom.value);
+    localStorage.setItem("Classroom", classRoom.value);
     localStorage.setItem("lectureName", lectureName.value);
     localStorage.setItem("day", day.value);
     localStorage.setItem("time", time.value);
@@ -36,7 +36,7 @@ function storeLecture () {
           + "\nTeacher: " + teacher.value
           + "\nStudy program: " + studyProgram.value
           + "\nCourse: " + course.value
-          + "\nClassroom: " + classRoom.value
+          + "\nClassroom: " + selectedClassroom.value
           + "\nLecture name: " + lectureName.value
           + "\nDay: " + day.value
           + "\nTime of lecture: " + time.value
@@ -47,3 +47,4 @@ function showLecture() {
     console.log("Show user stored in localStorage");
     console.log(localStorage);
 }
+

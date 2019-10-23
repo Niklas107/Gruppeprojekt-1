@@ -9,8 +9,8 @@ room2 = new Classroom("40", "Dalgas Have");
 room3 = new Classroom("120", "Solbjerg Plads");
 room4 = new Classroom("90", "Kilen");
 room5 = new Classroom("50", "Flintholm");
+var test1 = JSON.stringify(room1);
 
-var selectedClassroom = document.getElementById("Classroom").value;
 
 function getSelectClassroom() {
     var selectedClassroom = document.getElementById("Classroom").value;

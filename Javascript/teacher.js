@@ -9,34 +9,22 @@
     var comment = document.getElementById("comment");
 
 
-//Function to create lecture
-function createLecture() {
-    this.teacher = document.getElementById("teacher").value;
-    this.studyProgram = document.getElementById("studyProgram").value;
-    this.course = document.getElementById("course").value;
-    this.classRoom = document.getElementById("Classroom").value;
-    this.lectureName = document.getElementById("lectureName").value;
-    this.day = document.getElementById("day").value;
-    this.time = document.getElementById("time").value;
-    this.comment = document.getElementById("comment").value;
-}
-
 //Store input from lecture
 function storeLecture () {
-    localStorage.setItem("teacher", teacher.value);
-    localStorage.setItem("studyProgram", studyProgram.value);
-    localStorage.setItem("course", course.value);
-    localStorage.setItem("Classroom", classRoom.value);
-    localStorage.setItem("lectureName", lectureName.value);
-    localStorage.setItem("day", day.value);
-    localStorage.setItem("time", time.value);
-    localStorage.setItem("comment", comment.value);
+    localStorage.setItem("Teacher", teacher.value);
+    localStorage.setItem("Study program", studyProgram.value);
+    localStorage.setItem("Course", course.value);
+    localStorage.setItem("Classroom", classRoom.value + " - " + test1);
+    localStorage.setItem("Lecture name", lectureName.value);
+    localStorage.setItem("Day", day.value);
+    localStorage.setItem("Time", time.value);
+    localStorage.setItem("Comment", comment.value);
 
     alert("Your lecture has been created"
           + "\nTeacher: " + teacher.value
           + "\nStudy program: " + studyProgram.value
           + "\nCourse: " + course.value
-          + "\nClassroom: " + selectedClassroom.value
+          + "\nClassroom: " + classRoom.value + " - " + test1
           + "\nLecture name: " + lectureName.value
           + "\nDay: " + day.value
           + "\nTime of lecture: " + time.value

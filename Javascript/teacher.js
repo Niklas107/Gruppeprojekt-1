@@ -1,5 +1,26 @@
+class Teacher extends User {
+    constructor (userName, password, email, phoneNumber, firstName, lastName, studyProgram) {
+        super(userName, password, email, phoneNumber, firstName, lastName);
 
-    var teacher = document.getElementById("teacher");
+        this studyProgram = studyProgram;
+    }
+}
+
+console.log(localStorage.getItem("Teacher"))
+var teacherList = []
+
+if (localStorage.getItem("Teacher") == null) {
+
+    teacherList.push(new Teacher("Chris","1234","Christopher@andre.bz","31418551","Christopher","André","Ha(it)","1"));
+
+    var teacherListString = JSON.stringify(teacherList)
+    localStorage.setItem('Teacher', teacherListString)
+
+} else {
+    teacherList = JSON.parse(localStorage.getItem('Teacher'))
+}
+
+var teacher = document.getElementById("teacher");
     var studyProgram = document.getElementById("studyProgram");
     var course = document.getElementById("course");
     var classRoom = document.getElementById("Classroom");

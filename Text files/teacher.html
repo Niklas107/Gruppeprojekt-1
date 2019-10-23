@@ -11,7 +11,7 @@
     <!-- Text fields -->
     Teacher name
     <br/>
-    <input type="text" id="Teacher" value="" placeholder="Your name"/>
+    <input type="text" id="teacher1" value="" placeholder="Your name"/>
     <br/>
 
     <!-- Dropdown lists -->
@@ -83,7 +83,7 @@
 
       <!-- Submit button to create lecture -->
     <br/>
-    <button id="lecture" type="button" onclick="storeLecture(); getSelectClassroom();"> Create lecture </button>
+    <button id="lecture" type="button" onclick="getSelectClassroom(); createLecture();"> Create lecture </button>
     <br/>
     <br/>
 
@@ -103,5 +103,6 @@
     <!-- Linking external JavaScript file to our HTML page -->
     <script type="text/javascript" src="../Javascript/teacher.js"></script>
     <script type="text/javascript" src="../Javascript/classroom.js"></script>
+    <script type="text/javascript" src="../Javascript/user.js"></script>
     </body>
     </html>

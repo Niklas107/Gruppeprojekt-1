@@ -1,19 +1,19 @@
 class Student extends User {                                                                                                    //Vi extender vores værdier fra User
-    constructor(userName, password, email, phoneNumber, firstName, lastName, studyProgram, semester,) {
+    constructor(userName, password, email, phoneNumber, firstName, lastName, studyProgram, semester) {
         super(userName, password, email, phoneNumber, firstName, lastName);                                                       //Vi bruger super-funktionen.
 
         this.studyProgram = studyProgram;                                                                                         // Vi tilføjer tre nye attributter, som kun skal benyttes hos student
         this.semester = semester;
     }
 }
-
+//Local Storage in order to make a student able to log in.
 console.log(localStorage.getItem("Student"))
 var studentList = []
 
 if (localStorage.getItem("Student") == null) {
 
-        studentList.push(new Student("Chris","1234","Christopher@andre.bz","31418551","Christopher","André","Ha(it)","1"));
-
+        studentList.push(new Student("ChrisMJandre","Agurke","Christopher@andre.bz","31418551","Christopher","André","Ha(it)","1"));
+        studentList.push(new Student("Niller","1234", "nilb107@gmail.com", "31320232","Niklas", "L-B", "Ha(it)", "1"));
     var studentListString = JSON.stringify(studentList)
     localStorage.setItem('Student', studentListString)
 
@@ -23,7 +23,7 @@ if (localStorage.getItem("Student") == null) {
 
 
 
-function SelectCourse() {
+function SelectLecture() {
     var studyprogram = document.getElementById("category").value;
     var lecture = document.getElementById("subcategory").value;
     var lectureTime = document.getElementById("sub_subcategory").value;

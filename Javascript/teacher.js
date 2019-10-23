@@ -2,7 +2,7 @@ class Teacher extends User {
     constructor (userName, password, email, phoneNumber, firstName, lastName, studyProgram) {
         super(userName, password, email, phoneNumber, firstName, lastName);
 
-        this studyProgram = studyProgram;
+        this.studyProgram = studyProgram;
     }
 }
 
@@ -11,7 +11,7 @@ var teacherList = []
 
 if (localStorage.getItem("Teacher") == null) {
 
-    teacherList.push(new Teacher("Chris","1234","Christopher@andre.bz","31418551","Christopher","André","Ha(it)","1"));
+    teacherList.push(new Teacher("Jose","4567","Josefinecolberg@gmail.com","23626206","Josefine","Colberg","Ha(it)","2"));
 
     var teacherListString = JSON.stringify(teacherList)
     localStorage.setItem('Teacher', teacherListString)
@@ -20,37 +20,27 @@ if (localStorage.getItem("Teacher") == null) {
     teacherList = JSON.parse(localStorage.getItem('Teacher'))
 }
 
-var teacher = document.getElementById("teacher");
-    var studyProgram = document.getElementById("studyProgram");
-    var course = document.getElementById("course");
-    var classRoom = document.getElementById("Classroom");
-    var lectureName = document.getElementById("lectureName");
-    var day = document.getElementById("day");
-    var time = document.getElementById("time");
-    var comment = document.getElementById("comment");
-
-
-//Store input from lecture
-function storeLecture () {
-    localStorage.setItem("Teacher", teacher.value);
-    localStorage.setItem("Study program", studyProgram.value);
-    localStorage.setItem("Course", course.value);
-    localStorage.setItem("Classroom", classRoom.value + " - " + test1);
-    localStorage.setItem("Lecture name", lectureName.value);
-    localStorage.setItem("Day", day.value);
-    localStorage.setItem("Time", time.value);
-    localStorage.setItem("Comment", comment.value);
+function createLecture() {
+    var teacher1 = document.getElementById("teacher1").value;
+    var studyProgram1 = document.getElementById("studyProgram").value;
+    var course1 = document.getElementById("course").value;
+    var classRoom1 = document.getElementById("Classroom").value;
+    var lectureName1 = document.getElementById("lectureName").value;
+    var day1 = document.getElementById("day").value;
+    var time1 = document.getElementById("time").value;
+    var comment1 = document.getElementById("comment").value;
 
     alert("Your lecture has been created"
-          + "\nTeacher: " + teacher.value
-          + "\nStudy program: " + studyProgram.value
-          + "\nCourse: " + course.value
-          + "\nClassroom: " + classRoom.value + " - " + test1
-          + "\nLecture name: " + lectureName.value
-          + "\nDay: " + day.value
-          + "\nTime of lecture: " + time.value
-          + "\nAdditional comment: " + comment.value);
-  }
+        + "\nTeacher: " + teacher1
+        + "\nStudy program: " + studyProgram1
+        + "\nCourse: " + course1
+        + "\nClassroom: " + classRoom1 + " - " + test1
+        + "\nLecture name: " + lectureName1
+        + "\nDay: " + day1
+        + "\nTime of lecture: " + time1
+        + "\nAdditional comment: " + comment1);
+}
+
 
 function showLecture() {
     console.log("Show user stored in localStorage");

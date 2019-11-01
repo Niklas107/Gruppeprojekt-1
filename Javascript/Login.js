@@ -7,37 +7,18 @@ login.onclick = function() {
 
     for (let i = 0; i < existingStudent.length; i++) {
         if (user == existingStudent[i].userName && pass == existingStudent[i].password) {
-            alert("you are logged in as a student");
+            alert("You are logged in as a student");
             //document.location.href = "HTML PAGE";
             return true;
-        } else {
-            alert("Incorrect username or password");
         }
+
     }
-
-
-
-    for(let h = 0; h < existingTeacher.length; h++) {
+    for (let h = 0; h < existingTeacher.length; h++) {
         if (user == existingTeacher[h].userName && pass == existingTeacher[h].password) {
-            alert ("you are logged in as a Teacher");
+            alert("You are logged in as a Teacher");
             //document.location.href = "HTML PAGE";
-            return true
+            return true;
         }
-        else {
-            alert("incorrect username or password");
         }
+        alert("Incorrect username or password");
     }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-

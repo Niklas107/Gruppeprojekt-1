@@ -25,7 +25,8 @@ Classroom
 
 Student 
 (- selectLecture)
-- Hardcode flere students og/eller rette de eksisterende
+- Hardcode flere students og/eller rette de eksisterende - DONE BITHCES - CHRIS
+- Hardcode flere courses og lectures for Ha(jur) - DONE BITCHES - CHRIS
 
 User 
 - Måske have den til at virke med extension. 

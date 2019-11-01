@@ -1,8 +1,9 @@
 class Teacher extends User {
-    constructor (userName, password, email, phoneNumber, firstName, lastName, studyProgram) {
+    constructor (userName, password, email, phoneNumber, firstName, lastName, studyProgram, semester) {
         super(userName, password, email, phoneNumber, firstName, lastName);
 
         this.studyProgram = studyProgram;
+        this.semester = semester;
     }
 }
 
@@ -11,8 +12,9 @@ var teacherList = []
 
 if (localStorage.getItem("Teacher") == null) {
 
-    teacherList.push(new Teacher("Jose","4567","Josefinecolberg@gmail.com","23626206","Josefine","Colberg","Ha(it)","2"));
-
+    teacherList.push(new Teacher("Jose","4567","Josefinecolberg@gmail.com","23626206","Josefine","Colberg","Ha(it)","3"));
+    teacherList.push(new Teacher("Ca18ab", "Øl4ever0", "ca18ab@student.cbs.com", "45668921", "Calle", "Olsen", "HA(it)","5"));
+    teacherList.push(new Teacher("Ølgod"))
     var teacherListString = JSON.stringify(teacherList)
     localStorage.setItem('Teacher', teacherListString)
 
@@ -41,6 +43,10 @@ function createLecture() {
         + "\nAdditional comment: " + comment1);
 }
 
+function removeLecture() {
+    var x = document.getElementById("teacherLecture");
+    x.remove(x.selectedIndex);
+}
 
 /** function showLecture() {
     console.log("Show localStorage");

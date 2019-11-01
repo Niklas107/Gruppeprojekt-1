@@ -25,7 +25,10 @@ function delete() {
 
 
 
-
+function deleteLecture() {
+    var x = document.getElementById("allLectures");
+    x.remove(x.selectedIndex);
+}
 
 
 

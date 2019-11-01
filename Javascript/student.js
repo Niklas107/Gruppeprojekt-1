@@ -34,7 +34,7 @@ if (localStorage.getItem("Student") == null) {
 
 
 
-function SelectLecture() {
+function selectLecture() {
     var studyprogram = document.getElementById("category").value;
     var lecture = document.getElementById("subcategory").value;
     var lectureTime = document.getElementById("sub_subcategory").value;

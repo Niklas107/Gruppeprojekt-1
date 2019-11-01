@@ -36,6 +36,7 @@ if (localStorage.getItem("Teacher") == null) {
 function createLecture() {
     var teacher1 = document.getElementById("teacher1").value;
     var studyProgram1 = document.getElementById("studyProgram").value;
+    var semester = document.getElementById("semester").value;
     var course1 = document.getElementById("course").value;
     var classRoom1 = document.getElementById("Classroom").value;
     var lectureName1 = document.getElementById("lectureName").value;
@@ -46,6 +47,7 @@ function createLecture() {
     alert("Your lecture has been created"
         + "\nTeacher: " + teacher1
         + "\nStudy program: " + studyProgram1
+        + "\nSemester: " + semester
         + "\nCourse: " + course1
         + "\nClassroom: " + classRoom1 + " - " + test1
         + "\nLecture name: " + lectureName1

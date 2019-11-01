@@ -61,7 +61,13 @@ function removeLecture() {
     x.remove(x.selectedIndex);
 }
 
-
+function showStudentInformation() {
+    var studentinformation = JSON.parse(localStorage.getItem("Student"))
+    console.log(" name:  "+ studentinformation[0].firstName + " " + studentinformation[0].lastName + "\n email: " + studentinformation[0].email);
+    console.log(" name:  "+ studentinformation[1].firstName + " " + studentinformation[1].lastName + "\n email: " + studentinformation[1].email);
+    console.log(" name:  "+ studentinformation[2].firstName + " " + studentinformation[2].lastName + "\n email: " + studentinformation[2].email);
+    console.log(" name:  "+ studentinformation[3].firstName + " " + studentinformation[3].lastName + "\n email: " + studentinformation[3].email);
+}
 
 
 /** function showLecture() {

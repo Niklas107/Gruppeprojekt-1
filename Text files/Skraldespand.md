@@ -9,3 +9,5 @@ test
 test 2
 
 test800
+
+Nu er mine commits linket til nily19ab@student.cbs.dk tror jeg

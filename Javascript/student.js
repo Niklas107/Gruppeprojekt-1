@@ -18,21 +18,21 @@ class Student extends User {                                                    
     }
 }
 //Local Storage in order to make a student able to log in.
-console.log(localStorage.getItem("Student"))
-var studentList = []
-
+var studentList = [];
+//Our hardcoded users (students). here all of their information is gathered. e.g - this is where the log in function gets the matching username and password.
 if (localStorage.getItem("Student") == null) {
-
         studentList.push(new Student("ChrisMJandre","Agurke","Christopher@andre.bz","31418551","Christopher","André","Ha(it)","1"));
         studentList.push(new Student("Niller","1234", "nilb107@gmail.com", "31320232","Niklas", "L-B", "Ha(it)", "1"));
-    var studentListString = JSON.stringify(studentList)
-    localStorage.setItem('Student', studentListString)
+        studentList.push(new Student("Sven","bord123","Sven@gmail.com","57647239", "Sven", "Eriksen","Ha(jur)","1"));
+        studentList.push(new Student("Kasper", "stol123", "Kasper@gmail.com", "85923043", "Kasper", "Rasmussen", "Ha(it)", "2"));
+var studentListString = JSON.stringify(studentList);
+localStorage.setItem('Student', studentListString);
 
     } else {
         studentList = JSON.parse(localStorage.getItem('Student'))
     }
 
-
+console.log(localStorage.getItem("Student"))
 
 function selectLecture() {
     var studyprogram = document.getElementById("category").value;

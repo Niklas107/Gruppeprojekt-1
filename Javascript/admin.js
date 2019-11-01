@@ -46,8 +46,8 @@ function deleteTeacher() {
     x.remove(x.selectedIndex);
 }
 function deleteLecture() {
-    var x1 = document.getElementById("allLectures");
-    x1.remove(x1.selectedIndex);
+    var x = document.getElementById("allLectures");
+    x.remove(x.selectedIndex);
 }
 
 

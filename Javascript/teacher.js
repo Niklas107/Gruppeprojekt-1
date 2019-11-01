@@ -1,3 +1,14 @@
+class User {                                                                   //Klassen user er blot overklasse som de andre klasser inheriter fra
+    constructor(userName, password, email, phoneNumber, firstName, lastName) {  //Her er alle de attributter som alle classes skal bruge
+        this.userName = userName;
+        this.password = password;
+        this.email = email;
+        this.phoneNumber = phoneNumber;
+        this.firstName= firstName;
+        this.lastName = lastName;
+    }
+}
+
 class Teacher extends User {
     constructor (userName, password, email, phoneNumber, firstName, lastName, studyProgram, semester) {
         super(userName, password, email, phoneNumber, firstName, lastName);
@@ -7,15 +18,15 @@ class Teacher extends User {
     }
 }
 
-console.log(localStorage.getItem("Teacher"))
-var teacherList = []
+console.log(localStorage.getItem("Teacher"));
+var teacherList = [];
 
 if (localStorage.getItem("Teacher") == null) {
 
     teacherList.push(new Teacher("Jose","4567","Josefinecolberg@gmail.com","23626206","Josefine","Colberg","Ha(it)","3"));
     teacherList.push(new Teacher("Ca18ab", "Øl4ever", "ca18ab@student.cbs.com", "45668921", "Calle", "Olsen", "HA(it)","5"));
-    teacherList.push(new Teacher("Ølgod", ""))
-    var teacherListString = JSON.stringify(teacherList)
+    teacherList.push(new Teacher("Ølgod", "password", "miøl18a@student.cbs.com", "66698724", "Mikkel", "Ølgod", "HA(jur.)", "4"));
+    var teacherListString = JSON.stringify(teacherList);
     localStorage.setItem('Teacher', teacherListString)
 
 } else {
@@ -47,6 +58,11 @@ function removeLecture() {
     var x = document.getElementById("teacherLecture");
     x.remove(x.selectedIndex);
 }
+
+function showStudentInformation() {
+    
+}
+
 
 /** function showLecture() {
     console.log("Show localStorage");

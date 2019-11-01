@@ -12,8 +12,8 @@ Registration
 
 Teacher 
 (- createLecture)
-- Remove lecture skal virke igen 
-- Hertil skal der også hardcode en masse lecture, som der skal console.log 
+- Remove lecture skal virke igen - den virker nu halvt, men siden opdaterer efter man trykker på knappen på grund af noget af det der local storage?
+- Hertil skal der også hardcode en masse lecture, som der skal console.log - done og også done i admin
 - Funktion hvor teacher kan se Students email og telefon
 - Tilføje semester til teacher funktionerne 
 - Fjerne deltagere fra holdet 

@@ -38,4 +38,6 @@ Til rapporten (2. semester)
 
 Til 5 siders aflevering: 
 - Reflektion over ændringer
-- Opdaterer kravspecifi, klassediagram, usecases 
+- Opdaterer kravspecifikationer, klassediagram
+- Usecases
+- Redegøre over ting vi har tilføjet og fjernet. 

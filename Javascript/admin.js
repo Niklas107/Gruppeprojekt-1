@@ -41,6 +41,10 @@ function deleteStudent() {
     x.remove(x.selectedIndex);
 }
 
+function deleteTeacher() {
+    var x = document.getElementById("allTeachers");
+    x.remove(x.selectedIndex);
+}
 function deleteLecture() {
     var x1 = document.getElementById("allLectures");
     x1.remove(x1.selectedIndex);

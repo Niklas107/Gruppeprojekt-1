@@ -1,15 +1,11 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/html">
+<html>
 <head>
     <title>StudentTeach Admin page</title>
 </head>
 <body>
 <b/>
 <h2> StudentTeach Admin page </h2>
-
-<p> some funny text here </p>
-
-<form name="createTeacher">
 
     <!-- Drop down menu til at fjerne students -->
     <h3>Delete an existing student</h3>
@@ -20,13 +16,15 @@
             <option>Kasper Rasmussen HA(jur.) 3. semester </option>
     </select>
 <button type="button" onclick="deleteStudent()">Delete the selected student</button>
-</form>
-</body>
-</html>
 
-< // Remove teacher />
-
-< ///Remove student />
+<!-- Drop down menu til at fjerne teachers -->
+<h3>Delete an existing teacher</h3>
+<select id="allTeachers" size="3">
+    <option>Josefine HA(it.) 3. semester</option>
+    <option>Calle HA(it.) 5. semester</option>
+    <option>Mikkel HA(jur.) 4. semester</option>
+</select>
+<button type="button" onclick="deleteteacher()">Delete the selected teacher</button>
 
 <h3>Delete an existing lecture</h3>
 <select id="allLectures" size="13">
@@ -47,5 +45,9 @@
 <button type="button" onclick="deleteLecture();">Delete the selected lecture</button>
 <button type = "button" onclick="showStudentInformation();"> Show student information</button>
 <script type="text/javascript" src="Javascript/admin.js"></script>
+</body>
+</html>
+
+
 
 

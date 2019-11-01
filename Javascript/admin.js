@@ -47,6 +47,12 @@ function deleteLecture() {
 }
 
 
+function showStudentInformation() {
+    console.log(" name:  "+ studentList[0].firstName + " " + studentList[0].lastName + "\n email: " + studentList[0].email);
+    console.log(" name:  "+ studentList[1].firstName + " " + studentList[1].lastName + "\n email: " + studentList[1].email);
+    console.log(" name:  "+ studentList[2].firstName + " " + studentList[2].lastName + "\n email: " + studentList[2].email);
+    console.log(" name:  "+ studentList[3].firstName + " " + studentList[3].lastName + "\n email: " + studentList[3].email);
+}
 
 
 //Lav en removeTeacher og removeStudent funktion

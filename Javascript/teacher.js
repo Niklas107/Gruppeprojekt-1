@@ -61,9 +61,7 @@ function removeLecture() {
     x.remove(x.selectedIndex);
 }
 
-function showStudentInformation() {
-    
-}
+
 
 
 /** function showLecture() {

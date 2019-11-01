@@ -7,33 +7,37 @@
         function dynamicdropdown(listindex)
         {
             document.getElementById("sub_subcategory").length = 0;
-            document.getElementById("sub_subcategory").options[0]=new Option("Select Lecture Time ","");
+            document.getElementById("sub_subcategory").options[0]=new Option("Select Lecture  ","");
             document.getElementById("subcategory").length = 0;
             switch (listindex)
             {
                 case "Ha(it.)" :
-                    document.getElementById("subcategory").options[0]=new Option("Select Lecture","");
-                    document.getElementById("subcategory").options[1]=new Option("VØS","VØS");
-                    document.getElementById("subcategory").options[2]=new Option("BIS","BIS");
-                    document.getElementById("subcategory").options[3]=new Option("PRO","PRO");
-                    document.getElementById("subcategory").options[4]=new Option("ORG","ORG");
+                    document.getElementById("subcategory").options[0]=new Option("Select Course","");
+                    document.getElementById("subcategory").options[1]=new Option("Virksomhedens Økonomiske Styring","Virksomhedens Økonomiske Styring");
+                    document.getElementById("subcategory").options[2]=new Option("Business and Information Systems","Business and Information Systems");
+                    document.getElementById("subcategory").options[3]=new Option("Programmering","Programmering");
+                    document.getElementById("subcategory").options[4]=new Option("Indføring i Organisationers Opbygning","Indføring i Organisationers Opbygning");
                     break;
 
                 case "Ha(jur.)" :
-                    document.getElementById("subcategory").options[0]=new Option("Select Lecture","");
-                    document.getElementById("subcategory").options[1]=new Option("","");
+                    document.getElementById("subcategory").options[0]=new Option("Select Course","");
+                    document.getElementById("subcategory").options[1]=new Option("Mikroøkonomi","Mikroøkonomi");
+                    document.getElementById("subcategory").options[2]=new Option("Formueret","Formueret");
+                    document.getElementById("subcategory").options[3]=new Option("Aftaleret","Aftaleret");
                     break;
+/* Future implementation for courses in ha(fil) and Ha(mat)
                 case "Ha(fil.)" :
-                    document.getElementById("subcategory").options[0]=new Option("Select Lecture","");
+                    document.getElementById("subcategory").options[0]=new Option("Select Course","");
                     document.getElementById("subcategory").options[1]=new Option("","");
                     break;
                 case "Ha(mat.)" :
-                    document.getElementById("subcategory").options[0]=new Option("Select Lecture","");
+                    document.getElementById("subcategory").options[0]=new Option("Select Course","");
                     document.getElementById("subcategory").options[1]=new Option("","");
                     break;
                 default:
-                    document.getElementById("subcategory").options[0]=new Option("Select Lecture","");
+                    document.getElementById("subcategory").options[0]=new Option("Select Course","");
                     break;
+ */
             }
             return true;
         }
@@ -43,24 +47,42 @@
             document.getElementById("sub_subcategory").length = 0;
             switch (listindex)
             {
-                case "VØS" :
-                    document.getElementById("sub_subcategory").options[0]=new Option("Select Lecture Time","");
-                    document.getElementById("sub_subcategory").options[1]=new Option("VØS - Monday 16:30","VØS - Monday 16:30");
+                case "Virksomhedens Økonomiske Styring" :
+                    document.getElementById("sub_subcategory").options[0]=new Option("Select Lecture ","");
+                    document.getElementById("sub_subcategory").options[1]=new Option("VØS - Consumer surplus og producer surplus","VØS - Consumer surplus og producer surplus");
+                    document.getElementById("sub_subcategory").options[2]=new Option("VØS - Lineær programmering","VØS - Consumer surplus og producer surplus","VØS - Lineær programmering");
                     break;
-                case "BIS" :
-                    document.getElementById("sub_subcategory").options[0]=new Option("Select Lecture Time","");
-                    document.getElementById("sub_subcategory").options[1]=new Option("BIS - Tuesday 16:30","BIS - Tuesday 16:30");
+                case "Business and Information Systems" :
+                    document.getElementById("sub_subcategory").options[0]=new Option("Select Lecture ","");
+                    document.getElementById("sub_subcategory").options[1]=new Option("BIS - Vandfaldsmodellen","BIS - Vandfaldsmodellen");
+                    document.getElementById("sub_subcategory").options[2]=new Option("BIS - Html for begynder","BIS - Html for begynder");
                     break;
-                case "PRO" :
-                    document.getElementById("sub_subcategory").options[0]=new Option("Select Lecture Time","");
-                    document.getElementById("sub_subcategory").options[1]=new Option("VØS - Wednesday 16:30","PRO - Wednesday 16:30");
+                case "Programmering" :
+                    document.getElementById("sub_subcategory").options[0]=new Option("Select Lecture ","");
+                    document.getElementById("sub_subcategory").options[1]=new Option("PRO - Guide til objekter", "PRO - Guide til objekter");
+                    document.getElementById("sub_subcategory").options[2]=new Option("PRO - If statements og loops", "PRO - If statements og loops");
                     break;
-                case "ORG" :
-                    document.getElementById("sub_subcategory").options[0]=new Option("Select Lecture Time","");
-                    document.getElementById("sub_subcategory").options[1]=new Option("VØS - Thursday 16:30","ORG - Thursday 16:30");
+                case "Indføring i Organisationers Opbygning" :
+                    document.getElementById("sub_subcategory").options[0]=new Option("Select Lecture ","");
+                    document.getElementById("sub_subcategory").options[1]=new Option("ORG - Kultur i organisationer","ORG - Kultur i organisationer");
+                    document.getElementById("sub_subcategory").options[2]=new Option("ORG - Motivation og kobling til andre emner", "ORG - Motivation og kobling til andre emner");
+                    break;
+                case "Mikroøkonomi":
+                    document.getElementById("sub_subcategory").options[0]=new Option("Select Lecture ","");
+                    document.getElementById("sub_subcategory").options[1]=new Option("MØ - Mikroøkonomi opsumering","MØ - Mikroøkonomi opsumering");
+                    break;
+                case "Formueret":
+                    document.getElementById("sub_subcategory").options[0]=new Option("Select Lecture ","");
+                    document.getElementById("sub_subcategory").options[1]=new Option("Formueret - Eksamen tips og tricks","Formueret - Eksamen tips og tricks");
+                    break;
+                case "Aftaleret":
+                    document.getElementById("sub_subcategory").options[0]=new Option("Select Lecture ","");
+                    document.getElementById("sub_subcategory").options[1]=new Option("Aftaleret - Aftaleret for begynder", "Aftaleret - Aftaleret for begynder");
+                    document.getElementById("sub_subcategory").options[2]=new Option("Aftaleret - Juridisk metode", "Aftaleret - Juridisk metode");
+                    document.getElementById("sub_subcategory").options[3]=new Option("Aftaleret - Fuldmagt og ugyldihed opsumering", "Aftaleret - Fuldmagt og ugyldihed opsumering");
                     break;
                 default:
-                    document.getElementById("sub_subcategory").options[0]=new Option("Select Lecture Time","");
+                    document.getElementById("sub_subcategory").options[0]=new Option("Select Lecture ","");
                     break;
             }
             return true;
@@ -75,13 +97,15 @@
         <option value="">Select study program</option>
         <option value="Ha(it.)">Ha(it.)</option>
         <option value="Ha(jur.)">Ha(jur.)</option>
+<!--  Future implementation for courses in ha(fil) and Ha(mat)
         <option value="Ha(fil.)">Ha(fil.)</option>
         <option value="Ha(mat.)">Ha(mat.)</option>
+-->
     </select>
 </div>
-<div class="sub_category_div" id="sub_category_div"><h2>Select lecture:</h2>
+<div class="sub_category_div" id="sub_category_div"><h2>Select Course:</h2>
     <script type="text/javascript" language="JavaScript">
-        document.write('<select name="subcategory" id="subcategory" onchange="javascript: dynamicdropdownone(this.options[this.selectedIndex].value);"><option value="">Select Lecture</option></select>')
+        document.write('<select name="subcategory" id="subcategory" onchange="javascript: dynamicdropdownone(this.options[this.selectedIndex].value);"><option value="">Select Course</option></select>')
     </script>
     <noscript>
         <select name="subcategory" id="subcategory" >
@@ -89,9 +113,9 @@
         </select>
     </noscript>
 </div>
-<div class="sub_subcategory_div" id="sub_subcategory_div"><h2>Select Lecture Time:</h2>
+<div class="sub_subcategory_div" id="sub_subcategory_div"><h2>Select Lecture:</h2>
     <script type="text/javascript" language="JavaScript">
-        document.write('<select name="sub_subcategory" id="sub_subcategory"><option value="">Select Lecture Time </option></select>')
+        document.write('<select name="sub_subcategory" id="sub_subcategory"><option value="">Select Lecture  </option></select>')
     </script>
     <noscript>
         <select name="sub_subcategory" id="sub_subcategory" >

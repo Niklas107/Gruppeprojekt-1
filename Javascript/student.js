@@ -36,8 +36,8 @@ console.log(localStorage.getItem("Student"))
 
 function selectLecture() {
     var studyprogram = document.getElementById("category").value;
-    var lecture = document.getElementById("subcategory").value;
-    var lectureTime = document.getElementById("sub_subcategory").value;
+    var Course = document.getElementById("subcategory").value;
+    var lecture = document.getElementById("sub_subcategory").value;
     var comment = document.getElementById("comment").value;
 
     //Validation form
@@ -50,8 +50,8 @@ function selectLecture() {
  */
             alert("You have joined a lecture"
                 + "\nStudy Program: " + studyprogram
+                + "\nCourse: " + Course
                 + "\nLecture: " + lecture
-                + "\nLecture Time: " + lectureTime
                 + "\nAdditional comment:" + " " + comment);
             /*
         }

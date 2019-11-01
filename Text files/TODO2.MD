@@ -2,8 +2,8 @@ To - Do list.
 
 Admin
 (Ingen eksisterende funktioner)
-- Remove Teacher
-- Remove Student 
+- Delete Teacher
+- Delete Student 
 - Hardcode én admin som kan logge ind. 
 - Skal kunne se overblick over alle forelæsninger og antal elever på forelæsning
 

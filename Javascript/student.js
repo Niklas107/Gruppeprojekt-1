@@ -23,8 +23,8 @@ var studentList = [];
 if (localStorage.getItem("Student") == null) {
         studentList.push(new Student("ChrisMJandre","Agurke","Christopher@andre.bz","31418551","Christopher","André","HA(it.)","1"));
         studentList.push(new Student("Niller","1234", "nilb107@gmail.com", "31320232","Niklas", "L-B", "HA(it.)", "1"));
-        studentList.push(new Student("Sven","bord123","Sven@gmail.com","57647239", "Sven", "Eriksen","HA(jur.)","1"));
-        studentList.push(new Student("Kasper", "stol123", "Kasper@gmail.com", "85923043", "Kasper", "Rasmussen", "HA(it.)", "2"));
+        studentList.push(new Student("Sven","bord123","Sven@gmail.com","57647239", "Sven", "Eriksen","HA(jur.)","4"));
+        studentList.push(new Student("Kasper", "stol123", "Kasper@gmail.com", "85923043", "Kasper", "Rasmussen", "HA(it.)", "3"));
 var studentListString = JSON.stringify(studentList);
 localStorage.setItem('Student', studentListString);
 

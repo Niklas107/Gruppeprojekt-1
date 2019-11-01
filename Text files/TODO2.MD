@@ -2,16 +2,17 @@ To - Do list.
 
 Admin
 (Ingen eksisterende funktioner)
-- Remove Teacher
+- Remove Teacher - 
 - Hardcode én admin som kan logge ind. 
-- Skal kunne se overblick over alle forelæsninger og antal elever på forelæsning
+- Skal kunne se overblick over alle forelæsninger og antal elever på forelæsning - DONE
+- kan se information om teachers og students - DONE - CHRIS
 
 Registration
 - Finde ud af hvorfor det virker - DONE BITCHES - CHRIS 
 
 Teacher 
 (- createLecture)
-- Funktion hvor teacher kan se Students email og telefon
+- Funktion hvor teacher kan se Students email og telefon - DONE
 - Fjerne elever fra forelæsningen 
 
 Classroom

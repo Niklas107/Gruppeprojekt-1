@@ -17,7 +17,7 @@ function getSelectClassroom() {
     if (selectedClassroom === "room1") {
         console.log(room1);
     } else if (selectedClassroom === "room2") {
-            console.log(room2);
+        console.log(room2);
     } else if (selectedClassroom === "room3") {
         console.log(room3);
     } else if (selectedClassroom === "room4") {
@@ -27,9 +27,3 @@ function getSelectClassroom() {
     }
 }
 
-/**
-function addLectureToClassroom() {
-
-
-}
-*/

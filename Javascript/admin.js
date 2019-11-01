@@ -7,5 +7,5 @@ class Admin extends User {                                                      
 
 //Lav en removeTeacher og removeStudent funktion
 
-//Opret én bruger, som er admins' login
+//Harcode én bruger, som er admins' login
 //

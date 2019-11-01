@@ -42,9 +42,9 @@ function createLecture() {
 }
 
 
-function showLecture() {
-    console.log("Show user stored in localStorage");
+/** function showLecture() {
+    console.log("Show localStorage");
     console.log(localStorage);
 }
-
+*/
 

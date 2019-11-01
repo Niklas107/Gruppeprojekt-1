@@ -14,7 +14,6 @@ function Register() {
     this.comment = document.getElementById("comment").value;
     this.password = document.getElementById("password").value;
 }
-
 //Store input from registration to localStorage
 
 function storeLogin() {
@@ -44,7 +43,7 @@ function showUser () {
             form_valid = false; }
 
         if (fullName.value == null || fullName.value == ""){
-                validation_message += "fullName must be filled in! \n";
+                validation_message += "Full name must be filled in! \n";
                 form_valid = false; }
 
         var atpos = email.value.indexOf("@");
@@ -54,7 +53,7 @@ function showUser () {
             form_valid = false;}
 
         if (isNaN(phone.value)){
-            validation_message += "Phonenumbers can only consist of numbers! \n";
+            validation_message += "Phone numbers can only consist of numbers! \n";
             form_valid = false;}
         else if (phone.value == null || phone.value == "") {
             validation_message += "Please enter a phone number \n";

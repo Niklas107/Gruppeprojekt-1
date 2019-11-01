@@ -11,7 +11,7 @@
             document.getElementById("subcategory").length = 0;
             switch (listindex)
             {
-                case "Ha(it.)" :
+                case "HA(it.)" :
                     document.getElementById("subcategory").options[0]=new Option("Select Course","");
                     document.getElementById("subcategory").options[1]=new Option("Virksomhedens Økonomiske Styring","Virksomhedens Økonomiske Styring");
                     document.getElementById("subcategory").options[2]=new Option("Business and Information Systems","Business and Information Systems");
@@ -19,18 +19,18 @@
                     document.getElementById("subcategory").options[4]=new Option("Indføring i Organisationers Opbygning","Indføring i Organisationers Opbygning");
                     break;
 
-                case "Ha(jur.)" :
+                case "HA(jur.)" :
                     document.getElementById("subcategory").options[0]=new Option("Select Course","");
                     document.getElementById("subcategory").options[1]=new Option("Mikroøkonomi","Mikroøkonomi");
                     document.getElementById("subcategory").options[2]=new Option("Formueret","Formueret");
                     document.getElementById("subcategory").options[3]=new Option("Aftaleret","Aftaleret");
                     break;
 /* Future implementation for courses in ha(fil) and Ha(mat)
-                case "Ha(fil.)" :
+                case "HA(fil.)" :
                     document.getElementById("subcategory").options[0]=new Option("Select Course","");
                     document.getElementById("subcategory").options[1]=new Option("","");
                     break;
-                case "Ha(mat.)" :
+                case "HA(mat.)" :
                     document.getElementById("subcategory").options[0]=new Option("Select Course","");
                     document.getElementById("subcategory").options[1]=new Option("","");
                     break;
@@ -95,11 +95,11 @@
 <div class="category_div" id="category_div"><h2>Select study program:</h2>
     <select name="category" class="required-entry" id="category" onchange="javascript: dynamicdropdown(this.options[this.selectedIndex].value);">
         <option value="">Select study program</option>
-        <option value="Ha(it.)">Ha(it.)</option>
-        <option value="Ha(jur.)">Ha(jur.)</option>
+        <option value="HA(it.)">HA(it.)</option>
+        <option value="HA(jur.)">HA(jur.)</option>
 <!--  Future implementation for courses in ha(fil) and Ha(mat)
-        <option value="Ha(fil.)">Ha(fil.)</option>
-        <option value="Ha(mat.)">Ha(mat.)</option>
+        <option value="HA(fil.)">HA(fil.)</option>
+        <option value="HA(mat.)">HA(mat.)</option>
 -->
     </select>
 </div>

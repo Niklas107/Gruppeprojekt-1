@@ -13,24 +13,38 @@
 
     <!-- Drop down menu til at fjerne students (Prototype, virker ikke uden database) -->
     <br>
-    <select id="DeleteStudent" size="4">
+    <select id="allStudents" size="4">
             <option>Niklas Ha(IT) 1. semester</option>
             <option>Jens Ha(IT) 1. semester</option>
             <option>Christopher Ha(IT) 1. semester</option>
             <option>Alexander Ha(IT) 1. semester </option>
     </select>
-<button onclick="delete()">Delete the selected student</button>
+<button type="button" onclick="deleteStudent()">Delete the selected student</button>
 </form>
-
-
-<script>
-    function delete(); {
-        var x = document.getElementById("DeleteStudent");
-        x.remove(x.selectedIndex);
-    }
-</script>
 </body>
 </html>
 
 < // Remove teacher />
+
 < ///Remove student />
+
+<h3>Delete an existing lecture</h3>
+<select id="allLectures" size="13">
+    <option>Vandfaldsmodellen</option>                          <!-- De første to er BIS forelæsninger for HA(it.) -->
+    <option>Httml for begyndere</option>
+    <option>Consumer surplus og producer surplus</option>       <!-- De næste to er VØS forelæsninger for HA(it.) -->
+    <option>Lineær programmering</option>
+    <option>Programmering - Guide til objekter</option>         <!-- De næste to er PRO forelæsninger for HA(it.) -->
+    <option>If statements og loops</option>
+    <option>Kultur i organisationer</option>                    <!-- De næste to er ORG forelæsninger for HA(it.) -->
+    <option>Motivation og koblingen til andre emner</option>
+    <option>Mikroøkonomi opsummering</option>                   <!-- Denne er en forelæsning for mikroøkonomi for HA(jur.) -->
+    <option>Formueret eksamen tips og tricks </option>          <!-- Denne er en forelæsning for formueret for HA(jur.) -->
+    <option>Aftaleret for begyndere</option>                    <!-- De næste tre er forelæsninger for aftaleret for HA(jur.) -->
+    <option>Juridisk metode introduktion</option>
+    <option>Fuldmagt og ugyldighed opsummering</option>
+</select>
+<button type="button" onclick="deleteLecture();">Delete the selected lecture</button>
+
+<script type="text/javascript" src="Javascript/admin.js"></script>
+

@@ -1,19 +1,32 @@
-class Teacher extends User {
-    constructor (userName, password, email, phoneNumber, firstName, lastName, studyProgram) {
-        super(userName, password, email, phoneNumber, firstName, lastName);
-
-        this.studyProgram = studyProgram;
+class User {                                                                   //Klassen user er blot overklasse som de andre klasser inheriter fra
+    constructor(userName, password, email, phoneNumber, firstName, lastName) {  //Her er alle de attributter som alle classes skal bruge
+        this.userName = userName;
+        this.password = password;
+        this.email = email;
+        this.phoneNumber = phoneNumber;
+        this.firstName= firstName;
+        this.lastName = lastName;
     }
 }
 
-console.log(localStorage.getItem("Teacher"))
-var teacherList = []
+class Teacher extends User {
+    constructor (userName, password, email, phoneNumber, firstName, lastName, studyProgram, semester) {
+        super(userName, password, email, phoneNumber, firstName, lastName);
+
+        this.studyProgram = studyProgram;
+        this.semester = semester;
+    }
+}
+
+console.log(localStorage.getItem("Teacher"));
+var teacherList = [];
 
 if (localStorage.getItem("Teacher") == null) {
 
-    teacherList.push(new Teacher("Jose","4567","Josefinecolberg@gmail.com","23626206","Josefine","Colberg","Ha(it)","2"));
-
-    var teacherListString = JSON.stringify(teacherList)
+    teacherList.push(new Teacher("Jose","4567","Josefinecolberg@gmail.com","23626206","Josefine","Colberg","Ha(it)","3"));
+    teacherList.push(new Teacher("Ca18ab", "Øl4ever", "ca18ab@student.cbs.com", "45668921", "Calle", "Olsen", "HA(it)","5"));
+    teacherList.push(new Teacher("Ølgod", "password", "miøl18a@student.cbs.com", "66698724", "Mikkel", "Ølgod", "HA(jur.)", "4"));
+    var teacherListString = JSON.stringify(teacherList);
     localStorage.setItem('Teacher', teacherListString)
 
 } else {
@@ -39,6 +52,15 @@ function createLecture() {
         + "\nDay: " + day1
         + "\nTime of lecture: " + time1
         + "\nAdditional comment: " + comment1);
+}
+
+function removeLecture() {
+    var x = document.getElementById("teacherLecture");
+    x.remove(x.selectedIndex);
+}
+
+function showStudentInformation() {
+    
 }
 
 

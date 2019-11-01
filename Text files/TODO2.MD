@@ -8,7 +8,7 @@ Admin
 - Skal kunne se overblick over alle forelæsninger og antal elever på forelæsning
 
 Registration
-- Finde ud af hvorfor det virker 
+- Finde ud af hvorfor det virker - DONE BITCHES - CHRIS 
 
 Teacher 
 (- createLecture)

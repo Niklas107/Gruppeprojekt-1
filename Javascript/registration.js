@@ -1,10 +1,3 @@
-    var userName = document.getElementById("userName");
-    var fullName = document.getElementById("fullName");
-    var email = document.getElementById("email");
-    var phone = document.getElementById("phone");
-    var comment = document.getElementById("comment");
-    var password = document.getElementById("password");
-
 //Different variables needed in our registration form
 function Register() {
     this.userName = document.getElementById("userName").value;

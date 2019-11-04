@@ -12,7 +12,8 @@ Classroom
 User 
 - Måske have den til at virke med extension. 
 
-
+Student
+- validation form 
 
 Til rapporten (2. semester)
 - Tilføje flere studieretninger 

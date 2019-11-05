@@ -33,71 +33,58 @@ localStorage.setItem('Student', studentListString);
     }
 
 console.log(localStorage.getItem("Student"))
-
-function selectLecture() {
-    var studyprogram = document.getElementById("category").value;
-    var Course = document.getElementById("subcategory").value;
-    var lecture = document.getElementById("sub_subcategory").value;
-    var comment = document.getElementById("comment").value;
+console.log(document.getElementById("category").value);
+console.log(document.getElementById("subcategory").value);
 
     //Validation form
-/*    function validationForm() {
+function studentValidationForm() {
+
+        var studyprogram = document.getElementById("category").value;
+        var Course = document.getElementById("subcategory").value;
+        var lecture = document.getElementById("sub_subcategory").value;
+        var comment = document.getElementById("comment").value;
+
         var form_valid = true;
         var validation_message = "";
 
+        var studyprogram1 = document.getElementById("category").value;
+        if (studyprogram1 == null || studyprogram1 == "") {
+            form_valid = false;
+            validation_message += "A studyprogram must be selected \n";
+        }
+        var course1 = document.getElementById("subcategory").value;
+        if (course1 == null || course1 == "") {
+            form_valid = false;
+            validation_message += "A course must be selected \n";
+        }
+        var lecture1 = document.getElementById("sub_subcategory").value;
+        if (lecture1 == null || lecture1 == "") {
+            form_valid = false;
+            validation_message += "A lecture must be selected \n";
+        }
         if (form_valid) {
-
- */
             alert("You have joined a lecture"
                 + "\nStudy Program: " + studyprogram
                 + "\nCourse: " + Course
                 + "\nLecture: " + lecture
                 + "\nAdditional comment:" + " " + comment);
-            /*
         }
         else {
             alert(validation_message);
         }
-
-        var dd1 = document.getElementById("category").value;
-        if (dd1 !== "HA(it)") {
-            form_valid = false;
-            validation_message += "A studyprogram must be selected \n";
-            return (form_valid);
-
-
-        }
+        return form_valid;
     }
-*/
 
-//
-//
-
-
-/* Niklas = new student("Niller", "12345", "Nik123@gmail.com", "12345678", "Niklas","jh",""," ",""  );
-console.log(Niklas);
-*/
-
-
-
-}
-/*
-// Store input when astudent chooses to join a lecture.
-var studyprogram1 = document.getElementById("category");
-var lecture1 = document.getElementById("subcategory");
-var lectureTime1 = document.getElementById("sub_subcategory");
-function storeJoinLecture() {
-    localStorage.setItem("studyprogram", studyprogram1.value);
-    localStorage.setItem("lecture", lecture1.value);
-    localStorage.setItem("lecturetime", lectureTime1.value);
-    console.log (studyprogram1);
-}
-*/
 function showStudentInformation() {
-    console.log(" name:  "+ studentList[0].firstName + " " + studentList[0].lastName + "\n email: " + studentList[0].email);
-    console.log(" name:  "+ studentList[1].firstName + " " + studentList[1].lastName + "\n email: " + studentList[1].email);
-    console.log(" name:  "+ studentList[2].firstName + " " + studentList[2].lastName + "\n email: " + studentList[2].email);
-    console.log(" name:  "+ studentList[3].firstName + " " + studentList[3].lastName + "\n email: " + studentList[3].email);
+    alert("Student information:"
+    + "\n name:"  + studentList[0].firstName + " " + studentList[0].lastName + "\n email: " + studentList[0].email
+    + "\n"
+    + "\n name:"  + studentList[1].firstName + " " + studentList[1].lastName + "\n email: " + studentList[1].email
+    + "\n"
+    + "\n name:"  + studentList[2].firstName + " " + studentList[2].lastName + "\n email: " + studentList[2].email
+    + "\n"
+    + "\n name:"  + studentList[3].firstName + " " + studentList[3].lastName + "\n email: " + studentList[3].email
+)
 }
 
 // https://www.digitalocean.com/community/tutorials/understanding-classes-in-javascript

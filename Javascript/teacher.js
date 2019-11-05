@@ -51,9 +51,29 @@ function validateCreateLecture() {
         alert("Name must be entered!");
         return false;
     }
-
+// Tjekker om der er blevet valgt noget andet end standard-værdien ved dropdown. Alerter at der skal vælges noget andet end standard-værdien. - Alex
+    if (document.getElementById("studyProgram").value == "Select study program") {
+        alert("Study program must be selected!");
+        return false;
+    }
+    //Alerter at der ikke er blevet valgt noget andet end standard værdien. For at gå videre skal der vælges noget andet end standard-værdien. - Alex
+    if (document.getElementById("course").value == "Select course") {
+        alert("Course must be selected!");
+        return false;
+    }
+    // Tjekker om der er blevet valgt noget andet end standard-værdien ved select classroom. Alerter at der skal vælges noget andet end standard-værdien. - Alex
+    if (document.getElementById("Classroom").value == "Select classroom") {
+        alert("Classroom must be selected!");
+        return false;
+    }
+// Her tjekkes der om text-feltet er tomt. Hvis ikke så fortsætter den. - Alex
     if (!document.getElementById("lectureName").value) {
         alert("Lecture name must be entered!");
+        return false;
+    }
+    //Tjekkes om der er valgt en dag. Hvis dag ikke valgt, så alerter den, hvis valgt, så fortsætter den. - Alex
+    if (document.getElementById("day").value == "Choose day") {
+        alert("A day must be chosen!");
         return false;
     }
 

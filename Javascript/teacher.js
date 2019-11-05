@@ -1,5 +1,6 @@
-class User {                                                                   //Klassen user er blot overklasse som de andre klasser inheriter fra
-    constructor(userName, password, email, phoneNumber, firstName, lastName) {  //Her er alle de attributter som alle classes skal bruge
+// Klassen User er blot en overklasse som dens child Teacher inheritter fra - Nik
+class User {
+    constructor(userName, password, email, phoneNumber, firstName, lastName) {
         this.userName = userName;
         this.password = password;
         this.email = email;
@@ -36,21 +37,21 @@ if (localStorage.getItem("Teacher") == null) {
     teacherList = JSON.parse(localStorage.getItem('Teacher'))
 }
 
+/* Her oprettes en forelæsning som har andre variable end dem i localstorage, fordi funktionen ikke længere fungerede efter local storage.
+Vi kunne heller ikke få forelæsning op i local storage, så har i stedet valgt at gøre det sådan her - Nik */
 function createLecture() {
     var teacher1 = document.getElementById("teacher1").value;
     var studyProgram1 = document.getElementById("studyProgram").value;
-    var semester = document.getElementById("semester").value;
     var course1 = document.getElementById("course").value;
     var classRoom1 = document.getElementById("Classroom").value;
     var lectureName1 = document.getElementById("lectureName").value;
     var day1 = document.getElementById("day").value;
     var time1 = document.getElementById("time").value;
     var comment1 = document.getElementById("comment").value;
-
+// Her alertes den forelæsning man opretter med informationerne om de hardcodede classrooms fra det andet js dokument - Nik
     alert("Your lecture has been created"
         + "\nTeacher: " + teacher1
         + "\nStudy program: " + studyProgram1
-        + "\nSemester: " + semester
         + "\nCourse: " + course1
         + "\nClassroom: " + classRoom1 + " - " + test1
         + "\nLecture name: " + lectureName1
@@ -58,7 +59,7 @@ function createLecture() {
         + "\nTime of lecture: " + time1
         + "\nAdditional comment: " + comment1);
 }
-
+// Denne funktion fjerne en lecture fra dropdown menuen med allerede oprettede forelæsninger - Nik
 function removeLecture() {
     var x = document.getElementById("teacherLecture");
     x.remove(x.selectedIndex);
@@ -74,7 +75,8 @@ function showStudentInformation() {
         + "\n name: "  + studentinformation[3].firstName + " " + studentinformation[3].lastName + "\n email: " + studentinformation[3].email
     )
 }
-
+/* Her er funktionen der kan fjerne en student fra en forelæsning. Én forelæsning har ingen tilmeldte students, så der kan ingen fjernes fra.
+Andre har students, så man får vi listen over de students der er tilmeldt og kan fjerne en. Indtil videre fjerner det dem dog fra listen der er fælles for alle forelæsninger. - Nik */
 function studentRemove() {
     var lectureStudent = document.getElementById("lectureRemoveStudent").value;
     if(lectureStudent == "Consumer surplus og producer surplus") {
@@ -91,8 +93,10 @@ function studentRemove() {
         console.log("Please select student to remove");
     }
 }
-//Skal have ændret, så når man fjerne nogen fra en lecture, så bliver de ikke fjernet fra de andre lectures
+//Skal have ændret, så når man fjerne nogen fra en lecture, så bliver de ikke fjernet fra de andre lectures - Nik
 
+/* Denne funktion hører til dropdown listen over tilmeldte students, og skal kun vises, hvis der er nogen der er tilmeldt.
+Måske skal den gentages for hver forelæsning, så man ikke fjerner fra samme liste - Nik  */
 function removeStudent() {
     var x = document.getElementById("studentList");
     x.remove(x.selectedIndex);

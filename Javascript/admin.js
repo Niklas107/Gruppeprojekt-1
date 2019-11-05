@@ -9,7 +9,7 @@ class User {
         this.lastName = lastName;
     }
 }
-// Sub Class Admin which extends the user. Meaning: This class gets most of its attributes from the class user - Chris
+// Sub Class Admin which extends the user. Meaning: This class gets most of its attributes from the class user - Chris/Josephine
 class Admin extends User {
     constructor(userName, password, email, phoneNumber, firstName, lastName) {
         super(userName, password, email, phoneNumber, firstName, lastName);
@@ -33,11 +33,12 @@ if (localStorage.getItem("Admin") == null) {
     adminList = JSON.parse(localStorage.getItem('Admin'))
 }
 */
-/** function delete() {
+/* function delete() {
     var x = document.getElementById("DeleteStudent");
     x.remove(x.selectedIndex);
 }
 */
+//Her kommer tre ens funktioner, som blot fjerner en fra den liste man vælger fra - Nik
 function deleteStudent() {
     var x = document.getElementById("allStudents");
     x.remove(x.selectedIndex);
@@ -47,6 +48,7 @@ function deleteTeacher() {
     var x = document.getElementById("allTeachers");
     x.remove(x.selectedIndex);
 }
+
 function deleteLecture() {
     var x = document.getElementById("allLectures");
     x.remove(x.selectedIndex);

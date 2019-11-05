@@ -48,14 +48,14 @@ function validateHhMm(inputField) {
         return false;
     }
 
-    // Splitter teksten ud i to ved kolon. Hvis der ikke bliver 2 elementer, altså time og minut, er datoen formateret forkert.
-    //val[0] indeholder timen og val[1] indeholder minuttet
+    // Splitter teksten ud i to ved kolon. Hvis der ikke bliver 2 elementer, altså time og minut, er datoen formateret forkert. - Alex
+    //val[0] indeholder timen og val[1] indeholder minuttet - Alex
     var val = data.split(':');
     if(val.length != 2) { //Hvis der kommer alt andet end to værdier ud, så er enten ikke et kolon eller mere end et hvilket er forkert. - Alex
         return false;
     }
 
-    //Konverterer fra text til int og tjekker at det er et helt tal.
+    //Konverterer fra text til int og tjekker at det er et helt tal. - Alex
     if(!Number.isInteger(parseInt(val[0]))) { //val 0 er den time der blevet indtastet. - Alex
         return false;
     }
@@ -70,11 +70,11 @@ function validateHhMm(inputField) {
         return false;
     }
 
-    // Tjekker at tallet er positivt og at antallet af minutter angivet ikke er mere end 59
+    // Tjekker at tallet er positivt og at antallet af minutter angivet ikke er mere end 59. - Alex
     if(Math.sign(val[1]) == -1 || val[1] > 59) { //Hvis math.sign = -1 er det et negativt hvilket ikke er korrekt. - Alex
         return false;
     }
-    //Retunerer tidspunktet, som er blevet indtastet.
+    //Retunerer tidspunktet, som er blevet indtastet. - Alex
     return data;
 }
 

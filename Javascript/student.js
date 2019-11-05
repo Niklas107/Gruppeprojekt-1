@@ -37,7 +37,7 @@ localStorage.setItem('Student', studentListString);
         studentList = JSON.parse(localStorage.getItem('Student'))
     }
 /*
-Not sure why this is here TBH - will figure out later - CHRIs
+Not sure why this is here TBH - will figure out later - Chris
 console.log(localStorage.getItem("Student"))
 console.log(document.getElementById("category").value);
 console.log(document.getElementById("subcategory").value);

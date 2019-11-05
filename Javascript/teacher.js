@@ -40,9 +40,42 @@ if (localStorage.getItem("Teacher") == null) {
 //Code for validating time. - Alex
 //Tjekker om tid på dagen (som findes i teacher.html) er skrevet efter det rigtige format. - Alex
 function validateHhMm(inputField) {
-    var isValid = /^([0-1]?[0-9]|2[0-4]):([0-5][0-9])(:[0-5][0-9])?$/.test(inputField.value);
+    //Henter værdien af feltet angivet i parameteret - Alex
+    var data = inputField.value;
 
-    return isValid;
+    //Tjekker at feltet har en lovlig værdi - Alex
+    if(!data) {
+        return false;
+    }
+
+    // Splitter teksten ud i to ved kolon. Hvis der ikke bliver 2 elementer, altså time og minut, er datoen formateret forkert.
+    //val[0] indeholder timen og val[1] indeholder minuttet
+    var val = data.split(':');
+    if(val.length != 2) { //Hvis der kommer alt andet end to værdier ud, så er enten ikke et kolon eller mere end et hvilket er forkert. - Alex
+        return false;
+    }
+
+    //Konverterer fra text til int og tjekker at det er et helt tal.
+    if(!Number.isInteger(parseInt(val[0]))) { //val 0 er den time der blevet indtastet. - Alex
+        return false;
+    }
+
+    // Tjekker at tallet er positivt og at antallet af timer angivet ikke er mere end 23
+    if(Math.sign(val[0]) == -1 || val[0] > 23) { //Hvis math.sign = -1 er det et negativt hvilket ikke er korrekt. - Alex
+        return false;
+    } //Math.sign et library (et library er en samling af functioner) og en af de functioner er noget der kan opfange om tallene er negative eller positive. (udregner om de positive eller negative). -Alex
+
+    //Konverterer fra text til int (et helt tal positivt eller negativt) og tjekker at det er et helt tal.
+    if(!Number.isInteger(parseInt(val[1]))) {
+        return false;
+    }
+
+    // Tjekker at tallet er positivt og at antallet af minutter angivet ikke er mere end 59
+    if(Math.sign(val[1]) == -1 || val[1] > 59) { //Hvis math.sign = -1 er det et negativt hvilket ikke er korrekt. - Alex
+        return false;
+    }
+    //Retunerer tidspunktet, som er blevet indtastet.
+    return data;
 }
 
 //Validere inputs til create lecture. - Alex
@@ -97,6 +130,7 @@ Vi kunne heller ikke få forelæsning op i local storage, så har i stedet valgt
 function createLecture()
 {
 // Performs validation. -Alex
+    // Her trykker man på knappen create lecture og så starter valideringen som ses ovenfor. Så kører den igennem step by step som ses ovenfor. -Alex
 if (!validateCreateLecture()) {
     return;
 }

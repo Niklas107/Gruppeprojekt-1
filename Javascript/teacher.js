@@ -37,8 +37,42 @@ if (localStorage.getItem("Teacher") == null) {
     teacherList = JSON.parse(localStorage.getItem('Teacher'))
 }
 
+//Code for validating time - Alex
+function validateHhMm(inputField) {
+    var isValid = /^([0-1]?[0-9]|2[0-4]):([0-5][0-9])(:[0-5][0-9])?$/.test(inputField.value);
+
+    return isValid;
+}
+
+//Validere inputs til create lecture - Alex
+function validateCreateLecture() {
+    if (!document.getElementById("teacher1").value) {
+        alert("Name must be entered!");
+        return false;
+    }
+
+    if (!document.getElementById("lectureName").value) {
+        alert("Lecture name must be entered!");
+        return false;
+    }
+
+    //Validate that time is of a valid input.
+    if (!document.getElementById("time").value) {
+        alert("Please enter a valid number for the time of day");
+        return false;
+    }
+    //Validate that time is of the correct format.
+    if (!validateHhMm(document.getElementById("time"))) {
+        alert("Please enter a valid time of the day");
+        return false;
+    }
+
+    return true;
+}
+
 /* Her oprettes en forelæsning som har andre variable end dem i localstorage, fordi funktionen ikke længere fungerede efter local storage.
 Vi kunne heller ikke få forelæsning op i local storage, så har i stedet valgt at gøre det sådan her - Nik */
+//der står to funktioner i den og den ene eksisterer ikke
 function createLecture() {
     var teacher1 = document.getElementById("teacher1").value;
     var studyProgram1 = document.getElementById("studyProgram").value;
@@ -53,7 +87,7 @@ function createLecture() {
         + "\nTeacher: " + teacher1
         + "\nStudy program: " + studyProgram1
         + "\nCourse: " + course1
-        + "\nClassroom: " + classRoom1 + " - " + test1
+        + "\nClassroom: " + classRoom1 + " - " + test1   //test1 skal slettes?? gør at det ikke virker???
         + "\nLecture name: " + lectureName1
         + "\nDay: " + day1
         + "\nTime of lecture: " + time1

@@ -1,5 +1,6 @@
-class User {                                                                   //Klassen user er blot overklasse som de andre klasser inheriter fra
-    constructor(userName, password, email, phoneNumber, firstName, lastName) {  //Her er alle de attributter som alle classes skal bruge
+// class user, which is the main class where our sub classes gets a few of their attributes from - Chris
+class User {
+    constructor(userName, password, email, phoneNumber, firstName, lastName) {
         this.userName = userName;
         this.password = password;
         this.email = email;
@@ -8,15 +9,16 @@ class User {                                                                   /
         this.lastName = lastName;
     }
 }
-
-class Admin extends User {                                                                   // Vi extender fra user
-    constructor(userName, password, email, phoneNumber, firstName, lastName) {   // Alle attributter til admin
+// Sub Class Admin which extends the user. Meaning: This class gets most of its attributes from the class user - Chris
+class Admin extends User {
+    constructor(userName, password, email, phoneNumber, firstName, lastName) {
         super(userName, password, email, phoneNumber, firstName, lastName);
     }
 }
 
 
-/*
+/* NO CLUE who wrote this - but should probably be deleted - Chris
+i have done the admin log in page - chris
 //Local Storage in order to make a admin able to log in.
 console.log(localStorage.getItem("Admin"));
 var adminList = [];
@@ -50,7 +52,7 @@ function deleteLecture() {
     x.remove(x.selectedIndex);
 }
 
-//since studentlist is not defined in this js document, i had to define a new variable "studentinformation". We can fetch the data of our students from the local storage, with the key student.
+// Since studentlist is not defined in this js document, i had to define a new variable "Studentinformation". We can fetch the data of our students from the local storage, with the key student - Chris
 function showStudentInformation() {
      var studentinformation = JSON.parse(localStorage.getItem("Student"));
         alert("Student Information:"
@@ -60,6 +62,7 @@ function showStudentInformation() {
             + "\n name: "  + studentinformation[3].firstName + " " + studentinformation[3].lastName + "\n email: " + studentinformation[3].email
         )
 }
+// Same concept applies here as for the showStudentInformation function - Chris
 function showTeacherinformation() {
     var teacherInformation = JSON.parse(localStorage.getItem("Teacher"));
         alert ("Teacher Information:"
@@ -68,13 +71,20 @@ function showTeacherinformation() {
         + "\n name: " + teacherInformation[2].firstName + " " + teacherInformation[2].lastName + "\n email: " + teacherInformation[2].email
     )
 }
+// Log in for student - using Local storage - Chris
+// We start by creating an empty array called adminlist - Chris
 var adminlist = [];
-//Our hardcoded users (Admin). here all of their information is gathered. e.g - this is where the log in function gets the matching username and password.
+// Our hardcoded users (Admin). here all of their information is gathered. e.g - this is where the log in function gets the matching username and password.
+// When we have a class for our admin, it will ask us for all of the data points that we defined in the class student and user - Chris
+// Here we push a new admin to our empty array - Chris
 if (localStorage.getItem("Admin") == null) {
     adminlist.push(new Admin("Admin","123","Admin@gmail.com","12345678","Admin","Admin"));
+// The studentlist is then made into a string using the JSON.stringify command - Chris
     var adminListString = JSON.stringify(adminlist);
+// Here we set out studentListString in local storage so that we can later retrieve it - Chris
     localStorage.setItem('Admin', adminListString);
 } else {
     adminlist = JSON.parse(localStorage.getItem('Admin'))
 }
-console.log(adminlist[0]);
+
+

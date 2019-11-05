@@ -1,4 +1,4 @@
-//Different variables needed in our registration form - Josephine
+//Different variables needed in our registration form retrieved from out Registration HTML document - Alex
 function Register() {
     this.userName = document.getElementById("userName").value;
     this.name = document.getElementById("name").value;

@@ -57,12 +57,12 @@ function validateCreateLecture() {
         return false;
     }
 
-    //Validate that time is of a valid input.- Alex
+    //Validates that time is of a valid input.- Alex
     if (!document.getElementById("time").value) {
         alert("Please enter a valid number for the time of day");
         return false;
     }
-    //Validate that time is of the correct format. - Alex
+    //Validates that time is of the correct format. - Alex
     if (!validateHhMm(document.getElementById("time"))) {
         alert("Please enter a valid time of the day");
         return false;

@@ -2,18 +2,16 @@ To - Do list.
 
 Teacher 
 (- createLecture)
-- Fjerne elever fra forelæsningen 
+- Fjerne elever fra forelæsningen - in progress, do not disturb 
+- Validation form Teacher - OUCH - Asian is on the case 
 
 Classroom
 (-getSelectedClassroom)
-- Omskrive Classroom til SP205 osv. 
-- Fikset classroom i CreateLecture 
+- Omskrive Classroom til SP205 osv. - ALEX DO THIS 
+- Fikset classroom i CreateLecture - DO THIS TOO 
 
 User 
 - Måske have den til at virke med extension. - FUCK THIS SHIT - fatter det ej 
-
-Student
-- validation form - CHRIS DONE 
 
 Til rapporten (2. semester)
 - Tilføje flere studieretninger 

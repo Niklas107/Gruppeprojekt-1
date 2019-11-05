@@ -5,3 +5,6 @@ Her kan vi også skrive vores diskussioner om funktioner og andet, som kan bruge
 
 Hvis vi kopierer skal vi skrive referencer og bruge APA-modellen
 
+Slå op i bogen efter begreber når vi skriver kommentarer til vores kode
+
+Objekt orienteret programmering side 426 i bogen

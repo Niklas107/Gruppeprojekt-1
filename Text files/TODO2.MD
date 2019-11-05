@@ -3,7 +3,7 @@ To - Do list.
 Teacher 
 (- createLecture)
 - Fjerne elever fra forelæsningen - in progress, do not disturb 
-- Validation form Teacher - OUCH - Asian is on the case 
+- Validation form Teacher - Ordner jeg d. 5 november 2019 - alex
 
 Classroom
 (-getSelectedClassroom)

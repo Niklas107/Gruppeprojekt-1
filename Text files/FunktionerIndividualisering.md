@@ -28,3 +28,4 @@ Teacher
 	showStudentInformation - Chris 
 	studentRemove - Niller 
 	removeStudent - Niller 
+	Teacher Validation - Alexander

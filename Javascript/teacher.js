@@ -64,12 +64,15 @@ function removeLecture() {
     x.remove(x.selectedIndex);
 }
 
+// Since studentlist is not defined in this js document, i had to define a new variable "Studentinformation". We can fetch the data of our students from the local storage, with the key student - Chris
 function showStudentInformation() {
-    var studentinformation = JSON.parse(localStorage.getItem("Student"))
-    console.log(" name:  "+ studentinformation[0].firstName + " " + studentinformation[0].lastName + "\n email: " + studentinformation[0].email);
-    console.log(" name:  "+ studentinformation[1].firstName + " " + studentinformation[1].lastName + "\n email: " + studentinformation[1].email);
-    console.log(" name:  "+ studentinformation[2].firstName + " " + studentinformation[2].lastName + "\n email: " + studentinformation[2].email);
-    console.log(" name:  "+ studentinformation[3].firstName + " " + studentinformation[3].lastName + "\n email: " + studentinformation[3].email);
+    var studentinformation = JSON.parse(localStorage.getItem("Student"));
+    alert("Student Information:"
+        + "\n name: "  + studentinformation[0].firstName + " " + studentinformation[0].lastName + "\n email: " + studentinformation[0].email
+        + "\n name: "  + studentinformation[1].firstName + " " + studentinformation[1].lastName + "\n email: " + studentinformation[1].email
+        + "\n name: "  + studentinformation[2].firstName + " " + studentinformation[2].lastName + "\n email: " + studentinformation[2].email
+        + "\n name: "  + studentinformation[3].firstName + " " + studentinformation[3].lastName + "\n email: " + studentinformation[3].email
+    )
 }
 
 function studentRemove() {

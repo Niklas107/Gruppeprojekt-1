@@ -29,3 +29,4 @@ Teacher
 	studentRemove - Niller 
 	removeStudent - Niller 
 	Teacher Validation - Alexander
+    Createlecture Alert - Alexander

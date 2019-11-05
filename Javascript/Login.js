@@ -1,17 +1,25 @@
+// Here we have created a log in function using local storage - Chris
+// The goal of this function is allow the users to log in as either a student, teacher or admin - Chris
+// To start of we create a variable for a button, since we could not get it to work otherwise, that is why there is a login.onclick = function - it is a workaround instead of just creating a function and calling the function on the button - Chris
+// we also create 3 variables, existingStudent, existingTeacher and existingAdmin. These 3 variables store the information that we create in the correlating js documents - Chris
+// these 3 variables store the login information of our users. The username and the password - Chris
 var login = document.getElementById('login');
 var existingStudent = JSON.parse(localStorage.getItem('Student'));
 var existingTeacher = JSON.parse(localStorage.getItem("Teacher"));
+var existingAdmin = JSON.parse(localStorage.getItem("Admin"));
 login.onclick = function() {
+// Here we create 2 more variables to check if the username and the password actually matches the username and password in our local storage - Chris
     var user = document.getElementById("username").value;
     var pass = document.getElementById("password").value;
-
+// Here we created a for loop that checks the correlating username and password in the local storage and checks if it matches - Chris
+// If it is a match you are then granted access to the respective page for students, teachers and admin - Chris
+// The important distinction in the 3 loops is that we check for different user, student, teacher and admin, and you are then redirected to the correct page - Chris
     for (let i = 0; i < existingStudent.length; i++) {
         if (user == existingStudent[i].userName && pass == existingStudent[i].password) {
             alert("You are logged in as a student");
             //document.location.href = "HTML PAGE";
             return true;
         }
-
     }
     for (let h = 0; h < existingTeacher.length; h++) {
         if (user == existingTeacher[h].userName && pass == existingTeacher[h].password) {
@@ -19,6 +27,14 @@ login.onclick = function() {
             //document.location.href = "HTML PAGE";
             return true;
         }
-        }
-        alert("Incorrect username or password");
     }
+    for (let g = 0; g < existingAdmin.length; g++) {
+        if (user == existingAdmin[g].userName && pass == existingAdmin[g].password) {
+            alert("You are logged in as a Admin");
+            //document.location.href = "HTML PAGE";
+            return true;
+        }
+    }
+// I also created an alert in case the username and the password does not match, e.g. the username and password is not yet registered in the program - Chris
+        alert("Incorrect username or password");
+}

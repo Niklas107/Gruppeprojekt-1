@@ -50,19 +50,23 @@ function deleteLecture() {
     x.remove(x.selectedIndex);
 }
 
-
+//since studentlist is not defined in this js document, i had to define a new variable "studentinformation". We can fetch the data of our students from the local storage, with the key student.
 function showStudentInformation() {
-    var studentinformation = JSON.parse(localStorage.getItem("Student"));
-    console.log(" name:  "+ studentinformation[0].firstName + " " + studentinformation[0].lastName + "\n email: " + studentinformation[0].email);
-    console.log(" name:  "+ studentinformation[1].firstName + " " + studentinformation[1].lastName + "\n email: " + studentinformation[1].email);
-    console.log(" name:  "+ studentinformation[2].firstName + " " + studentinformation[2].lastName + "\n email: " + studentinformation[2].email);
-    console.log(" name:  "+ studentinformation[3].firstName + " " + studentinformation[3].lastName + "\n email: " + studentinformation[3].email);
+     var studentinformation = JSON.parse(localStorage.getItem("Student"));
+        alert("Student Information:"
+            + "\n name: "  + studentinformation[0].firstName + " " + studentinformation[0].lastName + "\n email: " + studentinformation[0].email
+            + "\n name: "  + studentinformation[1].firstName + " " + studentinformation[1].lastName + "\n email: " + studentinformation[1].email
+            + "\n name: "  + studentinformation[2].firstName + " " + studentinformation[2].lastName + "\n email: " + studentinformation[2].email
+            + "\n name: "  + studentinformation[3].firstName + " " + studentinformation[3].lastName + "\n email: " + studentinformation[3].email
+        )
 }
 function showTeacherinformation() {
     var teacherInformation = JSON.parse(localStorage.getItem("Teacher"));
-    console.log(" name:  "+ teacherInformation[0].firstName + " " + teacherInformation[0].lastName + "\n email: " + teacherInformation[0].email);
-    console.log(" name:  "+ teacherInformation[1].firstName + " " + teacherInformation[1].lastName + "\n email: " + teacherInformation[1].email);
-    console.log(" name:  "+ teacherInformation[2].firstName + " " + teacherInformation[2].lastName + "\n email: " + teacherInformation[2].email);
+        alert ("Teacher Information:"
+        + "\n name: " + teacherInformation[0].firstName + " " + teacherInformation[0].lastName + "\n email: " + teacherInformation[0].email
+        + "\n name: " + teacherInformation[1].firstName + " " + teacherInformation[1].lastName + "\n email: " + teacherInformation[1].email
+        + "\n name: " + teacherInformation[2].firstName + " " + teacherInformation[2].lastName + "\n email: " + teacherInformation[2].email
+    )
 }
 var adminlist = [];
 //Our hardcoded users (Admin). here all of their information is gathered. e.g - this is where the log in function gets the matching username and password.

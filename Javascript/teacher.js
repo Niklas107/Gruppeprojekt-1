@@ -69,7 +69,10 @@ function showStudentInformation() {
     console.log(" name:  "+ studentinformation[3].firstName + " " + studentinformation[3].lastName + "\n email: " + studentinformation[3].email);
 }
 
-
+function removeStudent() {
+    var x = document.getElementById("studentList");
+    x.remove(x.selectedIndex);
+}
 /** function showLecture() {
     console.log("Show localStorage");
     console.log(localStorage);

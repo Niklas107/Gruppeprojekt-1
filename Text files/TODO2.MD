@@ -10,10 +10,10 @@ Classroom
 - Fikset classroom i CreateLecture 
 
 User 
-- Måske have den til at virke med extension. 
+- Måske have den til at virke med extension. - FUCK THIS SHIT - fatter det ej 
 
 Student
-- validation form 
+- validation form - CHRIS DONE 
 
 Til rapporten (2. semester)
 - Tilføje flere studieretninger 

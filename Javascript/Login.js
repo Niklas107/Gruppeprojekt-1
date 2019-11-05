@@ -1,43 +1,32 @@
 var login = document.getElementById('login');
 var existingStudent = JSON.parse(localStorage.getItem('Student'));
 var existingTeacher = JSON.parse(localStorage.getItem("Teacher"));
+var existingAdmin = JSON.parse(localStorage.getItem("Admin"));
 login.onclick = function() {
     var user = document.getElementById("username").value;
     var pass = document.getElementById("password").value;
 
     for (let i = 0; i < existingStudent.length; i++) {
         if (user == existingStudent[i].userName && pass == existingStudent[i].password) {
-            alert("you are logged in as a student");
+            alert("You are logged in as a student");
             //document.location.href = "HTML PAGE";
             return true;
-        } else {
-            alert("Incorrect username or password");
         }
+
     }
-
-
-
-    for(let h = 0; h < existingTeacher.length; h++) {
+    for (let h = 0; h < existingTeacher.length; h++) {
         if (user == existingTeacher[h].userName && pass == existingTeacher[h].password) {
-            alert ("you are logged in as a Teacher");
+            alert("You are logged in as a Teacher");
             //document.location.href = "HTML PAGE";
-            return true
+            return true;
         }
-        else {
-            alert("incorrect username or password");
+        }
+    for (let g = 0; g < existingAdmin.length; g++) {
+        if (user == existingAdmin[g].userName && pass == existingAdmin[g].password) {
+            alert("You are logged in as a Admin");
+            //document.location.href = "HTML PAGE";
+            return true;
         }
     }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
+        alert("Incorrect username or password");
+    }

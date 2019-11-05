@@ -1,10 +1,3 @@
-    var userName = document.getElementById("userName");
-    var fullName = document.getElementById("fullName");
-    var email = document.getElementById("email");
-    var phone = document.getElementById("phone");
-    var comment = document.getElementById("comment");
-    var password = document.getElementById("password");
-
 //Different variables needed in our registration form
 function Register() {
     this.userName = document.getElementById("userName").value;
@@ -14,7 +7,6 @@ function Register() {
     this.comment = document.getElementById("comment").value;
     this.password = document.getElementById("password").value;
 }
-
 //Store input from registration to localStorage
 
 function storeLogin() {
@@ -44,7 +36,7 @@ function showUser () {
             form_valid = false; }
 
         if (fullName.value == null || fullName.value == ""){
-                validation_message += "fullName must be filled in! \n";
+                validation_message += "Full name must be filled in! \n";
                 form_valid = false; }
 
         var atpos = email.value.indexOf("@");
@@ -54,7 +46,7 @@ function showUser () {
             form_valid = false;}
 
         if (isNaN(phone.value)){
-            validation_message += "Phonenumbers can only consist of numbers! \n";
+            validation_message += "Phone numbers can only consist of numbers! \n";
             form_valid = false;}
         else if (phone.value == null || phone.value == "") {
             validation_message += "Please enter a phone number \n";

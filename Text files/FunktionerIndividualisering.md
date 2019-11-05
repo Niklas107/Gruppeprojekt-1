@@ -23,7 +23,7 @@ Student
 	Dynamic dropdown list - Chris (html) 
 Teacher 
 	Login Teacher - Chris 
-	createLecture - Niller
+	createLecture - Niller og Alexander
 	removeLecture - Niller 
 	showStudentInformation - Chris 
 	studentRemove - Niller 

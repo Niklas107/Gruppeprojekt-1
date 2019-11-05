@@ -37,14 +37,15 @@ if (localStorage.getItem("Teacher") == null) {
     teacherList = JSON.parse(localStorage.getItem('Teacher'))
 }
 
-//Code for validating time - Alex
+//Code for validating time. - Alex
+//Tjekker om tid på dagen (som findes i teacher.html) er skrevet efter det rigtige format. - Alex
 function validateHhMm(inputField) {
     var isValid = /^([0-1]?[0-9]|2[0-4]):([0-5][0-9])(:[0-5][0-9])?$/.test(inputField.value);
 
     return isValid;
 }
 
-//Validere inputs til create lecture - Alex
+//Validere inputs til create lecture. - Alex
 function validateCreateLecture() {
     if (!document.getElementById("teacher1").value) {
         alert("Name must be entered!");
@@ -56,12 +57,12 @@ function validateCreateLecture() {
         return false;
     }
 
-    //Validate that time is of a valid input.
+    //Validate that time is of a valid input.- Alex
     if (!document.getElementById("time").value) {
         alert("Please enter a valid number for the time of day");
         return false;
     }
-    //Validate that time is of the correct format.
+    //Validate that time is of the correct format. - Alex
     if (!validateHhMm(document.getElementById("time"))) {
         alert("Please enter a valid time of the day");
         return false;
@@ -69,11 +70,16 @@ function validateCreateLecture() {
 
     return true;
 }
-
+//Valideringen
 /* Her oprettes en forelæsning som har andre variable end dem i localstorage, fordi funktionen ikke længere fungerede efter local storage.
 Vi kunne heller ikke få forelæsning op i local storage, så har i stedet valgt at gøre det sådan her - Nik */
 //der står to funktioner i den og den ene eksisterer ikke
-function createLecture() {
+function createLecture()
+{
+// Performs validation. -Alex
+if (!validateCreateLecture()) {
+    return;
+}
     var teacher1 = document.getElementById("teacher1").value;
     var studyProgram1 = document.getElementById("studyProgram").value;
     var course1 = document.getElementById("course").value;

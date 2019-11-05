@@ -28,5 +28,4 @@ Teacher
 	showStudentInformation - Chris 
 	studentRemove - Niller 
 	removeStudent - Niller 
-	Teacher Validation - Alexander
-    Createlecture Alert - Alexander
+	validateCreateLecture - Alexander

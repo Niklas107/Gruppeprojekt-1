@@ -69,10 +69,29 @@ function showStudentInformation() {
     console.log(" name:  "+ studentinformation[3].firstName + " " + studentinformation[3].lastName + "\n email: " + studentinformation[3].email);
 }
 
+function studentRemove() {
+    var lectureStudent = document.getElementById("lectureRemoveStudent").value;
+    if(lectureStudent == "Consumer surplus og producer surplus") {
+        document.getElementById("studentListFunction").style.display = "none";
+        alert("No students in this lecture");
+    } else if (lectureStudent == "Lineær programmering") {
+        document.getElementById("studentListFunction").style.display = "";
+        console.log("Please select student to remove");
+    } else if (lectureStudent == "Programmering - Guide til objekter"){
+        document.getElementById("chris").style.display = "none";
+        console.log("Only one student in this lecture");
+    } else if (lectureStudent == "If statements og loops") {
+        document.getElementById("studentListFunction").style.display = "";
+        console.log("Please select student to remove");
+    }
+}
+//Skal have ændret, så når man fjerne nogen fra en lecture, så bliver de ikke fjernet fra de andre lectures
+
 function removeStudent() {
     var x = document.getElementById("studentList");
     x.remove(x.selectedIndex);
 }
+
 /** function showLecture() {
     console.log("Show localStorage");
     console.log(localStorage);

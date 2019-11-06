@@ -10,7 +10,7 @@ Admin
 Classroom 
 	getSelectedClassroom - Niller 
 Log in 
-	existingstudent - Chris og josefine 
+	existingstudent - Chris og Josefine 
 	existingTeacher - Chris 
 	existingAdmin - Chris
 Registration 
@@ -20,7 +20,7 @@ Registration
 Student 
 	Login Student - Chris 
 	studentValidationForm - Chris 
-	Dynamic dropdown list - Chris (html) 
+	Dynamic dropdown list - selectLecture - Chris (html) 
 Teacher 
 	Login Teacher - Chris 
 	createLecture - Niller og Alexander

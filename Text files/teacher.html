@@ -101,35 +101,40 @@
     <button type="button" onclick="removeLecture();">Remove selected lecture</button>
 
     <h3>Remove a student from (one of) your lecture(s)</h3>
-        <h4>Select the lecture that you want to remove a student from</h4>
-    <select id="lectureRemoveStudent" size="0">
-        <option selected disabled>Select lecture</option>
-        <option>Consumer surplus og producer surplus</option>
-        <option>Lineær programmering</option>
-        <option>Programmering - Guide til objekter</option>
-        <option>If statements og loops</option>
-    </select>
-
-    <button type = "button" onclick = "studentRemove();"> Select lecture </button>
-
-<div id="studentListFunction">
-    <h4>Select a student to remove</h4>
-    <select id="studentList" size="0">
+<select id="lecturesTeacher1" onchange="selectStudentsInLectures()">
+    <option selected disabled>Select lecture</option>
+    <option value="1">Consumer surplus og producer surplus</option>
+    <option value="2">Lineær programmering</option>
+    <option value="3">Programmering - Guide til objekter</option>
+    <option value="4">If statements og loops</option>
+</select>
+<div id="studentsInLectures">
+    <select id="studentsIn2">
         <option selected disabled>Select student</option>
-        <option id="chris">Christopher André HA(it.) 1. semester</option>
-        <option id="nik">Niklas L-B HA(it.) 1. semester</option>
+        <option value="1">Christopher André HA(it.) 1. semester</option>
+        <option value="2">Niklas L-B HA(it.) 1. semester</option>
     </select>
-    <button type="button" onclick="removeStudent();">Remove selected student</button>
+    <select id="studentsIn3">
+        <option selected disabled>Select student</option>
+        <option value="1">Niklas L-B HA(it.) 1. semester</option>
+    </select>
+    <select id="studentsIn4">
+        <option selected disabled>Select student</option>
+        <option value="1">Christopher André HA(it.) 1. semester</option>
+        <option value="2">Niklas L-B HA(it.) 1. semester</option>
+    </select>
+    <button id="removeButton2" type="button" onclick="removeStudent2();">Remove selected student</button>
+    <button id="removeButton3" type="button" onclick="removeStudent3();">Remove selected student</button>
+    <button id="removeButton4" type="button" onclick="removeStudent4();">Remove selected student</button>
 </div>
-
-
 <br/>
     <button type ="button" onclick="showStudentInformation();"> Show student information</button>
     <!--<button type = "button" onclick="showStudentInformation();"> Show student information</button>-->
-    <!-- Linking external JavaScript file to our HTML page -->
+    <!-- Linking external JavaScript and CSS files to our HTML page -->
     <script type="text/javascript" src="../Javascript/user.js"></script>
     <script type="text/javascript" src="../Javascript/teacher.js"></script>
     <script type="text/javascript" src="../Javascript/classroom.js"></script>
+    <link rel="stylesheet" href="teacher.css">
 
     </body>
     </html>

@@ -115,30 +115,58 @@ function showStudentInformation() {
         + "\n name: "  + studentinformation[3].firstName + " " + studentinformation[3].lastName + "\n email: " + studentinformation[3].email
     )
 }
-/* Her er funktionen der kan fjerne en student fra en forelæsning. Én forelæsning har ingen tilmeldte students, så der kan ingen fjernes fra.
-Andre har students, så man får vi listen over de students der er tilmeldt og kan fjerne en. Indtil videre fjerner det dem dog fra listen der er fælles for alle forelæsninger. - Nik */
-function studentRemove() {
-    var lectureStudent = document.getElementById("lectureRemoveStudent").value;
-    if(lectureStudent == "Consumer surplus og producer surplus") {
-        document.getElementById("studentListFunction").style.display = "none";
+/* Her fik jeg hjælp af min til block og none delen
+Men lad mig forklare. previousHidden er et array, hvor vi senere pusher elementer ind der skal være hidden - Nik */
+var previousHidden = [];
+function selectStudentsInLectures() {
+    // Her laves en variabel prev der gør at de ting der står i arrayet previousHidden er hidden ligesom i css dokumentet - Nik
+    for (var prev of previousHidden) {
+        prev.style.display = "none";
+    }
+    // Her søger vi efter den value man vælger i første dropdown - Nik
+    var x = document.getElementById("lecturesTeacher1").value;
+    // Hvis x er 1 alerter den at der ingen student er for denne forelæsning, da der ikke er nogen tilmeldt her - Nik
+    if (x == "1") {
         alert("No students in this lecture");
-    } else if (lectureStudent == "Lineær programmering") {
-        document.getElementById("studentListFunction").style.display = "";
-        console.log("Please select student to remove");
-    } else if (lectureStudent == "Programmering - Guide til objekter"){
-        document.getElementById("chris").style.display = "none";
-        console.log("Only one student in this lecture");
-    } else if (lectureStudent == "If statements og loops") {
-        document.getElementById("studentListFunction").style.display = "";
-        console.log("Please select student to remove");
+        /* Ved de næste tre values blockerer den deres hidden tilstand mens det er den value der er valgt i første dropdown liste
+        Derefter pushes de ind i arrayet så de er hidden igen når man vælger en anden value i første dropdown - Nik */
+    }else if (x == "2") {
+        var x = document.getElementById("studentsIn2");
+        x.style.display = "block";
+        previousHidden.push(x);
+        var y = document.getElementById("removeButton2");
+        y.style.display = "block";
+        previousHidden.push(y);
+    }else if (x == "3") {
+        var x = document.getElementById("studentsIn3");
+        x.style.display = "block";
+        previousHidden.push(x);
+        var y = document.getElementById("removeButton3");
+        y.style.display = "block";
+        previousHidden.push(y);
+    }else if (x == "4") {
+        var x = document.getElementById("studentsIn4");
+        x.style.display = "block";
+        previousHidden.push(x);
+        var y = document.getElementById("removeButton4");
+        y.style.display = "block";
+        previousHidden.push(y);
+    }else {
+        alert("Select a lecture to show its students");
     }
 }
-//Skal have ændret, så når man fjerne nogen fra en lecture, så bliver de ikke fjernet fra de andre lectures - Nik
 
-/* Denne funktion hører til dropdown listen over tilmeldte students, og skal kun vises, hvis der er nogen der er tilmeldt.
-Måske skal den gentages for hver forelæsning, så man ikke fjerner fra samme liste - Nik  */
-function removeStudent() {
-    var x = document.getElementById("studentList");
+/* De følgende funktion hører til dropdown listen over tilmeldte students. Jeg ville gerne kunne gøre det med en knap, der bruger det id der svarer til den dropdownlist man er i. - Nik  */
+function removeStudent2() {
+    var x = document.getElementById("studentsIn2");
+    x.remove(x.selectedIndex);
+}
+function removeStudent3() {
+    var x = document.getElementById("studentsIn3");
+    x.remove(x.selectedIndex);
+}
+function removeStudent4() {
+    var x = document.getElementById("studentsIn4");
     x.remove(x.selectedIndex);
 }
 

@@ -17,22 +17,23 @@ login.onclick = function() {
     for (let i = 0; i < existingStudent.length; i++) {
         if (user == existingStudent[i].userName && pass == existingStudent[i].password) {
             alert("You are logged in as a student");
-            //document.location.href = "HTML PAGE";
+            document.location.href = "Student.html"
             return true;
         }
     }
     for (let h = 0; h < existingTeacher.length; h++) {
         if (user == existingTeacher[h].userName && pass == existingTeacher[h].password) {
             alert("You are logged in as a Teacher");
-            //document.location.href = "HTML PAGE";
+            document.location.href = "teacher.html";
             return true;
         }
     }
     for (let g = 0; g < existingAdmin.length; g++) {
         if (user == existingAdmin[g].userName && pass == existingAdmin[g].password) {
             alert("You are logged in as a Admin");
-            //document.location.href = "HTML PAGE";
+            document.location.href = "http://localhost:63342/Gruppeprojekt-1/admin.html?_ijt=lnmm009ptdrsuqsa671lbm9as5";
             return true;
+
         }
     }
 // I also created an alert in case the username and the password does not match, e.g. the username and password is not yet registered in the program - Chris

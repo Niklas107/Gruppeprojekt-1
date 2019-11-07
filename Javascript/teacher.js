@@ -78,7 +78,7 @@ function validateHhMm(inputField) {
     return data;
 }
 
-//Validere inputs til create lecture. - Alex
+//Validerer inputs til create lecture. - Alex
 function validateCreateLecture() {
     if (!document.getElementById("teacher1").value) {
         alert("Name must be entered!");
@@ -110,12 +110,12 @@ function validateCreateLecture() {
         return false;
     }
 
-    //Validates that time is of a valid input.- Alex
+    //Validerer at inputtet til (altså det nummer man smider ind) "time of day" man smider ind, giver mening.- Alex
     if (!document.getElementById("time").value) {
         alert("Please enter a valid number for the time of day");
         return false;
     }
-    //Validates that time is of the correct format. - Alex
+    //Validerer om tiden for dagen er af korrekt format. - Alex
     if (!validateHhMm(document.getElementById("time"))) {
         alert("Please enter a valid time of the day");
         return false;

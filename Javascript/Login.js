@@ -1,6 +1,7 @@
 // Here we have created a log in function using local storage - Chris
 // The goal of this function is allow the users to log in as either a student, teacher or admin - Chris
-// To start of we create a variable for a button, since we could not get it to work otherwise, that is why there is a login.onclick = function - it is a workaround instead of just creating a function and calling the function on the button - Chris
+// To start of we create a variable for a button, since we could not get it to work otherwise, that is why there is a login.onclick = function
+// It is a workaround instead of just creating a function and calling the function on the button - Chris
 // we also create 3 variables, existingStudent, existingTeacher and existingAdmin. These 3 variables store the information that we create in the correlating js documents - Chris
 // these 3 variables store the login information of our users. The username and the password - Chris
 var login = document.getElementById('login');

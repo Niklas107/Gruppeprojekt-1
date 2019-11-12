@@ -8,6 +8,7 @@ class Classroom {
 
 
 // Her er der hardcodet nogle classrooms som bruges i createLecture funktionen - Nik
+//Det ville nok være smartere at push dem til et array
 room1 = new Classroom("50", "Solbjerg Plads");
 room2 = new Classroom("40", "Dalgas Have");
 room3 = new Classroom("120", "Solbjerg Plads");
@@ -32,4 +33,5 @@ function getSelectClassroom() {
         console.log(room5);
     }
 }
+
 

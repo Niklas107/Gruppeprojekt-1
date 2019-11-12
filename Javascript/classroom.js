@@ -5,6 +5,8 @@ class Classroom {
         this.location = location;
     }
 }
+
+
 // Her er der hardcodet nogle classrooms som bruges i createLecture funktionen - Nik
 room1 = new Classroom("50", "Solbjerg Plads");
 room2 = new Classroom("40", "Dalgas Have");

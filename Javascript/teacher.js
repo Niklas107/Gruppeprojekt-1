@@ -18,24 +18,34 @@ class Teacher extends User {
         this.semester = semester;
     }
 }
+
 // Log in for Teachers - using Local storage - Chris
 // We start by creating an empty array called teacherlist - Chris
 console.log(localStorage.getItem("Teacher"));
 var teacherList = [];
+
+
 // Our hardcoded users (teachers). here all of their information is gathered. e.g - this is where the log in function gets the matching username and password - Chris
 // When we have a class for our teachers, it will ask us for all of the data points that we defined in the class student and user - Chris
 if (localStorage.getItem("Teacher") == null) {
+
+
 // Here we push a new Teacher to our empty array - Chris
     teacherList.push(new Teacher("Jose","4567","Josefinecolberg@gmail.com","23626206","Josefine","Colberg","Ha(it)","3"));
     teacherList.push(new Teacher("Ca18ab", "Øl4ever", "ca18ab@student.cbs.com", "45668921", "Calle", "Olsen", "HA(it)","5"));
     teacherList.push(new Teacher("Ølgod", "password", "miøl18a@student.cbs.com", "66698724", "Mikkel", "Ølgod", "HA(jur.)", "4"));
+
+
 // The studentlist is then made into a string using the JSON.stringify command - Chris
     var teacherListString = JSON.stringify(teacherList);
+
+
 // Here we set out studentListString in local storage so that we can later retrieve it - Chris
     localStorage.setItem('Teacher', teacherListString)
 } else {
     teacherList = JSON.parse(localStorage.getItem('Teacher'))
 }
+
 
 //Code for validating time. - Alex
 //Tjekker om tid på dagen (som findes i teacher.html) er skrevet efter det rigtige format. - Alex
@@ -169,6 +179,8 @@ function showStudentInformation() {
         + "\n name: "  + studentinformation[3].firstName + " " + studentinformation[3].lastName + "\n email: " + studentinformation[3].email
     )
 }
+
+
 /* Her fik jeg hjælp af min til block og none delen
 Men lad mig forklare. previousHidden er et array, hvor vi senere pusher elementer ind der skal være hidden - Nik */
 var previousHidden = [];

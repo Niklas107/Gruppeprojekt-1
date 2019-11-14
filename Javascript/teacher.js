@@ -242,4 +242,3 @@ function removeStudent4() {
 }
 */
 
-//START PÅ VALIDATION - ALEX (DONT TOUCH)

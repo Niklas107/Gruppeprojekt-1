@@ -157,7 +157,7 @@ if (!validateCreateLecture()) {
         + "\nTeacher: " + teacher1
         + "\nStudy program: " + studyProgram1
         + "\nCourse: " + course1
-        + "\nClassroom: " + classRoom1 + " - " + test1   //test1 skal slettes?? gør at det ikke virker???
+        + "\nClassroom: " + classRoom1 + " - " + classroomListString
         + "\nLecture name: " + lectureName1
         + "\nDay: " + day1
         + "\nTime of lecture: " + time1

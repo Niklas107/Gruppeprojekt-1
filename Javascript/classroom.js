@@ -22,11 +22,15 @@ classroomList.push(new Classroom("50", "FLintholm"));
 var classroomListString = JSON.stringify([classroomList]);
  */
 
-//Den her skal være der før den virker
+//Den her skal være der før den virker den er fundet her:
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/toString
 Classroom.prototype.toString = function classroomToString () {
     return "Classroom " + "Size: " + this.size + " Location: " + this.location;
 }
 
+
+// Her er objekter af klassen Classroom, så stringifies. Det vil sige, at de laves om
+// fra et object til en string, så de kan bruges i alerten i createLecture funktionen - Nik
 room1 = new Classroom("50", "Solbjerg Plads");
 room2 = new Classroom("40", "Dalgas Have");
 room3 = new Classroom("120", "Solbjerg Plads");
@@ -38,6 +42,12 @@ var room3String = JSON.stringify(room3);
 var room4String = JSON.stringify(room4);
 var room5String = JSON.stringify(room5);
 
+// Her laver jeg variablen select som vælger fra IDet chooseClassroom, som er en tom
+// dropdown altså select HTML tag. Dernæst laver jeg variablen options, som er et array
+// Med de stringifiede versioner af room1 osv. Hvis i (integer) er 0 tilføjes en af
+// objekterne fra options arrayet. Variablen el laver nye option HTML elementer, hvis value
+// Er dem fra opt, som er taget fra options. Altså tilføjes der her options til en
+// HTML dropdown/select tag fra et array af vores hardcodede objekter. - Nik http://jsfiddle.net/yYW89/
 var select = document.getElementById("chooseClassroom");
 var options = ["Classroom 1: " + room1String, "Classroom 2: " + room2String, "Classroom 3: " + room3String, "Classroom 4: " + room4String, "Classroom 5: " + room5String];
 for (var i = 0; i < options.length; i++) {

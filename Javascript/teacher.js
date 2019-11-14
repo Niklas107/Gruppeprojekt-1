@@ -105,7 +105,7 @@ function validateCreateLecture() {
         return false;
     }
     // Tjekker om der er blevet valgt noget andet end standard-værdien ved select classroom. Alerter at der skal vælges noget andet end standard-værdien. - Alex
-    if (document.getElementById("Classroom").value == "Select classroom") {
+    if (document.getElementById("chooseClassroom").value == "Select classroom") {
         alert("Classroom must be selected!");
         return false;
     }
@@ -147,7 +147,7 @@ if (!validateCreateLecture()) {
     var teacher1 = document.getElementById("teacher1").value;
     var studyProgram1 = document.getElementById("studyProgram").value;
     var course1 = document.getElementById("course").value;
-    var classRoom1 = document.getElementById("Classroom").value;
+    var classRoom = document.getElementById("chooseClassroom").value;
     var lectureName1 = document.getElementById("lectureName").value;
     var day1 = document.getElementById("day").value;
     var time1 = document.getElementById("time").value;
@@ -157,12 +157,13 @@ if (!validateCreateLecture()) {
         + "\nTeacher: " + teacher1
         + "\nStudy program: " + studyProgram1
         + "\nCourse: " + course1
-        + "\nClassroom: " + classRoom1 + " - " + classroomListString
+        + "\n" + classRoom
         + "\nLecture name: " + lectureName1
         + "\nDay: " + day1
         + "\nTime of lecture: " + time1
         + "\nAdditional comment: " + comment1);
 }
+
 // Denne funktion fjerne en lecture fra dropdown menuen med allerede oprettede forelæsninger - Nik
 function removeLecture() {
     var x = document.getElementById("teacherLecture");

@@ -137,8 +137,7 @@ function validateCreateLecture() {
 /* Her oprettes en forelæsning som har andre variable end dem i localstorage, fordi funktionen ikke længere fungerede efter local storage.
 Vi kunne heller ikke få forelæsning op i local storage, så har i stedet valgt at gøre det sådan her - Nik */
 //der står to funktioner i den og den ene eksisterer ikke
-function createLecture()
-{
+function createLecture() {
 // Performs validation. -Alex
     // Her trykker man på knappen create lecture og så starter valideringen som ses ovenfor. Så kører den igennem step by step som ses ovenfor. -Alex
 if (!validateCreateLecture()) {
@@ -164,7 +163,7 @@ if (!validateCreateLecture()) {
         + "\nAdditional comment: " + comment1);
 }
 
-// Denne funktion fjerne en lecture fra dropdown menuen med allerede oprettede forelæsninger - Nik
+// Denne funktion fjerner en lecture fra dropdown menuen med allerede oprettede forelæsninger - Nik
 function removeLecture() {
     var x = document.getElementById("teacherLecture");
     x.remove(x.selectedIndex);
@@ -236,6 +235,10 @@ function removeStudent4() {
     var x = document.getElementById("studentsIn4");
     x.remove(x.selectedIndex);
 }
+
+
+console.log(previousHidden);
+
 
 /** function showLecture() {
     console.log("Show localStorage");

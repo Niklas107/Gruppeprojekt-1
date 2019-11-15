@@ -42,12 +42,14 @@ var room3String = JSON.stringify(room3);
 var room4String = JSON.stringify(room4);
 var room5String = JSON.stringify(room5);
 
+
 // Her laver jeg variablen select som vælger fra IDet chooseClassroom, som er en tom
 // dropdown altså select HTML tag. Dernæst laver jeg variablen options, som er et array
 // Med de stringifiede versioner af room1 osv. Hvis i (integer) er 0 tilføjes en af
 // objekterne fra options arrayet. Variablen el laver nye option HTML elementer, hvis value
 // Er dem fra opt, som er taget fra options. Altså tilføjes der her options til en
 // HTML dropdown/select tag fra et array af vores hardcodede objekter. - Nik http://jsfiddle.net/yYW89/
+(function fun() {
 var select = document.getElementById("chooseClassroom");
 var options = ["Classroom 1: " + room1String, "Classroom 2: " + room2String, "Classroom 3: " + room3String, "Classroom 4: " + room4String, "Classroom 5: " + room5String];
 for (var i = 0; i < options.length; i++) {
@@ -57,6 +59,7 @@ for (var i = 0; i < options.length; i++) {
     el.value = opt;
     select.appendChild(el);
 }
+})();
 
 
 

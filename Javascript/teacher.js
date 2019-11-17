@@ -237,7 +237,6 @@ function removeStudent4() {
 }
 
 
-console.log(previousHidden);
 
 
 /** function showLecture() {

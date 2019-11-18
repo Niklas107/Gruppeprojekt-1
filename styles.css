@@ -1,0 +1,22 @@
+@font-face {
+    font-family: cbsNewBold;
+    src: url("Fonts/cbsTypografier/cbsNewBold.ttf");
+}
+
+body {
+    background-color: rgb(247, 247, 243);
+}
+
+button {
+    background-color: rgb(73,103,170);
+}
+
+h2 {
+    color: rgb(73, 103, 170);
+    font-family: cbsNewBold;
+}
+
+h1 {
+    color: rgb(73, 103, 170);
+    font-family: cbsNewBold;
+}

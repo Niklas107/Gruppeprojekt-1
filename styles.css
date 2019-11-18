@@ -1,6 +1,6 @@
 @font-face {
     font-family: cbsNewBold;
-    src: url("Fonts/cbsTypografier/cbsNewBold.ttf");
+    src: url(fonts/cbsNewBold.ttf);
 }
 
 body {
@@ -11,12 +11,34 @@ button {
     background-color: rgb(73,103,170);
 }
 
+
+h1 {
+    color: rgb(73, 103, 170);
+    font-family: cbsNewBold;
+    text-align: center;
+    font-size: 60px;
+}
+
 h2 {
     color: rgb(73, 103, 170);
     font-family: cbsNewBold;
 }
 
-h1 {
+h3 {
     color: rgb(73, 103, 170);
     font-family: cbsNewBold;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: rgb(185, 194, 200);
+    padding: 10px;
+}
+.grid-item {
+    background-color: rgb(185,194, 200);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
 }

@@ -1,31 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>StudentTeach Admin page</title>
+    <meta charset="UTF-8">
+    <title>Title of the document</title>
 </head>
+
 <body>
-<b/>
-<h2> StudentTeach Admin page </h2>
-
-    <!-- Drop down menu til at fjerne students -->
-    <h3>Delete an existing student</h3>
-    <select id="allStudents" size="4">
-            <option>Christopher André HA(it.) 1. semester</option>
-            <option>Niklas L-B HA(it.) 1. semester</option>
-            <option>Sven Eriksen HA(jur.) 4. semester</option>
-            <option>Kasper Rasmussen HA(jur.) 3. semester </option>
-    </select>
-<button type="button" onclick="deleteStudent()">Delete the selected student</button>
-
-<!-- Drop down menu til at fjerne teachers -->
-<h3>Delete an existing teacher</h3>
-<select id="allTeachers" size="3">
-    <option>Josefine HA(it.) 3. semester</option>
-    <option>Calle HA(it.) 5. semester</option>
-    <option>Mikkel HA(jur.) 4. semester</option>
-</select>
-<button type="button" onclick="deleteTeacher()">Delete the selected teacher</button>
-
 <h3>Delete an existing lecture</h3>
 <select id="allLectures" size="13">
     <!-- De første to er BIS forelæsninger for HA(it.) -->
@@ -49,18 +29,18 @@
     <option>Juridisk metode introduktion</option>
     <option>Fuldmagt og ugyldighed opsummering</option>
 </select>
+<br>
 <button type="button" onclick="deleteLecture();">Delete the selected lecture</button>
+
+
 <br/>
 <br/>
 <button type ="button" onclick="showStudentInformation();"> Show student information</button>
 <br/>
 <br/>
 <button type ="button" onclick="showTeacherinformation();"> Show Teacher information</button>
-<script type="text/javascript" src="Javascript/admin.js"></script>
-
+<script type="text/javascript" src="../Javascript/admin.js"></script>
+<link rel="stylesheet" href="../styles.css" type="text/css">
 </body>
+
 </html>
-
-
-
-

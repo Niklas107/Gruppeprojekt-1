@@ -1,6 +1,6 @@
 @font-face {
     font-family: cbsNewBold;
-    src: url(fonts/cbsNewBold.ttf);
+    src: url(../fonts/cbsNewBold.ttf);
 }
 
 body {
@@ -10,7 +10,6 @@ body {
 button {
     background-color: rgb(73,103,170);
 }
-
 
 h1 {
     color: rgb(73, 103, 170);

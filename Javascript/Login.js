@@ -43,7 +43,7 @@ login.onclick = function() {
         if (user == existingAdmin[g].userName && pass == existingAdmin[g].password) {
             alert("You are logged in as a Admin");
 // Linking to the Admin page. For some reason it would not allow me to link straight to the html page as with student and teacher, but this works as well - Chris
-            document.location.href = "http://localhost:63342/Gruppeprojekt-1/admin.html?_ijt=lnmm009ptdrsuqsa671lbm9as5";
+            document.location.href = "../Text files/admin.html";
             return true;
         }
     }

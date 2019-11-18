@@ -1,9 +1,14 @@
+@font-face {
+    font-family: cbsNewBold;
+    src: url("fonts/cbsNewBold.ttf");
+}
+
 h1 {
-    color: red;
+    color: rgb(73, 103, 170);
 }
 
 body {
-    background-color: rgb(185, 194, 200);
+    background-color: rgb(247, 247, 243);
 }
 
 button {
@@ -12,4 +17,7 @@ button {
 
 h2 {
     color: rgb(73, 103, 170);
+    font-family: cbsNewBold;
 }
+
+

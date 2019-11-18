@@ -75,7 +75,7 @@ function validateHhMm(inputField) {
         return false;
     } //Math.sign et library (et library er en samling af functioner) og en af de functioner er noget der kan opfange om tallene er negative eller positive. (udregner om de positive eller negative). -Alex
 
-    //Konverterer fra text til int (et helt tal positivt eller negativt) og tjekker at det er et helt tal.
+    //Konverterer fra text til int (et helt tal positivt eller negativt) og tjekker at det er et helt tal. - Alex
     if(!Number.isInteger(parseInt(val[1]))) {
         return false;
     }

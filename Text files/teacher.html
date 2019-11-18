@@ -5,130 +5,23 @@
     <title>Teacher profile</title>
 </head>
 <body>
-<h2>Teacher profile</h2>
-<form name="Create Lecture">
-<h3>Create lecture form</h3>
-    <!-- Text fields -->
-    Teacher name
-    <br/>
-    <input type="text" id="teacher1" value="" placeholder="Your name"/>
-    <br/>
-
-    <!-- Dropdown lists -->
-    Study program
-    <br/>
-    <select id="studyProgram">
-        <option selected disabled>Select study program</option>
-        <option value="HA(it.)">HA(it.)</option>
-        <option value="HA(jur.)">HA(jur.)</option>
-        <option value="HA(fil.)">HA(fil.)</option>
-        <option value="HA(mat.)">HA(mat.)</option>
-        <option value="HA pro.">HA pro.</option>
-        <option value="HA(kom.)">HA(kom.)</option>
-        <option value="HA(psyk.)">HA(psyk.)</option>
-    </select>
-    <br/>
-
-    Course
-    <br/>
-    <select id="course">
-        <option selected disabled>Select course</option>
-        <option value="BIS">Introduction to Informations Systems and Informations Systems Development</option>
-        <option value="VØS">Virksomhedens økonomiske styring 1</option>
-        <option value="PRO">Programmering og udvikling af små systemer samt databaser</option>
-        <option value="ORG">Indføring i organisationers opbygning og funktion</option>
-    </select>
-    <br/>
-
-    Classroom
-    <br/>
-    <select id="Classroom">
-        <option selected disabled>Select classroom</option>
-        <option value="room1">1</option>
-        <option value="room2">2</option>
-        <option value="room3">3</option>
-        <option value="room4">4</option>
-        <option value="room5">5</option>
-    </select>
-    <br/>
-
-    Lecture Name
-    <br/>
-    <input type="text" name="text" id="lectureName" value="" placeholder="Lecture name"/>
-    <p id="lName"></p>
-
-
-    Day
-    <br/>
-    <select id="day">
-        <option selected disabled>Choose day</option>
-        <option value="Mon">Monday</option>
-        <option value="Tue">Tuesday</option>
-        <option value="Wed">Wednesday</option>
-        <option value="Thu">Thursday</option>
-        <option value="Fri">Friday</option>
-    </select>
-    <br/>
-
-    Time of lecture
-    <br/>
-    <textarea rows="1" cols="15" id="time" placeholder="Insert time"></textarea>
-    <br/>
-
-
-    <!-- Text area for additional comments -->
-    Additional comments
-    <br/>
-    <textarea rows="5" cols="30" id="comment" placeholder="Your comment here..."></textarea>
-
-      <!-- Submit button to create lecture -->
-    <br/>
-    <button id="lecture" type="button" onclick="getSelectClassroom(); createLecture();"> Create lecture </button>
-    <br/>
-    <br/>
-</form>
-
-    <!-- Dropdown list med alle ens egne oprettede forelæsninger -->
-    <h3>Remove (one of) your lecture(s)</h3>
-    <select id="teacherLecture" size="4">
-        <option>Consumer surplus og producer surplus</option>
-        <option>Lineær programmering</option>
-        <option>Programmering - Guide til objekter</option>
-        <option>If statements og loops</option>
-    </select>
-
-    <button type="button" onclick="removeLecture();">Remove selected lecture</button>
-
-    <h3>Remove a student from (one of) your lecture(s)</h3>
-        <h4>Select the lecture that you want to remove a student from</h4>
-    <select id="lectureRemoveStudent" size="0">
-        <option selected disabled>Select lecture</option>
-        <option>Consumer surplus og producer surplus</option>
-        <option>Lineær programmering</option>
-        <option>Programmering - Guide til objekter</option>
-        <option>If statements og loops</option>
-    </select>
-
-    <button type = "button" onclick = "studentRemove();"> Select lecture </button>
-
-<div id="studentListFunction">
-    <h4>Select a student to remove</h4>
-    <select id="studentList" size="0">
-        <option selected disabled>Select student</option>
-        <option id="chris">Christopher André HA(it.) 1. semester</option>
-        <option id="nik">Niklas L-B HA(it.) 1. semester</option>
-    </select>
-    <button type="button" onclick="removeStudent();">Remove selected student</button>
-</div>
-
-
+<h1>Teacher profile</h1>
+<a href="createLecture.html">Create lecture</a>
 <br/>
-    <button type ="button" onclick="showStudentInformation();"> Show student information</button>
-    <!--<button type = "button" onclick="showStudentInformation();"> Show student information</button>-->
-    <!-- Linking external JavaScript file to our HTML page -->
+<br/>
+<a href="removeLecture.html">Remove lecture</a>
+<br/>
+<br/>
+<a href="removeStudent.html">Remove student</a>
+
+
+
+
+    <!-- Linking external JavaScript and CSS files to our HTML page -->
     <script type="text/javascript" src="../Javascript/user.js"></script>
     <script type="text/javascript" src="../Javascript/teacher.js"></script>
     <script type="text/javascript" src="../Javascript/classroom.js"></script>
+    <link rel="stylesheet" href="teacher.css">
 
     </body>
     </html>

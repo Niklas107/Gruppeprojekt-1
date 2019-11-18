@@ -23,7 +23,7 @@ login.onclick = function() {
         if (user == existingStudent[i].userName && pass == existingStudent[i].password) {
             alert("You are logged in as a student");
 // Linking to the student page - Chris
-            document.location.href = "Student.html";
+            document.location.href = "Student.html"
             return true;
         }
     }

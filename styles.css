@@ -1,6 +1,10 @@
 @font-face {
     font-family: cbsNewBold;
-    src: url(../fonts/cbsNewBold.ttf);
+    src: url(fonts/cbsNewBold.ttf);
+}
+@font-face {
+    font-family: cbsNewRegular;
+    src: url(fonts/cbsNewRegular.ttf);
 }
 
 body {
@@ -9,6 +13,8 @@ body {
 
 button {
     background-color: rgb(73,103,170);
+    font-family: cbsNewRegular;
+    font-size: 18px;
 }
 
 h1 {
@@ -28,16 +34,14 @@ h3 {
     font-family: cbsNewBold;
 }
 
-.grid-container {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    background-color: rgb(185, 194, 200);
-    padding: 10px;
+
+input, select, option, textarea, text {
+    font-family: cbsNewRegular;
+    font-size: 16px;
 }
-.grid-item {
-    background-color: rgb(185,194, 200);
-    border: 1px solid rgba(0, 0, 0, 0.8);
-    padding: 20px;
-    font-size: 30px;
-    text-align: center;
+p, a {
+
+    font-family: cbsNewRegular;
+    font-size: 20px;
 }
+

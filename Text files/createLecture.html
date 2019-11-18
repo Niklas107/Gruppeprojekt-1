@@ -5,18 +5,16 @@
     <title>Create lecture</title>
 </head>
 <body>
-<h2>Create lecture</h2>
+<h1>Create lecture</h1>
 
 <form name="Create Lecture">
     <!-- Text fields -->
-    Teacher name
-    <br/>
+    <p>Teacher name</p>
     <input type="text" id="teacher1" value="" placeholder="Your name"/>
     <br/>
 
     <!-- Dropdown lists -->
-    Study program
-    <br/>
+    <p>Study program</p>
     <select id="studyProgram">
         <option selected disabled>Select study program</option>
         <option value="HA(it.)">HA(it.)</option>
@@ -29,8 +27,7 @@
     </select>
     <br/>
 
-    Course
-    <br/>
+    <p>Course</p>
     <select id="course">
         <option selected disabled>Select course</option>
         <option value="BIS">Introduction to Informations Systems and Informations Systems Development</option>
@@ -40,8 +37,7 @@
     </select>
     <br/>
 
-    Classroom
-    <br/>
+    <p>Classroom</p>
         <select id="chooseClassroom">
             <option>Select classroom</option>
         </select>
@@ -49,13 +45,11 @@
 
 
     <br/>
-    Lecture Name
-    <br/>
+    <p>Lecture Name</p>
     <input type="text" name="text" id="lectureName" value="" placeholder="Lecture name"/>
     <p id="lName"></p>
 
-    Day
-    <br/>
+    <p>Day</p>
     <select id="day">
         <option selected disabled>Choose day</option>
         <option value="Mon">Monday</option>
@@ -66,15 +60,13 @@
     </select>
     <br/>
 
-    Time of lecture
-    <br/>
+    <p>Time of lecture</p>
     <textarea rows="1" cols="15" id="time" placeholder="Insert time"></textarea>
     <br/>
 
 
     <!-- Text area for additional comments -->
-    Additional comments
-    <br/>
+    <p>Additional comments</p>
     <textarea rows="5" cols="30" id="comment" placeholder="Your comment here..."></textarea>
 
     <!-- Submit button to create lecture -->
@@ -86,6 +78,6 @@
 <script type="text/javascript" src="../Javascript/user.js"></script>
 <script type="text/javascript" src="../Javascript/teacher.js"></script>
 <script type="text/javascript" src="../Javascript/classroom.js"></script>
-<link rel="stylesheet" href="styles.css" type="text/css">
+<link rel="stylesheet" href="../styles.css" type="text/css">
 </body>
 </html>

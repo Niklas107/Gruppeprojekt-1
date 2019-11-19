@@ -6,68 +6,19 @@
 </head>
 <body>
 <b/>
-<h1> StudentTeach Admin page </h1>
+<h1>StudentTeach Admin page</h1>
 
+<ul>
+    <li><a href="deleteStudent.html">Delete a student</a> </li>
+    <li><a href="deleteTeacher.html">Delete a teacher</a></li>
+    <li><a href="deleteLecture.html">Delete lecture</a></li>
+    <li><a href="showStudentInformation.html">Show student information</a></li>
+    <li><a href="showTeacherInformation.html">Show Teacher information</a></li>
+</ul>
 
-
-<!-- Drop down menu til at fjerne students -->
-<h3>Delete an existing student</h3>
-<select id="allStudents" size="4">
-    <option>Christopher André HA(it.) 1. semester</option>
-    <option>Niklas L-B HA(it.) 1. semester</option>
-    <option>Sven Eriksen HA(jur.) 4. semester</option>
-    <option>Kasper Rasmussen HA(jur.) 3. semester </option>
-</select>
-<br>
-<button type="button" onclick="deleteStudent()">Delete the selected student</button>
-
-
-
-<!-- Drop down menu til at fjerne teachers -->
-<h3>Delete an existing teacher</h3>
-<select id="allTeachers" size="3">
-    <option>Josefine HA(it.) 3. semester</option>
-    <option>Calle HA(it.) 5. semester</option>
-    <option>Mikkel HA(jur.) 4. semester</option>
-</select>
-<br>
-<button type="button" onclick="deleteTeacher()">Delete the selected teacher</button>
-
-
-<h3>Delete an existing lecture</h3>
-<select id="allLectures" size="13">
-    <!-- De første to er BIS forelæsninger for HA(it.) -->
-    <option>Vandfaldsmodellen</option>
-    <option>Httml for begyndere</option>
-    <!-- De næste to er VØS forelæsninger for HA(it.) -->
-    <option>Consumer surplus og producer surplus</option>
-    <option>Lineær programmering</option>
-    <!-- De næste to er PRO forelæsninger for HA(it.) -->
-    <option>Programmering - Guide til objekter</option>
-    <option>If statements og loops</option>
-    <!-- De næste to er ORG forelæsninger for HA(it.) -->
-    <option>Kultur i organisationer</option>
-    <option>Motivation og koblingen til andre emner</option>
-    <!-- Denne er en forelæsning for mikroøkonomi for HA(jur.) -->
-    <option>Mikroøkonomi opsummering</option>
-    <!-- Denne er en forelæsning for formueret for HA(jur.) -->
-    <option>Formueret eksamen tips og tricks </option>
-    <!-- De næste tre er forelæsninger for aftaleret for HA(jur.) -->
-    <option>Aftaleret for begyndere</option>
-    <option>Juridisk metode introduktion</option>
-    <option>Fuldmagt og ugyldighed opsummering</option>
-</select>
-<br>
-<button type="button" onclick="deleteLecture();">Delete the selected lecture</button>
-
-
-<br/>
-<br/>
-<button type ="button" onclick="showStudentInformation();"> Show student information</button>
-<br/>
-<br/>
-<button type ="button" onclick="showTeacherinformation();"> Show Teacher information</button>
 <script type="text/javascript" src="../Javascript/admin.js"></script>
+<script type="text/javascript" src="../Javascript/teacher.js"></script>
+<script type="text/javascript" src="../Javascript/student.js"></script>
 <link rel="stylesheet" href="../styles.css" type="text/css">
 </body>
 </html>

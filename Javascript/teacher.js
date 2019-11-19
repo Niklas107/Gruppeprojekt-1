@@ -9,7 +9,7 @@ class User {
         this.lastName = lastName;
     }
 }
-
+// Sub Class student which extends the user. Meaning: This class gets most of its attributes from the class user, but a few new ones, such as study program and semester - Chris/Josefine
 class Teacher extends User {
     constructor (userName, password, email, phoneNumber, firstName, lastName, studyProgram, semester) {
         super(userName, password, email, phoneNumber, firstName, lastName);

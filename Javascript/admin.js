@@ -11,7 +11,7 @@ class User {
 }
 
 
-// Sub Class Admin which extends the user. Meaning: This class gets most of its attributes from the class user - Chris/Josephine
+// Sub Class Admin which extends the user. Meaning: This class gets most of its attributes from the class user - Chris/Josefine
 class Admin extends User {
     constructor(userName, password, email, phoneNumber, firstName, lastName) {
         super(userName, password, email, phoneNumber, firstName, lastName);

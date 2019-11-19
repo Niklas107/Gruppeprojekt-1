@@ -1,5 +1,7 @@
-/* class User {                                                                    //Klassen user er blot overklasse som de andre klasser inheriter fra
-    constructor(userName, password, email, phoneNumber, firstName, lastName) {  //Her er alle de attributter som alle classes skal bruge
+//Klassen er kommenteret ud og kopieret ind til de relevante steder, da den ikke kunne extend.
+
+/* class User {
+    constructor(userName, password, email, phoneNumber, firstName, lastName) {
         this.userName = userName;
         this.password = password;
         this.email = email;

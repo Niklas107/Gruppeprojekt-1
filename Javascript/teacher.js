@@ -236,10 +236,4 @@ function removeStudent4() {
     x.remove(x.selectedIndex);
 }
 
-/** function showLecture() {
-    console.log("Show localStorage");
-    console.log(localStorage);
-}
-*/
 
-//START PÅ VALIDATION - ALEX (DONT TOUCH)

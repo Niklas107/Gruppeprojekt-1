@@ -9,7 +9,7 @@ function Register() {
 }
 
 
-//Store input from registration to localStorage - Josephine
+//Store input from registration to localStorage - Josefine
 function storeLogin() {
     localStorage.setItem("userName", userName.value);
     localStorage.setItem("name", fullName.value);

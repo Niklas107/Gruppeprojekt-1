@@ -23,7 +23,7 @@ login.onclick = function() {
         if (user == existingStudent[i].userName && pass == existingStudent[i].password) {
             alert("You are logged in as a student");
 // Linking to the student page - Chris
-            document.location.href = "Student.html";
+            document.location.href = "Student.html"
             return true;
         }
     }
@@ -31,7 +31,7 @@ login.onclick = function() {
 
     for (let h = 0; h < existingTeacher.length; h++) {
         if (user == existingTeacher[h].userName && pass == existingTeacher[h].password) {
-            alert("You are logged in as a Teacher");
+            alert("You are logged in as a teacher");
 // Linking to the teacher page - Chris
             document.location.href = "teacher.html";
             return true;
@@ -41,9 +41,9 @@ login.onclick = function() {
 
     for (let g = 0; g < existingAdmin.length; g++) {
         if (user == existingAdmin[g].userName && pass == existingAdmin[g].password) {
-            alert("You are logged in as a Admin");
+            alert("You are logged in as an admin");
 // Linking to the Admin page. For some reason it would not allow me to link straight to the html page as with student and teacher, but this works as well - Chris
-            document.location.href = "http://localhost:63342/Gruppeprojekt-1/admin.html?_ijt=lnmm009ptdrsuqsa671lbm9as5";
+            document.location.href = "../Text files/admin.html";
             return true;
         }
     }

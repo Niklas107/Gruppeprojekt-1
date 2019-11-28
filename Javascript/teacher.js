@@ -9,7 +9,7 @@ class User {
         this.lastName = lastName;
     }
 }
-
+// Sub Class student which extends the user. Meaning: This class gets most of its attributes from the class user, but a few new ones, such as study program and semester - Chris/Josefine
 class Teacher extends User {
     constructor (userName, password, email, phoneNumber, firstName, lastName, studyProgram, semester) {
         super(userName, password, email, phoneNumber, firstName, lastName);
@@ -75,7 +75,7 @@ function validateHhMm(inputField) {
         return false;
     } //Math.sign et library (et library er en samling af functioner) og en af de functioner er noget der kan opfange om tallene er negative eller positive. (udregner om de positive eller negative). -Alex
 
-    //Konverterer fra text til int (et helt tal positivt eller negativt) og tjekker at det er et helt tal.
+    //Konverterer fra text til int (et helt tal positivt eller negativt) og tjekker at det er et helt tal. - Alex
     if(!Number.isInteger(parseInt(val[1]))) {
         return false;
     }
@@ -105,7 +105,7 @@ function validateCreateLecture() {
         return false;
     }
     // Tjekker om der er blevet valgt noget andet end standard-værdien ved select classroom. Alerter at der skal vælges noget andet end standard-værdien. - Alex
-    if (document.getElementById("chooseClassroom").value == "Select classroom") {
+    if (document.getElementById("Classroom").value == "Select classroom") {
         alert("Classroom must be selected!");
         return false;
     }
@@ -137,7 +137,8 @@ function validateCreateLecture() {
 /* Her oprettes en forelæsning som har andre variable end dem i localstorage, fordi funktionen ikke længere fungerede efter local storage.
 Vi kunne heller ikke få forelæsning op i local storage, så har i stedet valgt at gøre det sådan her - Nik */
 //der står to funktioner i den og den ene eksisterer ikke
-function createLecture() {
+function createLecture()
+{
 // Performs validation. -Alex
     // Her trykker man på knappen create lecture og så starter valideringen som ses ovenfor. Så kører den igennem step by step som ses ovenfor. -Alex
 if (!validateCreateLecture()) {
@@ -146,7 +147,7 @@ if (!validateCreateLecture()) {
     var teacher1 = document.getElementById("teacher1").value;
     var studyProgram1 = document.getElementById("studyProgram").value;
     var course1 = document.getElementById("course").value;
-    var classRoom = document.getElementById("chooseClassroom").value;
+    var classRoom1 = document.getElementById("Classroom").value;
     var lectureName1 = document.getElementById("lectureName").value;
     var day1 = document.getElementById("day").value;
     var time1 = document.getElementById("time").value;
@@ -156,14 +157,13 @@ if (!validateCreateLecture()) {
         + "\nTeacher: " + teacher1
         + "\nStudy program: " + studyProgram1
         + "\nCourse: " + course1
-        + "\n" + classRoom
+        + "\nClassroom: " + classRoom1 + " - " + test1   //test1 skal slettes?? gør at det ikke virker???
         + "\nLecture name: " + lectureName1
         + "\nDay: " + day1
         + "\nTime of lecture: " + time1
         + "\nAdditional comment: " + comment1);
 }
-
-// Denne funktion fjerner en lecture fra dropdown menuen med allerede oprettede forelæsninger - Nik
+// Denne funktion fjerne en lecture fra dropdown menuen med allerede oprettede forelæsninger - Nik
 function removeLecture() {
     var x = document.getElementById("teacherLecture");
     x.remove(x.selectedIndex);
@@ -236,12 +236,4 @@ function removeStudent4() {
     x.remove(x.selectedIndex);
 }
 
-
-
-
-/** function showLecture() {
-    console.log("Show localStorage");
-    console.log(localStorage);
-}
-*/
 

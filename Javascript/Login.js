@@ -8,7 +8,7 @@ var login = document.getElementById('login');
 var existingStudent = JSON.parse(localStorage.getItem('Student'));
 var existingTeacher = JSON.parse(localStorage.getItem("Teacher"));
 var existingAdmin = JSON.parse(localStorage.getItem("Admin"));
-login.onclick = function() {
+login.onclick = function login() {
 
 
 // Here we create 2 more variables to check if the username and the password actually matches the username and password in our local storage - Chris

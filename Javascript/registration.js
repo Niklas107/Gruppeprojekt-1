@@ -1,4 +1,6 @@
 //Different variables needed in our registration form retrieved from out Registration HTML document - Alex
+// Den her funktion bliver ikke brugt? - Nik
+/*
 function Register() {
     this.userName = document.getElementById("userName").value;
     this.name = document.getElementById("name").value;
@@ -7,7 +9,7 @@ function Register() {
     this.comment = document.getElementById("comment").value;
     this.password = document.getElementById("password").value;
 }
-
+*/
 
 //Store input from registration to localStorage - Josefine
 function storeLogin() {
@@ -17,6 +19,7 @@ function storeLogin() {
     localStorage.setItem("phone", phone.value);
     localStorage.setItem("comment", comment.value);
     localStorage.setItem("password",password.value);
+    // Hvorfor skal vi console.log det her? - Nik
     console.log(fullName.value);
 }
 

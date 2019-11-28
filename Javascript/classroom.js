@@ -33,7 +33,7 @@ var room5String = JSON.stringify(room5);
 // Er dem fra opt, som er taget fra options. Altså tilføjes der her options til en
 // HTML dropdown/select tag fra et array af vores hardcodede objekter. - Nik http://jsfiddle.net/yYW89/
 // Funktionen er i parantes, da den så kalder sig selv med det samme.
-(function fun() {
+(function selectClassroom() {
 var select = document.getElementById("chooseClassroom");
 var options = ["Classroom 1: " + room1String, "Classroom 2: " + room2String, "Classroom 3: " + room3String, "Classroom 4: " + room4String, "Classroom 5: " + room5String];
 for (var i = 0; i < options.length; i++) {

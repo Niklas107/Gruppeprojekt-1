@@ -105,6 +105,8 @@ function validateCreateLecture() {
         return false;
     }
     // Tjekker om der er blevet valgt noget andet end standard-værdien ved select classroom. Alerter at der skal vælges noget andet end standard-værdien. - Alex
+    // Virker ikke længere det nye elementID er chooseClassroom, men virker heller ikke hvis det udskiftes.
+    // og jeg kan ikke gennemskue din funktion Alex, så gider du forsøge at få den til at virke? - Nik
     if (document.getElementById("Classroom").value == "Select classroom") {
         alert("Classroom must be selected!");
         return false;
@@ -133,17 +135,15 @@ function validateCreateLecture() {
 
     return true;
 }
-//Valideringen
+
 /* Her oprettes en forelæsning som har andre variable end dem i localstorage, fordi funktionen ikke længere fungerede efter local storage.
 Vi kunne heller ikke få forelæsning op i local storage, så har i stedet valgt at gøre det sådan her - Nik */
-//der står to funktioner i den og den ene eksisterer ikke
-function createLecture()
-{
-// Performs validation. -Alex
-    // Her trykker man på knappen create lecture og så starter valideringen som ses ovenfor. Så kører den igennem step by step som ses ovenfor. -Alex
-if (!validateCreateLecture()) {
-    return;
-}
+function createLecture() {
+    // Performs validation. -Alex
+// Her trykker man på knappen create lecture og så starter valideringen som ses ovenfor. Så kører den igennem step by step som ses ovenfor. -Alex
+    if (!validateCreateLecture()) {
+        return;
+    }
     var teacher1 = document.getElementById("teacher1").value;
     var studyProgram1 = document.getElementById("studyProgram").value;
     var course1 = document.getElementById("course").value;

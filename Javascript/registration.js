@@ -12,6 +12,7 @@ function Register() {
 */
 
 //Store input from registration to localStorage - Josefine
+// Hvorfor er det fullName her, men firstName og lastName i student, admin og teacher?? - Nik
 function storeLogin() {
     localStorage.setItem("userName", userName.value);
     localStorage.setItem("name", fullName.value);

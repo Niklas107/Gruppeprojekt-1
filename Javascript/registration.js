@@ -79,11 +79,11 @@ function storeLogin() {
         if (form_valid) {
             alert("You have been registered"
 
-                + "\nuserName: " + userName.value
-                + "\nname: " + fullName.value
-                + "\nemail: " + email.value
-                + "\nphone: " + phone.value
-                + "\npassword: " + "****"
+                + "\nUsername: " + userName.value
+                + "\nName: " + fullName.value
+                + "\nEmail: " + email.value
+                + "\nPhone: " + phone.value
+                + "\nPassword: " + "****"
                 + "\nAdditional comment: " + comment.value);
         }
         else {

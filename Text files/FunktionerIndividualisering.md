@@ -10,7 +10,7 @@ Admin
 Classroom 
 	getSelectedClassroom - Niller 
 Log in 
-	existingstudent - Chris og josefine 
+	existingstudent - Chris og Josefine 
 	existingTeacher - Chris 
 	existingAdmin - Chris
 Registration 

@@ -11,7 +11,7 @@ class User {
 }
 
 
-// Sub Class Admin which extends the user. Meaning: This class gets most of its attributes from the class user - Chris/Josephine
+// Sub Class Admin which extends the user. Meaning: This class gets most of its attributes from the class user - Chris/Josefine
 class Admin extends User {
     constructor(userName, password, email, phoneNumber, firstName, lastName) {
         super(userName, password, email, phoneNumber, firstName, lastName);
@@ -36,6 +36,7 @@ function deleteLecture() {
 }
 
 // Since studentlist is not defined in this js document, i had to define a new variable "Studentinformation". We can fetch the data of our students from the local storage, with the key student - Chris
+// Den virker ikke fordi du bruger den samme vairabel som i Teacher, til at vise student information, plz fix - Nik
 function showStudentInformation() {
      var studentinformation = JSON.parse(localStorage.getItem("Student"));
         alert("Student Information:"

@@ -1,4 +1,6 @@
 //Different variables needed in our registration form retrieved from out Registration HTML document - Alex
+// Den her funktion bliver ikke brugt? - Nik
+/*
 function Register() {
     this.userName = document.getElementById("userName").value;
     this.name = document.getElementById("name").value;
@@ -7,9 +9,10 @@ function Register() {
     this.comment = document.getElementById("comment").value;
     this.password = document.getElementById("password").value;
 }
+*/
 
-
-//Store input from registration to localStorage - Josephine
+//Store input from registration to localStorage - Josefine
+// Hvorfor er det fullName her, men firstName og lastName i student, admin og teacher?? - Nik
 function storeLogin() {
     localStorage.setItem("userName", userName.value);
     localStorage.setItem("name", fullName.value);
@@ -17,6 +20,7 @@ function storeLogin() {
     localStorage.setItem("phone", phone.value);
     localStorage.setItem("comment", comment.value);
     localStorage.setItem("password",password.value);
+    // Hvorfor skal vi console.log det her? - Nik
     console.log(fullName.value);
 }
 
@@ -75,11 +79,11 @@ function storeLogin() {
         if (form_valid) {
             alert("You have been registered"
 
-                + "\nuserName: " + userName.value
-                + "\nname: " + fullName.value
-                + "\nemail: " + email.value
-                + "\nphone: " + phone.value
-                + "\npassword: " + "****"
+                + "\nUsername: " + userName.value
+                + "\nName: " + fullName.value
+                + "\nEmail: " + email.value
+                + "\nPhone: " + phone.value
+                + "\nPassword: " + "****"
                 + "\nAdditional comment: " + comment.value);
         }
         else {

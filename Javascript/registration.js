@@ -54,7 +54,7 @@ function storeLogin() {
 // Makes sure there is a @ in the email - Chris
         var atpos = email.value.indexOf("@");
         var dotpos = email.value.lastIndexOf(".");
-        if (atpos<1||dotpos < atpos + 2 || dotpos + 2 > email.lenght){
+        if (atpos<1||dotpos < atpos + 2 || dotpos + 2 > email.length){
             validation_message += "Please enter a valid email \n";
             form_valid = false;}
 

@@ -118,4 +118,8 @@ var classroomListString = JSON.stringify([classroomList]);
          console.log(room5);
      }
  }
+ 
+ 
+1.2 Problemformulering – Dette skal nok væk (Colle) enig Niklas 
+Universitetet er en stor ændring for mange af os. Studerende kommer med forskellige uddannelser fra gymnasiet (hhx, stx). Dette betyder at alle ikke har den samme viden, når de begynder på universitet. Dette resulterer ofte i, at mange føler, at de ikke helt kan følge med i undervisningen. Det er derfor vigtigt at der findes alternativer, så de kan bedst ydbygge deres faglige viden og finde ud af hvilke læringsteknikker, der virker for dem, i løbet af deres kommende år på universitet. Problemerne opstår i både form af mangel af viden på området, fordi det kan enten være helt nyt eller noget man syntes er meget abstrakt. Overgangen fra at være gymnasieelev til at være studerende på universitet kan også være svær, da ens ansvar for ens egen læring er markant højere end før. Dette har banet en vej for vores løsning – en platform som både skal være med at styrke elevens overgang til studiet, men også højne deres faglige viden, ved at udbyde muligheden for ekstra undervisning. 
   */

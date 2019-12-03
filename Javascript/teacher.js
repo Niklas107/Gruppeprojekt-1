@@ -107,7 +107,7 @@ function validateCreateLecture() {
     // Tjekker om der er blevet valgt noget andet end standard-værdien ved select classroom. Alerter at der skal vælges noget andet end standard-værdien. - Alex
     // Virker ikke længere det nye elementID er chooseClassroom, men virker heller ikke hvis det udskiftes.
     // og jeg kan ikke gennemskue din funktion Alex, så gider du forsøge at få den til at virke? - Nik
-    if (document.getElementById("Classroom").value == "Select classroom") {
+    if (document.getElementById("chooseClassroom").value == "Select classroom") { //Gennemtjek det her PUNKT
         alert("Classroom must be selected!");
         return false;
     }

@@ -46,7 +46,7 @@ if (localStorage.getItem("Teacher") == null) {
     teacherList = JSON.parse(localStorage.getItem('Teacher'))
 }
 
-
+//.value betyder at den henter værdien!!!
 //Code for validating time. - Alex
 //Tjekker om tid på dagen (som findes i teacher.html) er skrevet efter det rigtige format. - Alex
 function validateHhMm(inputField) {
@@ -74,7 +74,7 @@ function validateHhMm(inputField) {
     if(Math.sign(val[0]) == -1 || val[0] > 23) { //Hvis math.sign = -1 er det et negativt hvilket ikke er korrekt. - Alex
         return false;
     } //Math.sign et library (et library er en samling af functioner) og en af de functioner er noget der kan opfange om tallene er negative eller positive. (udregner om de positive eller negative). -Alex
-
+//kilde til math.sign: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/sign
     //Konverterer fra text til int (et helt tal positivt eller negativt) og tjekker at det er et helt tal. - Alex
     if(!Number.isInteger(parseInt(val[1]))) {
         return false;

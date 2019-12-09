@@ -1,4 +1,4 @@
-<mxfile host="www.draw.io" modified="2019-12-09T10:17:47.068Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36" etag="G-KYCF-B3dgNxCPLpZ87" version="12.3.8" type="github" pages="1">
+<mxfile host="www.draw.io" modified="2019-12-09T10:57:38.973Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36" etag="Ta25HPIOBEIztR2RXeET" version="12.3.8" type="github" pages="1">
   <diagram name="Page-1" id="e7e014a7-5840-1c2e-5031-d8a46d1fe8dd">
     <mxGraphModel dx="1648" dy="748" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="826" background="#ffffff" math="0" shadow="0">
       <root>
@@ -59,21 +59,18 @@
           <mxGeometry y="130" width="160" height="20" as="geometry"/>
         </mxCell>
         <mxCell id="WU4-prx6dVndjo4hRYrT-8" value="Admin" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
-          <mxGeometry x="680" y="18" width="160" height="230" as="geometry">
+          <mxGeometry x="680" y="18" width="160" height="196" as="geometry">
             <mxRectangle x="350" y="29" width="70" height="26" as="alternateBounds"/>
           </mxGeometry>
         </mxCell>
-        <mxCell id="WU4-prx6dVndjo4hRYrT-9" value="-adminName: string" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="WU4-prx6dVndjo4hRYrT-8" vertex="1">
-          <mxGeometry y="26" width="160" height="34" as="geometry"/>
-        </mxCell>
         <mxCell id="WU4-prx6dVndjo4hRYrT-10" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="WU4-prx6dVndjo4hRYrT-8" vertex="1">
-          <mxGeometry y="60" width="160" height="8" as="geometry"/>
+          <mxGeometry y="26" width="160" height="8" as="geometry"/>
         </mxCell>
         <mxCell id="WU4-prx6dVndjo4hRYrT-11" value="deleteStudent()&#xa;deleteTeacher()&#xa;deleteLecture()&#xa;showStudentInformation()&#xa;showTeacherInformation()&#xa;constructor()&#xa;JSON.parse()&#xa;localStorage.getItem()&#xa;JSON.stringify()&#xa;localStorage.setItem()&#xa;push()&#xa;&#xa;&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="WU4-prx6dVndjo4hRYrT-8" vertex="1">
-          <mxGeometry y="68" width="160" height="162" as="geometry"/>
+          <mxGeometry y="34" width="160" height="162" as="geometry"/>
         </mxCell>
         <mxCell id="LFXo94fJ0sIlH8z8r5xg-47" value="Teacher" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
-          <mxGeometry x="240" y="264.5" width="160" height="290" as="geometry">
+          <mxGeometry x="240" y="264.5" width="160" height="270" as="geometry">
             <mxRectangle x="350" y="29" width="70" height="26" as="alternateBounds"/>
           </mxGeometry>
         </mxCell>
@@ -83,8 +80,8 @@
         <mxCell id="LFXo94fJ0sIlH8z8r5xg-49" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="LFXo94fJ0sIlH8z8r5xg-47" vertex="1">
           <mxGeometry y="70" width="160" height="8" as="geometry"/>
         </mxCell>
-        <mxCell id="LFXo94fJ0sIlH8z8r5xg-50" value="createLecture()&#xa;removeLecture()&#xa;showStudentInforamtion()&#xa;removeStudent()&#xa;selectStudentsInLectures()&#xa;validateCreateLecture()&#xa;removeStudent2,3,4()&#xa;constructor()&#xa;localStorage.getItem()&#xa;localStorage.setItem()&#xa;JSON.stringify()&#xa;JSON.parse()&#xa;.length&#xa;push()&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="LFXo94fJ0sIlH8z8r5xg-47" vertex="1">
-          <mxGeometry y="78" width="160" height="212" as="geometry"/>
+        <mxCell id="LFXo94fJ0sIlH8z8r5xg-50" value="createLecture()&#xa;removeLecture()&#xa;showStudentInformation()&#xa;selectStudentsInLectures()&#xa;validateCreateLecture()&#xa;removeStudent2,3,4()&#xa;constructor()&#xa;localStorage.getItem()&#xa;localStorage.setItem()&#xa;JSON.stringify()&#xa;JSON.parse()&#xa;.length&#xa;push()&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="LFXo94fJ0sIlH8z8r5xg-47" vertex="1">
+          <mxGeometry y="78" width="160" height="192" as="geometry"/>
         </mxCell>
         <mxCell id="LFXo94fJ0sIlH8z8r5xg-51" value="Student" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
           <mxGeometry x="480" y="264.5" width="160" height="220" as="geometry">

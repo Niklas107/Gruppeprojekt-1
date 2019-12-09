@@ -127,6 +127,5 @@ Universitetet er en stor ændring for mange af os. Studerende kommer med forskel
 6.1 Planlægning af vores process (MÅSKE EKSTRA?) - Gider vi sku ikke lave kh niller 
 Bla bla  
   */
-
-//Fra min kodeforklaring. Laver om selectClassroom i stedet - Nik
-selectStudentsInLectures - I mangel på bedre løsninger har vi lavet 3 knapper og tre select tags i html for at få funktionen til at virke. Meningen er, man skal kunne se de tilmeldte elever på ens egne oprettede forelæsninger, og dernæst fjerne dem. Vi stødte dog ind i problemer med at de blev fjernet fra alle forelæsninger. SÅ der bliver her brugt CSS til at skjule knapperne og dropdownlisterne indtil de skal bruges. De er alle skrevet ind i et CSS dokument med display: none; og hvis man vælger en forelæsning, blokeres deres status som “usynlig” i CSS dokumentet og den pågældende knap og liste over elever vises. Når en anden forelæsning vælges, pushes den forrige knap og liste ind i et array der igen skjuler dem? Det skal siges at vi her fik hjælp til CSS delen, da vi følte, at funktion var vigtig at have for en teacher, så vi ville hellere have en dårlig løsning, der senere kan optimeres, end at fjerne den del af programmet. 
+  
+  

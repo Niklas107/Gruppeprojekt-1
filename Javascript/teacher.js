@@ -181,7 +181,7 @@ function showStudentInformation() {
 }
 
 
-/* Her fik jeg hjælp af min til block og none delen
+/* Her fik jeg hjælp af min roomie  til block og none delen
 Men lad mig forklare. previousHidden er et array, hvor vi senere pusher elementer ind der skal være hidden - Nik */
 var previousHidden = [];
 function selectStudentsInLectures() {

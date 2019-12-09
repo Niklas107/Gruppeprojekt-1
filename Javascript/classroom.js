@@ -12,7 +12,7 @@ Classroom.prototype.toString = function classroomToString () {
     return "Classroom " + "Size: " + this.size + " Location: " + this.location;
 }
 
-// Her er objekter af klassen Classroom, så stringifies. Det vil sige, at de laves om
+// Her er objekter af klassen Classroom, som stringifies. Det vil sige, at de laves om
 // fra et object til en string, så de kan bruges i alerten i createLecture funktionen - Nik
 room1 = new Classroom("50", "Solbjerg Plads");
 room2 = new Classroom("40", "Dalgas Have");
@@ -26,7 +26,7 @@ var room4String = JSON.stringify(room4);
 var room5String = JSON.stringify(room5);
 
 
-// Her laver jeg variablen select som vælger fra IDet chooseClassroom, som er en tom
+// Her laver jeg variablen select som vælger fra ID'et chooseClassroom, som er en tom
 // dropdown altså select HTML tag. Dernæst laver jeg variablen options, som er et array
 // Med de stringifiede versioner af room1 osv. Hvis i (integer) er 0 tilføjes en af
 // objekterne fra options arrayet. Variablen el laver nye option HTML elementer, hvis value
@@ -35,7 +35,8 @@ var room5String = JSON.stringify(room5);
 // Funktionen er i parantes, da den så kalder sig selv med det samme.
 (function selectClassroom() {
 var select = document.getElementById("chooseClassroom");
-var options = ["Classroom 1: " + room1String, "Classroom 2: " + room2String, "Classroom 3: " + room3String, "Classroom 4: " + room4String, "Classroom 5: " + room5String];
+var options = ["Classroom 1: " + room1String, "Classroom 2: " + room2String, "Classroom 3: "
++ room3String, "Classroom 4: " + room4String, "Classroom 5: " + room5String];
 for (var i = 0; i < options.length; i++) {
     var opt = options[i];
     var el = document.createElement("option");

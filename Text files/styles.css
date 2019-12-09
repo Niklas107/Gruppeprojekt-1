@@ -1,10 +1,10 @@
 @font-face {
     font-family: cbsNewBold;
-    src: url(fonts/cbsNewBold.ttf);
+    src: url(../Fonts/cbsNewBold.ttf);
 }
 @font-face {
     font-family: cbsNewRegular;
-    src: url(fonts/cbsNewRegular.ttf);
+    src: url(../Fonts/cbsNewRegular.ttf);
 }
 
 body {

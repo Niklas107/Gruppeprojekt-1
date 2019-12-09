@@ -1,4 +1,4 @@
-// Klassenn Classroom er her opstillet med nogle attributter - Nik
+// Klassen Classroom er her opstillet med nogle attributter - Nik
 class Classroom {
     constructor(size, location) {
         this.size = size;

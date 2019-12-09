@@ -47,13 +47,14 @@ if (localStorage.getItem("Teacher") == null) {
 }
 
 //.value betyder at den henter værdien!!!
+//Kilde: https://stackoverflow.com/questions/154059/how-to-check-empty-undefined-null-string-in-javascript?fbclid=IwAR2Zr_S8S-Wuo0DXQe3x3HG0SWcfMy7jfzorYNjSSRKKNobHis_J-zthQ7k
 //Code for validating time. - Alex
-//Tjekker om tid på dagen (som findes i teacher.html) er skrevet efter det rigtige format. - Alex
 function validateHhMm(inputField) {
-    //Henter værdien af feltet angivet i parameteret - Alex
+    //Henter værdien angivet i feltet "time" eller "tid" - Alex
     var data = inputField.value;
 
     //Tjekker at feltet har en lovlig værdi - Alex
+    // ! betyder is true. Hvis der altså er indtastet date i feltet "tid" så fortsætter den.
     if(!data) {
         return false;
     }
@@ -64,6 +65,7 @@ function validateHhMm(inputField) {
     if(val.length != 2) { //Hvis der kommer alt andet end to værdier ud, så er enten ikke et kolon eller mere end et hvilket er forkert. - Alex
         return false;
     }
+//inspiration til split: https://www.dotnetperls.com/split-js
 
     // Tjekker at tallet er positivt og at antallet af timer angivet ikke er mere end 23
     if(Math.sign(val[0]) == -1 || val[0] > 23) { //Hvis math.sign = -1 er det et negativt hvilket ikke er korrekt. - Alex

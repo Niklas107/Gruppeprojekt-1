@@ -47,13 +47,14 @@ if (localStorage.getItem("Teacher") == null) {
 }
 
 //.value betyder at den henter værdien!!!
+//Kilde: https://stackoverflow.com/questions/154059/how-to-check-empty-undefined-null-string-in-javascript?fbclid=IwAR2Zr_S8S-Wuo0DXQe3x3HG0SWcfMy7jfzorYNjSSRKKNobHis_J-zthQ7k
 //Code for validating time. - Alex
-//Tjekker om tid på dagen (som findes i teacher.html) er skrevet efter det rigtige format. - Alex
 function validateHhMm(inputField) {
-    //Henter værdien af feltet angivet i parameteret - Alex
+    //Henter værdien angivet i feltet "time" eller "tid" - Alex
     var data = inputField.value;
 
     //Tjekker at feltet har en lovlig værdi - Alex
+    // ! betyder is true. Hvis der altså er indtastet date i feltet "tid" så fortsætter den.
     if(!data) {
         return false;
     }
@@ -64,21 +65,13 @@ function validateHhMm(inputField) {
     if(val.length != 2) { //Hvis der kommer alt andet end to værdier ud, så er enten ikke et kolon eller mere end et hvilket er forkert. - Alex
         return false;
     }
-
-    //Konverterer fra text til int og tjekker at det er et helt tal. - Alex
-    if(!Number.isInteger(parseInt(val[0]))) { //val 0 er den time der blevet indtastet. - Alex
-        return false;
-    }
+//inspiration til split: https://www.dotnetperls.com/split-js
 
     // Tjekker at tallet er positivt og at antallet af timer angivet ikke er mere end 23
     if(Math.sign(val[0]) == -1 || val[0] > 23) { //Hvis math.sign = -1 er det et negativt hvilket ikke er korrekt. - Alex
         return false;
     } //Math.sign et library (et library er en samling af functioner) og en af de functioner er noget der kan opfange om tallene er negative eller positive. (udregner om de positive eller negative). -Alex
 //kilde til math.sign: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/sign
-    //Konverterer fra text til int (et helt tal positivt eller negativt) og tjekker at det er et helt tal. - Alex
-    if(!Number.isInteger(parseInt(val[1]))) {
-        return false;
-    }
 
     // Tjekker at tallet er positivt og at antallet af minutter angivet ikke er mere end 59. - Alex
     if(Math.sign(val[1]) == -1 || val[1] > 59) { //Hvis math.sign = -1 er det et negativt hvilket ikke er korrekt. - Alex
@@ -120,12 +113,7 @@ function validateCreateLecture() {
     if (document.getElementById("day").value == "Choose day") {
         alert("A day must be chosen!");
         return false;
-    }
 
-    //Validerer at inputtet til (altså det nummer man smider ind) "time of day" man smider ind, giver mening.- Alex
-    if (!document.getElementById("time").value) {
-        alert("Please enter a valid number for the time of day");
-        return false;
     }
     //Validerer om tiden for dagen er af korrekt format. - Alex
     if (!validateHhMm(document.getElementById("time"))) {

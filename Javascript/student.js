@@ -31,8 +31,8 @@ var studentList = [];
 // When we have a class for our student, it will ask us for all of the data points that we defined in the class student and user - Chris
 // Here we push a new student to our empty array - Chris
 if (localStorage.getItem("Student") == null) {
-        studentList.push(new Student("ChrisMJandre","Agurk","Christopher@andre.bz","31418551","Christopher",
-            "André","HA(it.)","1"));
+        studentList.push(new Student("ChrisMJandre","Agurk","Christopher@andre.bz",
+            "31418551","Christopher","André","HA(it.)","1"));
         studentList.push(new Student("Niller","1234", "nilb107@gmail.com", "31320232","Niklas",
             "L-B", "HA(it.)", "1"));
         studentList.push(new Student("Sven","bord123","Sven@gmail.com","57647239", "Sven",

@@ -50,5 +50,5 @@ login.onclick = function login() {
 
 
 // I also created an alert in case the username and the password does not match, e.g. the username and password is not yet registered in the program - Chris
-        alert("Incorrect username or password");
+    alert("Incorrect username or password");
 }
